@@ -1,5 +1,5 @@
 {
-  "generated_at_local": "2026-07-13T00:00:48.433394+07:00",
+  "generated_at_local": "2026-07-13T01:00:52.594905+07:00",
   "timezone": "Asia/Bangkok",
   "model": {
     "provider": "openai-codex",
@@ -2111,18 +2111,18 @@
         "primary": false
       },
       "overall": {
-        "sessions": 1421,
+        "sessions": 1432,
         "first_local": "2026-04-24 15:59:57",
-        "last_local": "2026-07-12 23:31:53",
-        "api_calls": 35639,
-        "tool_calls": 51526,
-        "input": 537311320,
-        "output": 13219127,
-        "cache_read": 1957071490,
+        "last_local": "2026-07-13 00:54:20",
+        "api_calls": 35806,
+        "tool_calls": 51935,
+        "input": 538366474,
+        "output": 13313925,
+        "cache_read": 1968489602,
         "cache_write": 2544417,
-        "reasoning": 2435171,
-        "total": 2510146354,
-        "all_in": 2512581525
+        "reasoning": 2446095,
+        "total": 2522714418,
+        "all_in": 2525160513
       },
       "daily": [
         {
@@ -3051,15 +3051,28 @@
         {
           "day": "2026-07-12",
           "sessions": 93,
-          "calls": 2189,
-          "tool_calls": 4752,
-          "input": 14509920,
-          "output": 979655,
-          "cache_read": 199081984,
+          "calls": 2190,
+          "tool_calls": 4755,
+          "input": 14512069,
+          "output": 980056,
+          "cache_read": 199228928,
           "cache_write": 0,
-          "reasoning": 147207,
-          "total": 214571559,
-          "all_in": 214718766
+          "reasoning": 147220,
+          "total": 214721053,
+          "all_in": 214868273
+        },
+        {
+          "day": "2026-07-13",
+          "sessions": 11,
+          "calls": 166,
+          "tool_calls": 406,
+          "input": 1053005,
+          "output": 94397,
+          "cache_read": 11271168,
+          "cache_write": 0,
+          "reasoning": 10911,
+          "total": 12418570,
+          "all_in": 12429481
         }
       ],
       "weekly": [
@@ -3220,16 +3233,30 @@
         {
           "week_start": "2026-07-06",
           "sessions": 299,
-          "calls": 6708,
-          "tool_calls": 14318,
-          "input": 56480022,
-          "output": 3070526,
-          "cache_read": 615655424,
+          "calls": 6709,
+          "tool_calls": 14321,
+          "input": 56482171,
+          "output": 3070927,
+          "cache_read": 615802368,
           "cache_write": 0,
-          "reasoning": 554420,
-          "total": 675205972,
-          "all_in": 675760392,
+          "reasoning": 554433,
+          "total": 675355466,
+          "all_in": 675909899,
           "week_end": "2026-07-12"
+        },
+        {
+          "week_start": "2026-07-13",
+          "sessions": 11,
+          "calls": 166,
+          "tool_calls": 406,
+          "input": 1053005,
+          "output": 94397,
+          "cache_read": 11271168,
+          "cache_write": 0,
+          "reasoning": 10911,
+          "total": 12418570,
+          "all_in": 12429481,
+          "week_end": "2026-07-19"
         }
       ]
     }
@@ -3255,19 +3282,19 @@
     {
       "provider": "openai-codex",
       "model": "gpt-5.6-sol",
-      "sessions": 135,
-      "calls": 3381,
-      "tool_calls": 7802,
-      "input": 24115162,
-      "output": 1458208,
-      "cache_read": 312853504,
+      "sessions": 146,
+      "calls": 3548,
+      "tool_calls": 8211,
+      "input": 25170316,
+      "output": 1553006,
+      "cache_read": 324271616,
       "cache_write": 0,
-      "reasoning": 231800,
-      "total": 338426874,
-      "all_in": 338658674,
+      "reasoning": 242724,
+      "total": 350994938,
+      "all_in": 351237662,
       "key": "openai-codex / gpt-5.6-sol",
       "first_local": "2026-07-07 03:21:20",
-      "last_local": "2026-07-12 23:31:53"
+      "last_local": "2026-07-13 00:54:20"
     },
     {
       "provider": "openai-codex",
@@ -4580,49 +4607,76 @@
         {
           "day": "2026-07-12",
           "sessions": 85,
-          "calls": 1991,
-          "tool_calls": 4465,
-          "input": 13477511,
-          "output": 905145,
-          "cache_read": 182243840,
+          "calls": 1992,
+          "tool_calls": 4468,
+          "input": 13479660,
+          "output": 905546,
+          "cache_read": 182390784,
           "cache_write": 0,
-          "reasoning": 131056,
-          "total": 196626496,
-          "all_in": 196757552
+          "reasoning": 131069,
+          "total": 196775990,
+          "all_in": 196907059
+        },
+        {
+          "day": "2026-07-13",
+          "sessions": 11,
+          "calls": 166,
+          "tool_calls": 406,
+          "input": 1053005,
+          "output": 94397,
+          "cache_read": 11271168,
+          "cache_write": 0,
+          "reasoning": 10911,
+          "total": 12418570,
+          "all_in": 12429481
         }
       ],
       "weekly": [
         {
           "week_start": "2026-07-06",
           "sessions": 135,
-          "calls": 3381,
-          "tool_calls": 7802,
-          "input": 24115162,
-          "output": 1458208,
-          "cache_read": 312853504,
+          "calls": 3382,
+          "tool_calls": 7805,
+          "input": 24117311,
+          "output": 1458609,
+          "cache_read": 313000448,
           "cache_write": 0,
-          "reasoning": 231800,
-          "total": 338426874,
-          "all_in": 338658674,
+          "reasoning": 231813,
+          "total": 338576368,
+          "all_in": 338808181,
           "week_end": "2026-07-12"
+        },
+        {
+          "week_start": "2026-07-13",
+          "sessions": 11,
+          "calls": 166,
+          "tool_calls": 406,
+          "input": 1053005,
+          "output": 94397,
+          "cache_read": 11271168,
+          "cache_write": 0,
+          "reasoning": 10911,
+          "total": 12418570,
+          "all_in": 12429481,
+          "week_end": "2026-07-19"
         }
       ],
       "total": {
         "provider": "openai-codex",
         "model": "gpt-5.6-sol",
-        "sessions": 135,
-        "calls": 3381,
-        "tool_calls": 7802,
-        "input": 24115162,
-        "output": 1458208,
-        "cache_read": 312853504,
+        "sessions": 146,
+        "calls": 3548,
+        "tool_calls": 8211,
+        "input": 25170316,
+        "output": 1553006,
+        "cache_read": 324271616,
         "cache_write": 0,
-        "reasoning": 231800,
-        "total": 338426874,
-        "all_in": 338658674,
+        "reasoning": 242724,
+        "total": 350994938,
+        "all_in": 351237662,
         "key": "openai-codex / gpt-5.6-sol",
         "first_local": "2026-07-07 03:21:20",
-        "last_local": "2026-07-12 23:31:53"
+        "last_local": "2026-07-13 00:54:20"
       }
     },
     "openai-codex / gpt-5.4": {
