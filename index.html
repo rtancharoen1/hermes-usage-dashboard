@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark light">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 64 64%22><rect width=%2264%22 height=%2264%22 rx=%2212%22 fill=%22%230a0b0d%22/><path d=%22M14 18h8v10h20V18h8v28h-8V36H22v10h-8z%22 fill=%22%23f5a524%22/></svg>">
+<title>Hermes Usage · Codex gpt-5.5</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to main content</a>
+
+<header class="page-head" role="banner">
+  <div class="head-row">
+    <div class="head-brand">
+      <div class="head-eyebrow">HERMES · USAGE INSTRUMENT</div>
+      <h1 class="head-title">Token usage <span class="mono" id="head-model-name">All models</span></h1>
+      <div class="head-sub" lang="th">รายงานการใช้งาน · Hermes local telemetry</div>
+    </div>
+    <dl class="head-meta">
+      <div><dt>Generated</dt><dd id="meta-generated">—</dd></div>
+      <div><dt>Timezone</dt><dd id="meta-tz">—</dd></div>
+      <div><dt>Provider</dt><dd id="meta-provider">—</dd></div>
+      <div><dt>Sessions on record</dt><dd id="meta-sessions" class="mono">—</dd></div>
+    </dl>
+  </div>
+  <p class="head-note" id="head-note">
+    Local <code>state.db</code> telemetry. Select all tracked usage or isolate one provider/model. Metadata-only sessions are excluded from token totals.
+  </p>
+</header>
+
+<main id="main">
+
+  <!-- HERO KPIs -->
+  <section class="section hero" aria-labelledby="hero-title">
+    <div class="section-head">
+      <h2 id="hero-title">At a glance</h2>
+      <div class="section-sub">Today, this week, all time.</div>
+    </div>
+    <div class="kpi-grid">
+      <article class="kpi kpi-today">
+        <div class="kpi-label">Today · tokens</div>
+        <div class="kpi-value mono" id="kpi-today-total">—</div>
+        <div class="kpi-foot"><span id="kpi-today-day" class="mono">—</span> · vs 7d avg <span id="kpi-today-vs7" class="mono">—</span></div>
+        <svg class="spark" id="spark-today" viewBox="0 0 200 40" preserveAspectRatio="none" aria-hidden="true"></svg>
+      </article>
+
+      <article class="kpi">
+        <div class="kpi-label">Today · API calls</div>
+        <div class="kpi-value mono" id="kpi-today-calls">—</div>
+        <div class="kpi-foot">Sessions <span id="kpi-today-sessions" class="mono">—</span></div>
+        <svg class="spark" id="spark-calls" viewBox="0 0 200 40" preserveAspectRatio="none" aria-hidden="true"></svg>
+      </article>
+
+      <article class="kpi">
+        <div class="kpi-label">Current week · tokens</div>
+        <div class="kpi-value mono" id="kpi-week-total">—</div>
+        <div class="kpi-foot"><span id="kpi-week-range" class="mono">—</span> · pace <span id="kpi-week-pace" class="mono">—</span></div>
+        <svg class="spark" id="spark-week" viewBox="0 0 200 40" preserveAspectRatio="none" aria-hidden="true"></svg>
+      </article>
+
+      <article class="kpi">
+        <div class="kpi-label">All time · tokens</div>
+        <div class="kpi-value mono" id="kpi-total">—</div>
+        <div class="kpi-foot">since <span id="kpi-first" class="mono">—</span></div>
+        <div class="stack-mini" id="stack-mini" aria-hidden="true"></div>
+      </article>
+
+      <article class="kpi kpi-quota">
+        <div class="kpi-label">Quota status</div>
+        <div class="kpi-value quota-badge" id="kpi-quota-state">Not exposed</div>
+        <div class="kpi-foot">
+          Remaining quota is not in local <code>state.db</code>.
+          Last <span class="mono">HTTP 429</span> on <span class="mono">2026-07-05</span>, reset ≈ <span class="mono">19:01 +07</span>.
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- CONTROLS -->
+  <section class="section controls" aria-label="Chart controls">
+    <div class="ctrl-group model-control">
+      <label class="ctrl-label" for="model-select">Model</label>
+      <select id="model-select" aria-describedby="model-filter-status"></select>
+      <span class="sr-only" id="model-filter-status" aria-live="polite"></span>
+    </div>
+    <div class="ctrl-group" role="group" aria-label="Date range">
+      <span class="ctrl-label">Range</span>
+      <div class="segmented" id="ctrl-range" role="tablist">
+        <button role="tab" data-range="7" aria-selected="false">7d</button>
+        <button role="tab" data-range="14" aria-selected="false">14d</button>
+        <button role="tab" data-range="30" aria-selected="true">30d</button>
+        <button role="tab" data-range="90" aria-selected="false">90d</button>
+        <button role="tab" data-range="all" aria-selected="false">All</button>
+      </div>
+    </div>
+    <div class="ctrl-group" role="group" aria-label="Metric">
+      <span class="ctrl-label">Metric</span>
+      <div class="segmented" id="ctrl-metric" role="tablist">
+        <button role="tab" data-metric="total" aria-selected="true">Total</button>
+        <button role="tab" data-metric="grouped" aria-selected="false">All metrics</button>
+        <button role="tab" data-metric="input" aria-selected="false">Input</button>
+        <button role="tab" data-metric="output" aria-selected="false">Output</button>
+        <button role="tab" data-metric="cache_read" aria-selected="false">Cache read</button>
+        <button role="tab" data-metric="calls" aria-selected="false">Calls</button>
+      </div>
+    </div>
+    <div class="ctrl-group" role="group" aria-label="View">
+      <span class="ctrl-label">View</span>
+      <div class="segmented" id="ctrl-view" role="tablist">
+        <button role="tab" data-view="daily" aria-selected="true">Daily</button>
+        <button role="tab" data-view="weekly" aria-selected="false">Weekly</button>
+        <button role="tab" data-view="monthly" aria-selected="false">Monthly</button>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <section class="section" aria-labelledby="model-breakdown-title">
+    <div class="section-head"><h2 id="model-breakdown-title">Model breakdown</h2><div class="section-sub">All tracked token telemetry · select a row to isolate it</div></div>
+    <div class="card model-breakdown" id="model-breakdown" role="list" aria-label="Token usage by provider and model"></div>
+  </section>
+
+  <!-- MAIN CHART -->
+  <section class="section" aria-labelledby="chart-main-title">
+    <div class="section-head">
+      <h2 id="chart-main-title">Usage over time</h2>
+      <div class="section-sub" id="chart-main-sub">Daily · Total tokens</div>
+    </div>
+    <div class="card chart-card">
+      <svg id="chart-main" class="chart" viewBox="0 0 1200 380" aria-label="Main usage chart"></svg>
+      <div class="chart-legend" id="chart-main-legend"></div>
+    </div>
+  </section>
+
+
+
+  <section class="section" aria-labelledby="heatmap-title"><div class="section-head"><h2 id="heatmap-title">Daily pressure map</h2><div class="section-sub">Select any day for a full token breakdown</div></div><div class="card heatmap-card"><div class="heatmap-legend" aria-hidden="true"><span>Low</span><i></i><i></i><i></i><i></i><span>Critical</span></div><div class="heatmap" id="usage-heatmap" role="list" aria-label="Daily token usage heatmap"></div></div></section>
+
+  <!-- STACKED COMPOSITION -->
+  <section class="section" aria-labelledby="chart-comp-title">
+    <div class="section-head">
+      <h2 id="chart-comp-title">Composition · last 14 days</h2>
+      <div class="section-sub">Input · Output · Cache read · Cache write</div>
+    </div>
+    <div class="card chart-card">
+      <svg id="chart-comp" class="chart" viewBox="0 0 1200 320" aria-label="Stacked token composition"></svg>
+      <div class="chart-legend" id="chart-comp-legend">
+        <span class="lg-item"><i class="lg-swatch" style="background:var(--c-cache-read)"></i>cache_read</span>
+        <span class="lg-item"><i class="lg-swatch" style="background:var(--c-input)"></i>input</span>
+        <span class="lg-item"><i class="lg-swatch" style="background:var(--c-output)"></i>output</span>
+        <span class="lg-item"><i class="lg-swatch" style="background:var(--c-cache-write)"></i>cache_write</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- DUAL: WEEKLY + SCATTER -->
+  <div class="grid-2">
+    <section class="section" aria-labelledby="chart-week-title">
+      <div class="section-head">
+        <h2 id="chart-week-title">Weekly totals</h2>
+        <div class="section-sub">ISO weeks · total tokens</div>
+      </div>
+      <div class="card chart-card">
+        <svg id="chart-weekly" class="chart" viewBox="0 0 800 320" aria-label="Weekly totals"></svg>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="chart-scatter-title">
+      <div class="section-head">
+        <h2 id="chart-scatter-title">Calls vs tokens</h2>
+        <div class="section-sub">Each dot is one day</div>
+      </div>
+      <div class="card chart-card">
+        <svg id="chart-scatter" class="chart" viewBox="0 0 800 320" aria-label="Calls vs tokens scatter"></svg>
+      </div>
+    </section>
+  </div>
+
+  <!-- ANALYSIS -->
+  <section class="section" aria-labelledby="analysis-title">
+    <div class="section-head">
+      <h2 id="analysis-title">Analysis</h2>
+      <div class="section-sub">What the numbers actually say.</div>
+    </div>
+    <div class="analysis-grid">
+      <article class="card note-card">
+        <h3>What is driving usage</h3>
+        <ul class="notes">
+          <li><span class="mono" id="pct-cache-read">—</span> of all tokens are <strong>cache_read</strong> — reused context, not fresh generation.</li>
+          <li><span class="mono" id="pct-input">—</span> input · <span class="mono" id="pct-output">—</span> output · <span class="mono" id="pct-reason">—</span> reasoning.</li>
+          <li>Fresh output is a rounding error relative to context replay. Optimizing context reuse and prompt size will beat trimming responses.</li>
+        </ul>
+      </article>
+
+      <article class="card note-card">
+        <h3>Quota pressure</h3>
+        <ul class="notes">
+          <li>Heaviest day: <span class="mono" id="peak-day">—</span> at <span class="mono" id="peak-day-total">—</span> tokens.</li>
+          <li>Heaviest week: <span class="mono" id="peak-week">—</span> at <span class="mono" id="peak-week-total">—</span> tokens.</li>
+          <li><span class="mono">2026-07-05</span> hit HTTP 429 <em>usage_limit_reached</em>; reset ≈ <span class="mono">19:01 +07</span>. That day is by itself the biggest day on record.</li>
+        </ul>
+      </article>
+
+      <article class="card note-card">
+        <h3>Operational recommendations</h3>
+        <ul class="notes">
+          <li>Watch daily total; when it crosses ~<span class="mono">50M</span> tokens, expect quota pressure that day.</li>
+          <li>Cache reuse is a feature — don't shrink it blindly; shrink base prompt and long attachments first.</li>
+          <li>Route non-critical work to a lower-tier model on days above the pressure threshold.</li>
+          <li>Log local <code>state.db</code> daily so future 429s land in this dashboard automatically.</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <!-- TABLE -->
+  <section class="section" aria-labelledby="table-title">
+    <div class="section-head">
+      <h2 id="table-title">Daily table</h2>
+      <div class="section-sub">Click a column to sort.</div>
+    </div>
+    <div class="card table-card">
+      <table id="daily-table">
+        <thead>
+          <tr>
+            <th data-key="day" scope="col"><button class="th-btn">Day</button></th>
+            <th data-key="sessions" class="num" scope="col"><button class="th-btn">Sessions</button></th>
+            <th data-key="calls" class="num" scope="col"><button class="th-btn">Calls</button></th>
+            <th data-key="input" class="num" scope="col"><button class="th-btn">Input</button></th>
+            <th data-key="output" class="num" scope="col"><button class="th-btn">Output</button></th>
+            <th data-key="cache_read" class="num" scope="col"><button class="th-btn">Cache read</button></th>
+            <th data-key="reasoning" class="num" scope="col"><button class="th-btn">Reasoning</button></th>
+            <th data-key="total" class="num" scope="col"><button class="th-btn">Total</button></th>
+          </tr>
+        </thead>
+        <tbody id="daily-tbody"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <footer class="page-foot">
+    <div>Rendered from <code>usage-data.json</code>. Static, offline, no CDN.</div>
+    <div>Hermes · Codex telemetry</div>
+  </footer>
+
+</main>
+
+<div class="tooltip" id="tooltip" role="tooltip" aria-hidden="true"></div>
+<dialog id="day-dialog" aria-labelledby="day-dialog-title"><div class="dialog-head"><div><div class="head-eyebrow">DAILY PRESSURE DETAIL</div><h2 id="day-dialog-title">—</h2></div><button class="dialog-close" type="button" aria-label="Close day details">×</button></div><div id="day-dialog-content"></div></dialog>
+<script src="app.js" defer></script>
+</body>
+</html>
