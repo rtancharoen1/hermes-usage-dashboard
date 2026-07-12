@@ -1,5 +1,5 @@
 {
-  "generated_at_local": "2026-07-12T21:01:43.708359+07:00",
+  "generated_at_local": "2026-07-12T21:11:04.074626+07:00",
   "timezone": "Asia/Bangkok",
   "model": {
     "provider": "openai-codex",
@@ -2111,18 +2111,18 @@
         "primary": false
       },
       "overall": {
-        "sessions": 1407,
+        "sessions": 1410,
         "first_local": "2026-04-24 15:59:57",
-        "last_local": "2026-07-12 21:00:14",
-        "api_calls": 35275,
-        "tool_calls": 50800,
-        "input": 534225422,
-        "output": 13063324,
-        "cache_read": 1923048066,
+        "last_local": "2026-07-12 21:09:13",
+        "api_calls": 35383,
+        "tool_calls": 50998,
+        "input": 534861390,
+        "output": 13098284,
+        "cache_read": 1932480130,
         "cache_write": 2544417,
-        "reasoning": 2403941,
-        "total": 2472881229,
-        "all_in": 2475285170
+        "reasoning": 2411580,
+        "total": 2482984221,
+        "all_in": 2485395801
       },
       "daily": [
         {
@@ -3025,15 +3025,15 @@
         {
           "day": "2026-07-10",
           "sessions": 19,
-          "calls": 582,
-          "tool_calls": 1132,
-          "input": 5192226,
-          "output": 224342,
-          "cache_read": 64193536,
+          "calls": 587,
+          "tool_calls": 1141,
+          "input": 5334019,
+          "output": 225526,
+          "cache_read": 64726016,
           "cache_write": 0,
-          "reasoning": 43054,
-          "total": 69610104,
-          "all_in": 69653158
+          "reasoning": 43327,
+          "total": 70285561,
+          "all_in": 70328888
         },
         {
           "day": "2026-07-11",
@@ -3050,16 +3050,16 @@
         },
         {
           "day": "2026-07-12",
-          "sessions": 79,
-          "calls": 1844,
-          "tool_calls": 4051,
-          "input": 11748161,
-          "output": 832201,
-          "cache_read": 167527424,
+          "sessions": 82,
+          "calls": 1947,
+          "tool_calls": 4240,
+          "input": 12242336,
+          "output": 865977,
+          "cache_read": 176427008,
           "cache_write": 0,
-          "reasoning": 119249,
-          "total": 180107786,
-          "all_in": 180227035
+          "reasoning": 126615,
+          "total": 189535321,
+          "all_in": 189661936
         }
       ],
       "weekly": [
@@ -3219,16 +3219,16 @@
         },
         {
           "week_start": "2026-07-06",
-          "sessions": 285,
-          "calls": 6344,
-          "tool_calls": 13592,
-          "input": 53394124,
-          "output": 2914723,
-          "cache_read": 581632000,
+          "sessions": 288,
+          "calls": 6452,
+          "tool_calls": 13790,
+          "input": 54030092,
+          "output": 2949683,
+          "cache_read": 591064064,
           "cache_write": 0,
-          "reasoning": 523190,
-          "total": 637940847,
-          "all_in": 638464037,
+          "reasoning": 530829,
+          "total": 648043839,
+          "all_in": 648574668,
           "week_end": "2026-07-12"
         }
       ]
@@ -3255,19 +3255,19 @@
     {
       "provider": "openai-codex",
       "model": "gpt-5.6-sol",
-      "sessions": 127,
-      "calls": 3236,
-      "tool_calls": 7352,
-      "input": 22198696,
-      "output": 1382585,
-      "cache_read": 299029504,
+      "sessions": 129,
+      "calls": 3267,
+      "tool_calls": 7443,
+      "input": 22557736,
+      "output": 1390567,
+      "cache_read": 301381632,
       "cache_write": 0,
-      "reasoning": 219360,
-      "total": 322610785,
-      "all_in": 322830145,
+      "reasoning": 220616,
+      "total": 325329935,
+      "all_in": 325550551,
       "key": "openai-codex / gpt-5.6-sol",
       "first_local": "2026-07-07 03:21:20",
-      "last_local": "2026-07-12 20:59:52"
+      "last_local": "2026-07-12 21:09:13"
     },
     {
       "provider": "openai-codex",
@@ -3285,6 +3285,23 @@
       "key": "openai-codex / gpt-5.4",
       "first_local": "2026-04-24 15:59:57",
       "last_local": "2026-07-02 18:29:20"
+    },
+    {
+      "provider": "openai-codex",
+      "model": "gpt-5.6-terra",
+      "sessions": 3,
+      "calls": 62,
+      "tool_calls": 90,
+      "input": 279112,
+      "output": 23486,
+      "cache_read": 4841472,
+      "cache_write": 0,
+      "reasoning": 6792,
+      "total": 5144070,
+      "all_in": 5150862,
+      "key": "openai-codex / gpt-5.6-terra",
+      "first_local": "2026-07-12 18:08:49",
+      "last_local": "2026-07-12 21:00:14"
     },
     {
       "provider": "anthropic",
@@ -3306,19 +3323,19 @@
     {
       "provider": "openai-codex",
       "model": "claude-haiku-4-5",
-      "sessions": 2,
-      "calls": 13,
-      "tool_calls": 72,
-      "input": 247003,
-      "output": 11510,
-      "cache_read": 953344,
+      "sessions": 1,
+      "calls": 31,
+      "tool_calls": 91,
+      "input": 288286,
+      "output": 15635,
+      "cache_read": 3269120,
       "cache_write": 0,
-      "reasoning": 2667,
-      "total": 1211857,
-      "all_in": 1214524,
+      "reasoning": 2373,
+      "total": 3573041,
+      "all_in": 3575414,
       "key": "openai-codex / claude-haiku-4-5",
       "first_local": "2026-07-12 18:00:06",
-      "last_local": "2026-07-12 18:08:49"
+      "last_local": "2026-07-12 18:00:06"
     },
     {
       "provider": "openai-codex",
@@ -3370,23 +3387,6 @@
       "key": "openrouter / google/gemma-4-31b-it:free",
       "first_local": "2026-06-25 01:52:24",
       "last_local": "2026-07-02 18:29:45"
-    },
-    {
-      "provider": "openai-codex",
-      "model": "gpt-5.6-terra",
-      "sessions": 1,
-      "calls": 3,
-      "tool_calls": 2,
-      "input": 43467,
-      "output": 633,
-      "cache_read": 77312,
-      "cache_write": 0,
-      "reasoning": 115,
-      "total": 121412,
-      "all_in": 121527,
-      "key": "openai-codex / gpt-5.6-terra",
-      "first_local": "2026-07-12 21:00:14",
-      "last_local": "2026-07-12 21:00:14"
     },
     {
       "provider": "openrouter",
@@ -4554,15 +4554,15 @@
         {
           "day": "2026-07-10",
           "sessions": 6,
-          "calls": 152,
-          "tool_calls": 287,
-          "input": 1209240,
-          "output": 52927,
-          "cache_read": 12129280,
+          "calls": 157,
+          "tool_calls": 296,
+          "input": 1351033,
+          "output": 54111,
+          "cache_read": 12661760,
           "cache_write": 0,
-          "reasoning": 12046,
-          "total": 13391447,
-          "all_in": 13403493
+          "reasoning": 12319,
+          "total": 14066904,
+          "all_in": 14079223
         },
         {
           "day": "2026-07-11",
@@ -4579,50 +4579,50 @@
         },
         {
           "day": "2026-07-12",
-          "sessions": 76,
-          "calls": 1828,
-          "tool_calls": 3977,
-          "input": 11457691,
-          "output": 820058,
-          "cache_read": 166496768,
+          "sessions": 78,
+          "calls": 1854,
+          "tool_calls": 4059,
+          "input": 11674938,
+          "output": 826856,
+          "cache_read": 168316416,
           "cache_write": 0,
-          "reasoning": 116467,
-          "total": 178774517,
-          "all_in": 178890984
+          "reasoning": 117450,
+          "total": 180818210,
+          "all_in": 180935660
         }
       ],
       "weekly": [
         {
           "week_start": "2026-07-06",
-          "sessions": 127,
-          "calls": 3236,
-          "tool_calls": 7352,
-          "input": 22198696,
-          "output": 1382585,
-          "cache_read": 299029504,
+          "sessions": 129,
+          "calls": 3267,
+          "tool_calls": 7443,
+          "input": 22557736,
+          "output": 1390567,
+          "cache_read": 301381632,
           "cache_write": 0,
-          "reasoning": 219360,
-          "total": 322610785,
-          "all_in": 322830145,
+          "reasoning": 220616,
+          "total": 325329935,
+          "all_in": 325550551,
           "week_end": "2026-07-12"
         }
       ],
       "total": {
         "provider": "openai-codex",
         "model": "gpt-5.6-sol",
-        "sessions": 127,
-        "calls": 3236,
-        "tool_calls": 7352,
-        "input": 22198696,
-        "output": 1382585,
-        "cache_read": 299029504,
+        "sessions": 129,
+        "calls": 3267,
+        "tool_calls": 7443,
+        "input": 22557736,
+        "output": 1390567,
+        "cache_read": 301381632,
         "cache_write": 0,
-        "reasoning": 219360,
-        "total": 322610785,
-        "all_in": 322830145,
+        "reasoning": 220616,
+        "total": 325329935,
+        "all_in": 325550551,
         "key": "openai-codex / gpt-5.6-sol",
         "first_local": "2026-07-07 03:21:20",
-        "last_local": "2026-07-12 20:59:52"
+        "last_local": "2026-07-12 21:09:13"
       }
     },
     "openai-codex / gpt-5.4": {
@@ -4784,6 +4784,58 @@
         "last_local": "2026-07-02 18:29:20"
       }
     },
+    "openai-codex / gpt-5.6-terra": {
+      "provider": "openai-codex",
+      "model": "gpt-5.6-terra",
+      "daily": [
+        {
+          "day": "2026-07-12",
+          "sessions": 3,
+          "calls": 62,
+          "tool_calls": 90,
+          "input": 279112,
+          "output": 23486,
+          "cache_read": 4841472,
+          "cache_write": 0,
+          "reasoning": 6792,
+          "total": 5144070,
+          "all_in": 5150862
+        }
+      ],
+      "weekly": [
+        {
+          "week_start": "2026-07-06",
+          "sessions": 3,
+          "calls": 62,
+          "tool_calls": 90,
+          "input": 279112,
+          "output": 23486,
+          "cache_read": 4841472,
+          "cache_write": 0,
+          "reasoning": 6792,
+          "total": 5144070,
+          "all_in": 5150862,
+          "week_end": "2026-07-12"
+        }
+      ],
+      "total": {
+        "provider": "openai-codex",
+        "model": "gpt-5.6-terra",
+        "sessions": 3,
+        "calls": 62,
+        "tool_calls": 90,
+        "input": 279112,
+        "output": 23486,
+        "cache_read": 4841472,
+        "cache_write": 0,
+        "reasoning": 6792,
+        "total": 5144070,
+        "all_in": 5150862,
+        "key": "openai-codex / gpt-5.6-terra",
+        "first_local": "2026-07-12 18:08:49",
+        "last_local": "2026-07-12 21:00:14"
+      }
+    },
     "anthropic / claude-sonnet-4-6": {
       "provider": "anthropic",
       "model": "claude-sonnet-4-6",
@@ -4869,50 +4921,50 @@
       "daily": [
         {
           "day": "2026-07-12",
-          "sessions": 2,
-          "calls": 13,
-          "tool_calls": 72,
-          "input": 247003,
-          "output": 11510,
-          "cache_read": 953344,
+          "sessions": 1,
+          "calls": 31,
+          "tool_calls": 91,
+          "input": 288286,
+          "output": 15635,
+          "cache_read": 3269120,
           "cache_write": 0,
-          "reasoning": 2667,
-          "total": 1211857,
-          "all_in": 1214524
+          "reasoning": 2373,
+          "total": 3573041,
+          "all_in": 3575414
         }
       ],
       "weekly": [
         {
           "week_start": "2026-07-06",
-          "sessions": 2,
-          "calls": 13,
-          "tool_calls": 72,
-          "input": 247003,
-          "output": 11510,
-          "cache_read": 953344,
+          "sessions": 1,
+          "calls": 31,
+          "tool_calls": 91,
+          "input": 288286,
+          "output": 15635,
+          "cache_read": 3269120,
           "cache_write": 0,
-          "reasoning": 2667,
-          "total": 1211857,
-          "all_in": 1214524,
+          "reasoning": 2373,
+          "total": 3573041,
+          "all_in": 3575414,
           "week_end": "2026-07-12"
         }
       ],
       "total": {
         "provider": "openai-codex",
         "model": "claude-haiku-4-5",
-        "sessions": 2,
-        "calls": 13,
-        "tool_calls": 72,
-        "input": 247003,
-        "output": 11510,
-        "cache_read": 953344,
+        "sessions": 1,
+        "calls": 31,
+        "tool_calls": 91,
+        "input": 288286,
+        "output": 15635,
+        "cache_read": 3269120,
         "cache_write": 0,
-        "reasoning": 2667,
-        "total": 1211857,
-        "all_in": 1214524,
+        "reasoning": 2373,
+        "total": 3573041,
+        "all_in": 3575414,
         "key": "openai-codex / claude-haiku-4-5",
         "first_local": "2026-07-12 18:00:06",
-        "last_local": "2026-07-12 18:08:49"
+        "last_local": "2026-07-12 18:00:06"
       }
     },
     "openai-codex / claude-fable-5": {
@@ -5096,58 +5148,6 @@
         "key": "openrouter / google/gemma-4-31b-it:free",
         "first_local": "2026-06-25 01:52:24",
         "last_local": "2026-07-02 18:29:45"
-      }
-    },
-    "openai-codex / gpt-5.6-terra": {
-      "provider": "openai-codex",
-      "model": "gpt-5.6-terra",
-      "daily": [
-        {
-          "day": "2026-07-12",
-          "sessions": 1,
-          "calls": 3,
-          "tool_calls": 2,
-          "input": 43467,
-          "output": 633,
-          "cache_read": 77312,
-          "cache_write": 0,
-          "reasoning": 115,
-          "total": 121412,
-          "all_in": 121527
-        }
-      ],
-      "weekly": [
-        {
-          "week_start": "2026-07-06",
-          "sessions": 1,
-          "calls": 3,
-          "tool_calls": 2,
-          "input": 43467,
-          "output": 633,
-          "cache_read": 77312,
-          "cache_write": 0,
-          "reasoning": 115,
-          "total": 121412,
-          "all_in": 121527,
-          "week_end": "2026-07-12"
-        }
-      ],
-      "total": {
-        "provider": "openai-codex",
-        "model": "gpt-5.6-terra",
-        "sessions": 1,
-        "calls": 3,
-        "tool_calls": 2,
-        "input": 43467,
-        "output": 633,
-        "cache_read": 77312,
-        "cache_write": 0,
-        "reasoning": 115,
-        "total": 121412,
-        "all_in": 121527,
-        "key": "openai-codex / gpt-5.6-terra",
-        "first_local": "2026-07-12 21:00:14",
-        "last_local": "2026-07-12 21:00:14"
       }
     },
     "openrouter / openrouter/owl-alpha": {
@@ -5465,9 +5465,9 @@
     {
       "provider": "(none)",
       "model": "claude-haiku-4-5",
-      "sessions": 6,
+      "sessions": 5,
       "calls": 0,
-      "tool_calls": 27,
+      "tool_calls": 0,
       "input": 0,
       "output": 0,
       "cache_read": 0,
@@ -5477,7 +5477,7 @@
       "all_in": 0,
       "key": "(none) / claude-haiku-4-5",
       "first_local": "2026-07-05 22:36:29",
-      "last_local": "2026-07-12 18:09:46"
+      "last_local": "2026-07-12 18:09:36"
     },
     {
       "provider": "(none)",

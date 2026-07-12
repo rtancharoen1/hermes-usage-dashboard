@@ -31,6 +31,7 @@ serve through a local HTTP server.
 ## What is shown
 
 - **Header** — provider, model, timezone, generated timestamp, 429 note.
+- **GPT-5.6 versions** — an auto-updating panel that lists each billed `gpt-5.6-*` variant, its sessions, first/last-seen dates, total tokens, and share of GPT-5.6 usage. A newly used third variant appears after its first telemetry record.
 - **KPIs** — today total, today calls, current week, all-time, quota status.
   Each KPI has a 14-day sparkline. Overall composition bar shows how much of
   all-time tokens are cache reads.

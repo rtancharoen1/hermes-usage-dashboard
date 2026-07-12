@@ -163,6 +163,7 @@ function renderAll() {
   renderTable();
   renderCharts();
   renderModelBreakdown();
+  renderGPT56Versions();
   renderHeatmap();
 }
 
@@ -899,6 +900,33 @@ function renderModelBreakdown() {
     button.setAttribute('aria-label', `${r.provider} ${r.model}: ${fmtInt(r.total)} tokens, ${fmtPct(r.total/allTotal)} of tracked usage`);
     const width = Math.max(1.5, r.total / max * 100);
     button.innerHTML = `<span class="model-rank mono">${String(i+1).padStart(2,'0')}</span><span class="model-name"><strong>${escapeText(r.model)}</strong><small>${escapeText(r.provider)}</small></span><span class="model-track"><i style="width:${width.toFixed(1)}%"></i></span><span class="model-total mono">${fmtCompact(r.total)}<small>${fmtPct(r.total/allTotal)}</small></span>`;
+    button.addEventListener('click', () => selectModel(r.key));
+    root.appendChild(button);
+  });
+}
+
+function renderGPT56Versions() {
+  const root = document.getElementById('gpt56-versions');
+  if (!root) return;
+  const rows = state.source.model_totals.filter(r => /^gpt-5\.6(?:[-.]|$)/i.test(r.model));
+  root.innerHTML = '';
+  if (!rows.length) {
+    root.innerHTML = '<p class="empty-state">No GPT-5.6 token telemetry recorded yet. New variants will appear automatically after their first billed session.</p>';
+    return;
+  }
+  const max = Math.max(...rows.map(r => r.total), 1);
+  const familyTotal = rows.reduce((sum, r) => sum + (r.total || 0), 0) || 1;
+  rows.forEach((r, i) => {
+    const button = document.createElement('button');
+    button.type = 'button';
+    button.className = `model-row${state.selection === r.key ? ' selected' : ''}`;
+    button.setAttribute('role', 'listitem');
+    button.setAttribute('aria-pressed', state.selection === r.key ? 'true' : 'false');
+    button.setAttribute('aria-label', `${r.model}: ${fmtInt(r.total)} tokens across ${fmtInt(r.sessions)} sessions; first seen ${r.first_local || 'unknown'}, last seen ${r.last_local || 'unknown'}`);
+    const width = Math.max(1.5, r.total / max * 100);
+    const firstSeen = (r.first_local || '—').split(' ')[0];
+    const lastSeen = (r.last_local || '—').split(' ')[0];
+    button.innerHTML = `<span class="model-rank mono">${String(i+1).padStart(2,'0')}</span><span class="model-name"><strong>${escapeText(r.model)}</strong><small>${fmtInt(r.sessions)} sessions · ${firstSeen} → ${lastSeen}</small></span><span class="model-track"><i style="width:${width.toFixed(1)}%"></i></span><span class="model-total mono">${fmtCompact(r.total)}<small>${fmtPct(r.total/familyTotal)} of GPT-5.6</small></span>`;
     button.addEventListener('click', () => selectModel(r.key));
     root.appendChild(button);
   });
