@@ -252,6 +252,13 @@ main { padding: 8px 48px 96px; max-width: 1600px; margin: 0 auto; }
   margin-top: 6px;
 }
 .kpi-current .kpi-value { color: var(--c-amber); }
+.kpi-average {
+  margin-top: 7px;
+  color: var(--c-fg-mute);
+  font: 10.5px var(--f-mono);
+}
+.kpi-average span { color: var(--c-fg-dim); text-transform: uppercase; letter-spacing: 0.08em; }
+.kpi-average strong { color: var(--c-amber); font-size: 12px; font-weight: 500; }
 .kpi-foot {
   font-size: 12px;
   color: var(--c-fg-mute);

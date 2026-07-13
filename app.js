@@ -215,6 +215,12 @@ function renderKPIs() {
     value.setAttribute('title', fmtInt(period.total));
     document.getElementById(`kpi-${id}-range`).textContent = `since ${fmtPeriodStart(period.start_local)}`;
     document.getElementById(`kpi-${id}-calls`).textContent = fmtInt(period.calls);
+    const average = document.getElementById(`kpi-${id}-average`);
+    if (average) {
+      const tokensPerDay = period.total / fallbackDays;
+      average.textContent = fmtCompact(tokensPerDay);
+      average.setAttribute('title', `${fmtInt(tokensPerDay)} tokens per day`);
+    }
   }
 
   document.getElementById('kpi-total').textContent = fmtCompact(d.overall.total);
