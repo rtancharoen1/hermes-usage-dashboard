@@ -75,6 +75,32 @@ def fetch_daily(scope):
     """).fetchall()
     return [dict(r) for r in rows]
 
+def fetch_periods_where(where):
+    """Return exact rolling-window aggregates, anchored to generation time."""
+    now = datetime.datetime.now(datetime.timezone.utc).timestamp()
+    periods = {}
+    for key, hours in [('last_24_hours', 24), ('last_7_days', 24 * 7), ('last_30_days', 24 * 30)]:
+        cutoff = now - (hours * 3600)
+        row = conn.execute(f"""
+          SELECT count(*) sessions, sum(api_call_count) calls, sum(tool_call_count) tool_calls,
+                 sum(input_tokens) input, sum(output_tokens) output,
+                 sum(cache_read_tokens) cache_read, sum(cache_write_tokens) cache_write,
+                 sum(reasoning_tokens) reasoning,
+                 sum(input_tokens+output_tokens+cache_read_tokens+cache_write_tokens) total,
+                 sum(input_tokens+output_tokens+cache_read_tokens+cache_write_tokens+reasoning_tokens) all_in
+          FROM sessions WHERE {where} AND started_at >= ? AND started_at <= ?
+        """, (cutoff, now)).fetchone()
+        bucket = empty_bucket('period', key)
+        bucket.pop('period')
+        bucket.update({k: row[k] or 0 for k in row.keys()})
+        bucket['start_local'] = local_dt(cutoff).isoformat(timespec='seconds')
+        bucket['end_local'] = local_dt(now).isoformat(timespec='seconds')
+        periods[key] = bucket
+    return periods
+
+def fetch_periods(scope):
+    return fetch_periods_where(where_clause(scope))
+
 def weekly_from_daily(daily):
     buckets={}
     for r in daily:
@@ -133,7 +159,15 @@ for item in model_totals:
     """).fetchall()
     key=item['key']
     daily=[dict(r) for r in rows]
-    series_by_model[key]={'provider':item['provider'],'model':item['model'],'daily':daily,'weekly':weekly_from_daily(daily),'total':item}
+    model_where = (
+        f"coalesce(billing_provider,'(none)')='{provider}' "
+        f"AND coalesce(model,'(none)')='{model}' "
+        "AND (input_tokens + output_tokens + cache_read_tokens + cache_write_tokens) > 0"
+    )
+    series_by_model[key]={
+      'provider':item['provider'],'model':item['model'],'daily':daily,
+      'weekly':weekly_from_daily(daily),'periods':fetch_periods_where(model_where),'total':item
+    }
 
 codex_daily=fetch_daily('codex')
 all_daily=fetch_daily('all_tracked')
@@ -145,6 +179,7 @@ scopes={
     'overall': fetch_overall('codex'),
     'daily': codex_daily,
     'weekly': weekly_from_daily(codex_daily),
+    'periods': fetch_periods('codex'),
   },
   'all_tracked': {
     'label':'All tracked models',
@@ -153,6 +188,7 @@ scopes={
     'overall': fetch_overall('all_tracked'),
     'daily': all_daily,
     'weekly': weekly_from_daily(all_daily),
+    'periods': fetch_periods('all_tracked'),
   }
 }
 

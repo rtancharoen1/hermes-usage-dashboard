@@ -1,5 +1,5 @@
 {
-  "generated_at_local": "2026-07-13T21:00:42.187661+07:00",
+  "generated_at_local": "2026-07-13T21:32:53.572190+07:00",
   "timezone": "Asia/Bangkok",
   "model": {
     "provider": "openai-codex",
@@ -2100,7 +2100,51 @@
           "all_in": 313935774,
           "week_end": "2026-07-12"
         }
-      ]
+      ],
+      "periods": {
+        "last_24_hours": {
+          "sessions": 0,
+          "calls": 0,
+          "tool_calls": 0,
+          "input": 0,
+          "output": 0,
+          "cache_read": 0,
+          "cache_write": 0,
+          "reasoning": 0,
+          "total": 0,
+          "all_in": 0,
+          "start_local": "2026-07-12T21:32:53+07:00",
+          "end_local": "2026-07-13T21:32:53+07:00"
+        },
+        "last_7_days": {
+          "sessions": 70,
+          "calls": 1926,
+          "tool_calls": 4013,
+          "input": 20536743,
+          "output": 883767,
+          "cache_read": 200728064,
+          "cache_write": 0,
+          "reasoning": 159441,
+          "total": 222148574,
+          "all_in": 222308015,
+          "start_local": "2026-07-06T21:32:53+07:00",
+          "end_local": "2026-07-13T21:32:53+07:00"
+        },
+        "last_30_days": {
+          "sessions": 594,
+          "calls": 11432,
+          "tool_calls": 19569,
+          "input": 91114812,
+          "output": 5250931,
+          "cache_read": 848044608,
+          "cache_write": 0,
+          "reasoning": 1001012,
+          "total": 944410351,
+          "all_in": 945411363,
+          "start_local": "2026-06-13T21:32:53+07:00",
+          "end_local": "2026-07-13T21:32:53+07:00"
+        }
+      }
     },
     "all_tracked": {
       "label": "All tracked models",
@@ -2111,18 +2155,18 @@
         "primary": false
       },
       "overall": {
-        "sessions": 1494,
+        "sessions": 1504,
         "first_local": "2026-04-24 15:59:57",
-        "last_local": "2026-07-13 20:59:45",
-        "api_calls": 37235,
-        "tool_calls": 55474,
-        "input": 549970097,
-        "output": 14070041,
-        "cache_read": 2095626882,
+        "last_local": "2026-07-13 21:31:06",
+        "api_calls": 37483,
+        "tool_calls": 56080,
+        "input": 551162722,
+        "output": 14171775,
+        "cache_read": 2115779202,
         "cache_write": 2544417,
-        "reasoning": 2630549,
-        "total": 2662211437,
-        "all_in": 2664841986
+        "reasoning": 2662211,
+        "total": 2683658116,
+        "all_in": 2686320327
       },
       "daily": [
         {
@@ -3063,16 +3107,16 @@
         },
         {
           "day": "2026-07-13",
-          "sessions": 73,
-          "calls": 1509,
-          "tool_calls": 3824,
-          "input": 11810726,
-          "output": 825490,
-          "cache_read": 129044992,
+          "sessions": 83,
+          "calls": 1757,
+          "tool_calls": 4430,
+          "input": 13003351,
+          "output": 927224,
+          "cache_read": 149197312,
           "cache_write": 0,
-          "reasoning": 190553,
-          "total": 141681208,
-          "all_in": 141871761
+          "reasoning": 222215,
+          "total": 163127887,
+          "all_in": 163350102
         }
       ],
       "weekly": [
@@ -3246,19 +3290,63 @@
         },
         {
           "week_start": "2026-07-13",
-          "sessions": 73,
-          "calls": 1509,
-          "tool_calls": 3824,
-          "input": 11810726,
-          "output": 825490,
-          "cache_read": 129044992,
+          "sessions": 83,
+          "calls": 1757,
+          "tool_calls": 4430,
+          "input": 13003351,
+          "output": 927224,
+          "cache_read": 149197312,
           "cache_write": 0,
-          "reasoning": 190553,
-          "total": 141681208,
-          "all_in": 141871761,
+          "reasoning": 222215,
+          "total": 163127887,
+          "all_in": 163350102,
           "week_end": "2026-07-19"
         }
-      ]
+      ],
+      "periods": {
+        "last_24_hours": {
+          "sessions": 88,
+          "calls": 1846,
+          "tool_calls": 4722,
+          "input": 14198093,
+          "output": 975124,
+          "cache_read": 158318592,
+          "cache_write": 0,
+          "reasoning": 229974,
+          "total": 173491809,
+          "all_in": 173721783,
+          "start_local": "2026-07-12T21:32:53+07:00",
+          "end_local": "2026-07-13T21:32:53+07:00"
+        },
+        "last_7_days": {
+          "sessions": 298,
+          "calls": 7393,
+          "tool_calls": 16728,
+          "input": 60020284,
+          "output": 3387976,
+          "cache_read": 693772288,
+          "cache_write": 0,
+          "reasoning": 640210,
+          "total": 757180548,
+          "all_in": 757820758,
+          "start_local": "2026-07-06T21:32:53+07:00",
+          "end_local": "2026-07-13T21:32:53+07:00"
+        },
+        "last_30_days": {
+          "sessions": 840,
+          "calls": 16917,
+          "tool_calls": 32284,
+          "input": 131080955,
+          "output": 7755362,
+          "cache_read": 1341139392,
+          "cache_write": 0,
+          "reasoning": 1481810,
+          "total": 1479975709,
+          "all_in": 1481457519,
+          "start_local": "2026-06-13T21:32:53+07:00",
+          "end_local": "2026-07-13T21:32:53+07:00"
+        }
+      }
     }
   },
   "model_totals": [
@@ -3282,19 +3370,19 @@
     {
       "provider": "openai-codex",
       "model": "gpt-5.6-sol",
-      "sessions": 209,
-      "calls": 5000,
-      "tool_calls": 11771,
-      "input": 36912555,
-      "output": 2314238,
-      "cache_read": 452512768,
+      "sessions": 219,
+      "calls": 5248,
+      "tool_calls": 12377,
+      "input": 38105180,
+      "output": 2415972,
+      "cache_read": 472665088,
       "cache_write": 0,
-      "reasoning": 429234,
-      "total": 491739561,
-      "all_in": 492168795,
+      "reasoning": 460896,
+      "total": 513186240,
+      "all_in": 513647136,
       "key": "openai-codex / gpt-5.6-sol",
       "first_local": "2026-07-07 03:21:20",
-      "last_local": "2026-07-13 20:59:45"
+      "last_local": "2026-07-13 21:31:06"
     },
     {
       "provider": "openai-codex",
@@ -4517,6 +4605,50 @@
           "week_end": "2026-07-12"
         }
       ],
+      "periods": {
+        "last_24_hours": {
+          "sessions": 0,
+          "calls": 0,
+          "tool_calls": 0,
+          "input": 0,
+          "output": 0,
+          "cache_read": 0,
+          "cache_write": 0,
+          "reasoning": 0,
+          "total": 0,
+          "all_in": 0,
+          "start_local": "2026-07-12T21:32:53+07:00",
+          "end_local": "2026-07-13T21:32:53+07:00"
+        },
+        "last_7_days": {
+          "sessions": 70,
+          "calls": 1926,
+          "tool_calls": 4013,
+          "input": 20536743,
+          "output": 883767,
+          "cache_read": 200728064,
+          "cache_write": 0,
+          "reasoning": 159441,
+          "total": 222148574,
+          "all_in": 222308015,
+          "start_local": "2026-07-06T21:32:53+07:00",
+          "end_local": "2026-07-13T21:32:53+07:00"
+        },
+        "last_30_days": {
+          "sessions": 594,
+          "calls": 11432,
+          "tool_calls": 19569,
+          "input": 91114812,
+          "output": 5250931,
+          "cache_read": 848044608,
+          "cache_write": 0,
+          "reasoning": 1001012,
+          "total": 944410351,
+          "all_in": 945411363,
+          "start_local": "2026-06-13T21:32:53+07:00",
+          "end_local": "2026-07-13T21:32:53+07:00"
+        }
+      },
       "total": {
         "provider": "openai-codex",
         "model": "gpt-5.5",
@@ -4619,16 +4751,16 @@
         },
         {
           "day": "2026-07-13",
-          "sessions": 73,
-          "calls": 1509,
-          "tool_calls": 3824,
-          "input": 11810726,
-          "output": 825490,
-          "cache_read": 129044992,
+          "sessions": 83,
+          "calls": 1757,
+          "tool_calls": 4430,
+          "input": 13003351,
+          "output": 927224,
+          "cache_read": 149197312,
           "cache_write": 0,
-          "reasoning": 190553,
-          "total": 141681208,
-          "all_in": 141871761
+          "reasoning": 222215,
+          "total": 163127887,
+          "all_in": 163350102
         }
       ],
       "weekly": [
@@ -4648,35 +4780,79 @@
         },
         {
           "week_start": "2026-07-13",
-          "sessions": 73,
-          "calls": 1509,
-          "tool_calls": 3824,
-          "input": 11810726,
-          "output": 825490,
-          "cache_read": 129044992,
+          "sessions": 83,
+          "calls": 1757,
+          "tool_calls": 4430,
+          "input": 13003351,
+          "output": 927224,
+          "cache_read": 149197312,
           "cache_write": 0,
-          "reasoning": 190553,
-          "total": 141681208,
-          "all_in": 141871761,
+          "reasoning": 222215,
+          "total": 163127887,
+          "all_in": 163350102,
           "week_end": "2026-07-19"
         }
       ],
+      "periods": {
+        "last_24_hours": {
+          "sessions": 88,
+          "calls": 1846,
+          "tool_calls": 4722,
+          "input": 14198093,
+          "output": 975124,
+          "cache_read": 158318592,
+          "cache_write": 0,
+          "reasoning": 229974,
+          "total": 173491809,
+          "all_in": 173721783,
+          "start_local": "2026-07-12T21:32:53+07:00",
+          "end_local": "2026-07-13T21:32:53+07:00"
+        },
+        "last_7_days": {
+          "sessions": 219,
+          "calls": 5248,
+          "tool_calls": 12377,
+          "input": 38105180,
+          "output": 2415972,
+          "cache_read": 472665088,
+          "cache_write": 0,
+          "reasoning": 460896,
+          "total": 513186240,
+          "all_in": 513647136,
+          "start_local": "2026-07-06T21:32:53+07:00",
+          "end_local": "2026-07-13T21:32:53+07:00"
+        },
+        "last_30_days": {
+          "sessions": 219,
+          "calls": 5248,
+          "tool_calls": 12377,
+          "input": 38105180,
+          "output": 2415972,
+          "cache_read": 472665088,
+          "cache_write": 0,
+          "reasoning": 460896,
+          "total": 513186240,
+          "all_in": 513647136,
+          "start_local": "2026-06-13T21:32:53+07:00",
+          "end_local": "2026-07-13T21:32:53+07:00"
+        }
+      },
       "total": {
         "provider": "openai-codex",
         "model": "gpt-5.6-sol",
-        "sessions": 209,
-        "calls": 5000,
-        "tool_calls": 11771,
-        "input": 36912555,
-        "output": 2314238,
-        "cache_read": 452512768,
+        "sessions": 219,
+        "calls": 5248,
+        "tool_calls": 12377,
+        "input": 38105180,
+        "output": 2415972,
+        "cache_read": 472665088,
         "cache_write": 0,
-        "reasoning": 429234,
-        "total": 491739561,
-        "all_in": 492168795,
+        "reasoning": 460896,
+        "total": 513186240,
+        "all_in": 513647136,
         "key": "openai-codex / gpt-5.6-sol",
         "first_local": "2026-07-07 03:21:20",
-        "last_local": "2026-07-13 20:59:45"
+        "last_local": "2026-07-13 21:31:06"
       }
     },
     "openai-codex / gpt-5.4": {
@@ -4820,6 +4996,50 @@
           "week_end": "2026-07-05"
         }
       ],
+      "periods": {
+        "last_24_hours": {
+          "sessions": 0,
+          "calls": 0,
+          "tool_calls": 0,
+          "input": 0,
+          "output": 0,
+          "cache_read": 0,
+          "cache_write": 0,
+          "reasoning": 0,
+          "total": 0,
+          "all_in": 0,
+          "start_local": "2026-07-12T21:32:53+07:00",
+          "end_local": "2026-07-13T21:32:53+07:00"
+        },
+        "last_7_days": {
+          "sessions": 0,
+          "calls": 0,
+          "tool_calls": 0,
+          "input": 0,
+          "output": 0,
+          "cache_read": 0,
+          "cache_write": 0,
+          "reasoning": 0,
+          "total": 0,
+          "all_in": 0,
+          "start_local": "2026-07-06T21:32:53+07:00",
+          "end_local": "2026-07-13T21:32:53+07:00"
+        },
+        "last_30_days": {
+          "sessions": 2,
+          "calls": 2,
+          "tool_calls": 0,
+          "input": 71729,
+          "output": 41,
+          "cache_read": 0,
+          "cache_write": 0,
+          "reasoning": 29,
+          "total": 71770,
+          "all_in": 71799,
+          "start_local": "2026-06-13T21:32:53+07:00",
+          "end_local": "2026-07-13T21:32:53+07:00"
+        }
+      },
       "total": {
         "provider": "openai-codex",
         "model": "gpt-5.4",
@@ -4885,6 +5105,50 @@
           "week_end": "2026-07-12"
         }
       ],
+      "periods": {
+        "last_24_hours": {
+          "sessions": 0,
+          "calls": 0,
+          "tool_calls": 0,
+          "input": 0,
+          "output": 0,
+          "cache_read": 0,
+          "cache_write": 0,
+          "reasoning": 0,
+          "total": 0,
+          "all_in": 0,
+          "start_local": "2026-07-12T21:32:53+07:00",
+          "end_local": "2026-07-13T21:32:53+07:00"
+        },
+        "last_7_days": {
+          "sessions": 7,
+          "calls": 181,
+          "tool_calls": 238,
+          "input": 1033000,
+          "output": 71572,
+          "cache_read": 16857088,
+          "cache_write": 0,
+          "reasoning": 17143,
+          "total": 17961660,
+          "all_in": 17978803,
+          "start_local": "2026-07-06T21:32:53+07:00",
+          "end_local": "2026-07-13T21:32:53+07:00"
+        },
+        "last_30_days": {
+          "sessions": 7,
+          "calls": 181,
+          "tool_calls": 238,
+          "input": 1033000,
+          "output": 71572,
+          "cache_read": 16857088,
+          "cache_write": 0,
+          "reasoning": 17143,
+          "total": 17961660,
+          "all_in": 17978803,
+          "start_local": "2026-06-13T21:32:53+07:00",
+          "end_local": "2026-07-13T21:32:53+07:00"
+        }
+      },
       "total": {
         "provider": "openai-codex",
         "model": "gpt-5.6-terra",
@@ -4964,6 +5228,50 @@
           "week_end": "2026-05-03"
         }
       ],
+      "periods": {
+        "last_24_hours": {
+          "sessions": 0,
+          "calls": 0,
+          "tool_calls": 0,
+          "input": 0,
+          "output": 0,
+          "cache_read": 0,
+          "cache_write": 0,
+          "reasoning": 0,
+          "total": 0,
+          "all_in": 0,
+          "start_local": "2026-07-12T21:32:53+07:00",
+          "end_local": "2026-07-13T21:32:53+07:00"
+        },
+        "last_7_days": {
+          "sessions": 0,
+          "calls": 0,
+          "tool_calls": 0,
+          "input": 0,
+          "output": 0,
+          "cache_read": 0,
+          "cache_write": 0,
+          "reasoning": 0,
+          "total": 0,
+          "all_in": 0,
+          "start_local": "2026-07-06T21:32:53+07:00",
+          "end_local": "2026-07-13T21:32:53+07:00"
+        },
+        "last_30_days": {
+          "sessions": 0,
+          "calls": 0,
+          "tool_calls": 0,
+          "input": 0,
+          "output": 0,
+          "cache_read": 0,
+          "cache_write": 0,
+          "reasoning": 0,
+          "total": 0,
+          "all_in": 0,
+          "start_local": "2026-06-13T21:32:53+07:00",
+          "end_local": "2026-07-13T21:32:53+07:00"
+        }
+      },
       "total": {
         "provider": "anthropic",
         "model": "claude-sonnet-4-6",
@@ -5016,6 +5324,50 @@
           "week_end": "2026-07-12"
         }
       ],
+      "periods": {
+        "last_24_hours": {
+          "sessions": 0,
+          "calls": 0,
+          "tool_calls": 0,
+          "input": 0,
+          "output": 0,
+          "cache_read": 0,
+          "cache_write": 0,
+          "reasoning": 0,
+          "total": 0,
+          "all_in": 0,
+          "start_local": "2026-07-12T21:32:53+07:00",
+          "end_local": "2026-07-13T21:32:53+07:00"
+        },
+        "last_7_days": {
+          "sessions": 1,
+          "calls": 31,
+          "tool_calls": 91,
+          "input": 288286,
+          "output": 15635,
+          "cache_read": 3269120,
+          "cache_write": 0,
+          "reasoning": 2373,
+          "total": 3573041,
+          "all_in": 3575414,
+          "start_local": "2026-07-06T21:32:53+07:00",
+          "end_local": "2026-07-13T21:32:53+07:00"
+        },
+        "last_30_days": {
+          "sessions": 1,
+          "calls": 31,
+          "tool_calls": 91,
+          "input": 288286,
+          "output": 15635,
+          "cache_read": 3269120,
+          "cache_write": 0,
+          "reasoning": 2373,
+          "total": 3573041,
+          "all_in": 3575414,
+          "start_local": "2026-06-13T21:32:53+07:00",
+          "end_local": "2026-07-13T21:32:53+07:00"
+        }
+      },
       "total": {
         "provider": "openai-codex",
         "model": "claude-haiku-4-5",
@@ -5068,6 +5420,50 @@
           "week_end": "2026-07-12"
         }
       ],
+      "periods": {
+        "last_24_hours": {
+          "sessions": 0,
+          "calls": 0,
+          "tool_calls": 0,
+          "input": 0,
+          "output": 0,
+          "cache_read": 0,
+          "cache_write": 0,
+          "reasoning": 0,
+          "total": 0,
+          "all_in": 0,
+          "start_local": "2026-07-12T21:32:53+07:00",
+          "end_local": "2026-07-13T21:32:53+07:00"
+        },
+        "last_7_days": {
+          "sessions": 1,
+          "calls": 7,
+          "tool_calls": 9,
+          "input": 57075,
+          "output": 1030,
+          "cache_read": 252928,
+          "cache_write": 0,
+          "reasoning": 357,
+          "total": 311033,
+          "all_in": 311390,
+          "start_local": "2026-07-06T21:32:53+07:00",
+          "end_local": "2026-07-13T21:32:53+07:00"
+        },
+        "last_30_days": {
+          "sessions": 1,
+          "calls": 7,
+          "tool_calls": 9,
+          "input": 57075,
+          "output": 1030,
+          "cache_read": 252928,
+          "cache_write": 0,
+          "reasoning": 357,
+          "total": 311033,
+          "all_in": 311390,
+          "start_local": "2026-06-13T21:32:53+07:00",
+          "end_local": "2026-07-13T21:32:53+07:00"
+        }
+      },
       "total": {
         "provider": "openai-codex",
         "model": "claude-fable-5",
@@ -5120,6 +5516,50 @@
           "week_end": "2026-06-28"
         }
       ],
+      "periods": {
+        "last_24_hours": {
+          "sessions": 0,
+          "calls": 0,
+          "tool_calls": 0,
+          "input": 0,
+          "output": 0,
+          "cache_read": 0,
+          "cache_write": 0,
+          "reasoning": 0,
+          "total": 0,
+          "all_in": 0,
+          "start_local": "2026-07-12T21:32:53+07:00",
+          "end_local": "2026-07-13T21:32:53+07:00"
+        },
+        "last_7_days": {
+          "sessions": 0,
+          "calls": 0,
+          "tool_calls": 0,
+          "input": 0,
+          "output": 0,
+          "cache_read": 0,
+          "cache_write": 0,
+          "reasoning": 0,
+          "total": 0,
+          "all_in": 0,
+          "start_local": "2026-07-06T21:32:53+07:00",
+          "end_local": "2026-07-13T21:32:53+07:00"
+        },
+        "last_30_days": {
+          "sessions": 5,
+          "calls": 5,
+          "tool_calls": 0,
+          "input": 132130,
+          "output": 22,
+          "cache_read": 31488,
+          "cache_write": 0,
+          "reasoning": 0,
+          "total": 163640,
+          "all_in": 163640,
+          "start_local": "2026-06-13T21:32:53+07:00",
+          "end_local": "2026-07-13T21:32:53+07:00"
+        }
+      },
       "total": {
         "provider": "openrouter",
         "model": "claude-haiku-4-5-20251001",
@@ -5199,6 +5639,50 @@
           "week_end": "2026-07-05"
         }
       ],
+      "periods": {
+        "last_24_hours": {
+          "sessions": 0,
+          "calls": 0,
+          "tool_calls": 0,
+          "input": 0,
+          "output": 0,
+          "cache_read": 0,
+          "cache_write": 0,
+          "reasoning": 0,
+          "total": 0,
+          "all_in": 0,
+          "start_local": "2026-07-12T21:32:53+07:00",
+          "end_local": "2026-07-13T21:32:53+07:00"
+        },
+        "last_7_days": {
+          "sessions": 0,
+          "calls": 0,
+          "tool_calls": 0,
+          "input": 0,
+          "output": 0,
+          "cache_read": 0,
+          "cache_write": 0,
+          "reasoning": 0,
+          "total": 0,
+          "all_in": 0,
+          "start_local": "2026-07-06T21:32:53+07:00",
+          "end_local": "2026-07-13T21:32:53+07:00"
+        },
+        "last_30_days": {
+          "sessions": 5,
+          "calls": 5,
+          "tool_calls": 0,
+          "input": 141935,
+          "output": 142,
+          "cache_read": 0,
+          "cache_write": 0,
+          "reasoning": 0,
+          "total": 142077,
+          "all_in": 142077,
+          "start_local": "2026-06-13T21:32:53+07:00",
+          "end_local": "2026-07-13T21:32:53+07:00"
+        }
+      },
       "total": {
         "provider": "openrouter",
         "model": "google/gemma-4-31b-it:free",
@@ -5251,6 +5735,50 @@
           "week_end": "2026-06-28"
         }
       ],
+      "periods": {
+        "last_24_hours": {
+          "sessions": 0,
+          "calls": 0,
+          "tool_calls": 0,
+          "input": 0,
+          "output": 0,
+          "cache_read": 0,
+          "cache_write": 0,
+          "reasoning": 0,
+          "total": 0,
+          "all_in": 0,
+          "start_local": "2026-07-12T21:32:53+07:00",
+          "end_local": "2026-07-13T21:32:53+07:00"
+        },
+        "last_7_days": {
+          "sessions": 0,
+          "calls": 0,
+          "tool_calls": 0,
+          "input": 0,
+          "output": 0,
+          "cache_read": 0,
+          "cache_write": 0,
+          "reasoning": 0,
+          "total": 0,
+          "all_in": 0,
+          "start_local": "2026-07-06T21:32:53+07:00",
+          "end_local": "2026-07-13T21:32:53+07:00"
+        },
+        "last_30_days": {
+          "sessions": 3,
+          "calls": 3,
+          "tool_calls": 0,
+          "input": 66051,
+          "output": 6,
+          "cache_read": 15872,
+          "cache_write": 0,
+          "reasoning": 0,
+          "total": 81929,
+          "all_in": 81929,
+          "start_local": "2026-06-13T21:32:53+07:00",
+          "end_local": "2026-07-13T21:32:53+07:00"
+        }
+      },
       "total": {
         "provider": "openrouter",
         "model": "openrouter/owl-alpha",
@@ -5303,6 +5831,50 @@
           "week_end": "2026-07-12"
         }
       ],
+      "periods": {
+        "last_24_hours": {
+          "sessions": 0,
+          "calls": 0,
+          "tool_calls": 0,
+          "input": 0,
+          "output": 0,
+          "cache_read": 0,
+          "cache_write": 0,
+          "reasoning": 0,
+          "total": 0,
+          "all_in": 0,
+          "start_local": "2026-07-12T21:32:53+07:00",
+          "end_local": "2026-07-13T21:32:53+07:00"
+        },
+        "last_7_days": {
+          "sessions": 0,
+          "calls": 0,
+          "tool_calls": 0,
+          "input": 0,
+          "output": 0,
+          "cache_read": 0,
+          "cache_write": 0,
+          "reasoning": 0,
+          "total": 0,
+          "all_in": 0,
+          "start_local": "2026-07-06T21:32:53+07:00",
+          "end_local": "2026-07-13T21:32:53+07:00"
+        },
+        "last_30_days": {
+          "sessions": 2,
+          "calls": 2,
+          "tool_calls": 0,
+          "input": 50672,
+          "output": 5,
+          "cache_read": 0,
+          "cache_write": 0,
+          "reasoning": 0,
+          "total": 50677,
+          "all_in": 50677,
+          "start_local": "2026-06-13T21:32:53+07:00",
+          "end_local": "2026-07-13T21:32:53+07:00"
+        }
+      },
       "total": {
         "provider": "gemini",
         "model": "gemini-2.5-flash",
@@ -5355,6 +5927,50 @@
           "week_end": "2026-06-28"
         }
       ],
+      "periods": {
+        "last_24_hours": {
+          "sessions": 0,
+          "calls": 0,
+          "tool_calls": 0,
+          "input": 0,
+          "output": 0,
+          "cache_read": 0,
+          "cache_write": 0,
+          "reasoning": 0,
+          "total": 0,
+          "all_in": 0,
+          "start_local": "2026-07-12T21:32:53+07:00",
+          "end_local": "2026-07-13T21:32:53+07:00"
+        },
+        "last_7_days": {
+          "sessions": 0,
+          "calls": 0,
+          "tool_calls": 0,
+          "input": 0,
+          "output": 0,
+          "cache_read": 0,
+          "cache_write": 0,
+          "reasoning": 0,
+          "total": 0,
+          "all_in": 0,
+          "start_local": "2026-07-06T21:32:53+07:00",
+          "end_local": "2026-07-13T21:32:53+07:00"
+        },
+        "last_30_days": {
+          "sessions": 1,
+          "calls": 1,
+          "tool_calls": 0,
+          "input": 20085,
+          "output": 6,
+          "cache_read": 3200,
+          "cache_write": 0,
+          "reasoning": 0,
+          "total": 23291,
+          "all_in": 23291,
+          "start_local": "2026-06-13T21:32:53+07:00",
+          "end_local": "2026-07-13T21:32:53+07:00"
+        }
+      },
       "total": {
         "provider": "openrouter",
         "model": "gpt-5.5-11c",
@@ -5407,6 +6023,50 @@
           "week_end": "2026-05-03"
         }
       ],
+      "periods": {
+        "last_24_hours": {
+          "sessions": 0,
+          "calls": 0,
+          "tool_calls": 0,
+          "input": 0,
+          "output": 0,
+          "cache_read": 0,
+          "cache_write": 0,
+          "reasoning": 0,
+          "total": 0,
+          "all_in": 0,
+          "start_local": "2026-07-12T21:32:53+07:00",
+          "end_local": "2026-07-13T21:32:53+07:00"
+        },
+        "last_7_days": {
+          "sessions": 0,
+          "calls": 0,
+          "tool_calls": 0,
+          "input": 0,
+          "output": 0,
+          "cache_read": 0,
+          "cache_write": 0,
+          "reasoning": 0,
+          "total": 0,
+          "all_in": 0,
+          "start_local": "2026-07-06T21:32:53+07:00",
+          "end_local": "2026-07-13T21:32:53+07:00"
+        },
+        "last_30_days": {
+          "sessions": 0,
+          "calls": 0,
+          "tool_calls": 0,
+          "input": 0,
+          "output": 0,
+          "cache_read": 0,
+          "cache_write": 0,
+          "reasoning": 0,
+          "total": 0,
+          "all_in": 0,
+          "start_local": "2026-06-13T21:32:53+07:00",
+          "end_local": "2026-07-13T21:32:53+07:00"
+        }
+      },
       "total": {
         "provider": "openai-codex",
         "model": "gpt-5.4-mini",

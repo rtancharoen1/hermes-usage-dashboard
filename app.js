@@ -68,6 +68,10 @@ function fmtShortDate(d) {
   const [, m, day] = d.split('-');
   return `${m}/${day}`;
 }
+function fmtPeriodStart(iso) {
+  const match = String(iso || '').match(/^\d{4}-(\d{2})-(\d{2})T(\d{2}):(\d{2})/);
+  return match ? `${match[1]}/${match[2]} ${match[3]}:${match[4]}` : '—';
+}
 function fmtMonth(m) {
   const [y, mm] = m.split('-');
   const names = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
@@ -191,46 +195,37 @@ function renderHeader() {
 function renderKPIs() {
   const d = state.data;
   const daily = d.daily;
-  const today = daily[daily.length - 1];
+  const periods = d.periods || {};
+  const periodSpecs = [
+    ['24h', periods.last_24_hours, 1],
+    ['7d', periods.last_7_days, 7],
+    ['30d', periods.last_30_days, 30],
+  ];
 
-  document.getElementById('kpi-today-total').textContent = fmtCompact(today.total);
-  document.getElementById('kpi-today-total').setAttribute('title', fmtInt(today.total));
-  document.getElementById('kpi-today-day').textContent = today.day;
-
-  const last7 = daily.slice(-8, -1); // 7 days before today
-  const avg7 = last7.reduce((s, x) => s + x.total, 0) / Math.max(last7.length, 1);
-  const vs7 = avg7 > 0 ? (today.total - avg7) / avg7 : 0;
-  document.getElementById('kpi-today-vs7').textContent = fmtDelta(vs7);
-
-  document.getElementById('kpi-today-calls').textContent = fmtInt(today.calls);
-  document.getElementById('kpi-today-sessions').textContent = fmtInt(today.sessions);
-
-  // current week: match today's day to the weekly row containing it
-  let currWeek = d.weekly[d.weekly.length - 1];
-  for (const w of d.weekly) {
-    if (today.day >= w.week_start && today.day <= w.week_end) { currWeek = w; break; }
+  for (const [id, exact, fallbackDays] of periodSpecs) {
+    const fallbackRows = daily.slice(-fallbackDays);
+    const period = exact || {
+      total: fallbackRows.reduce((sum, row) => sum + (row.total || 0), 0),
+      calls: fallbackRows.reduce((sum, row) => sum + (row.calls || 0), 0),
+      start_local: fallbackRows[0] ? `${fallbackRows[0].day}T00:00:00` : '',
+    };
+    const value = document.getElementById(`kpi-${id}-total`);
+    value.textContent = fmtCompact(period.total);
+    value.setAttribute('title', fmtInt(period.total));
+    document.getElementById(`kpi-${id}-range`).textContent = `since ${fmtPeriodStart(period.start_local)}`;
+    document.getElementById(`kpi-${id}-calls`).textContent = fmtInt(period.calls);
   }
-  document.getElementById('kpi-week-total').textContent = fmtCompact(currWeek.total);
-  document.getElementById('kpi-week-total').setAttribute('title', fmtInt(currWeek.total));
-  document.getElementById('kpi-week-range').textContent =
-    `${fmtShortDate(currWeek.week_start)}–${fmtShortDate(currWeek.week_end)}`;
-  // pace: how many days into the week has today covered
-  const daysInWeek = daily.filter(x => x.day >= currWeek.week_start && x.day <= currWeek.week_end).length;
-  const proj = daysInWeek > 0 ? Math.round((currWeek.total / daysInWeek) * 7) : 0;
-  document.getElementById('kpi-week-pace').textContent = `≈${fmtCompact(proj)}/wk`;
 
   document.getElementById('kpi-total').textContent = fmtCompact(d.overall.total);
   document.getElementById('kpi-total').setAttribute('title', fmtInt(d.overall.total));
   document.getElementById('kpi-first').textContent = d.overall.first_local.split(' ')[0];
 
-  // sparklines: last 14 days
-  const spark14 = daily.slice(-14);
-  drawSpark(document.getElementById('spark-today'),
-    spark14.map(x => x.total), { fill: true, color: 'var(--c-amber)' });
-  drawSpark(document.getElementById('spark-calls'),
-    spark14.map(x => x.calls), { fill: false, color: 'var(--c-reason)' });
-  drawSpark(document.getElementById('spark-week'),
-    d.weekly.slice(-10).map(x => x.total), { fill: false, color: 'var(--c-fg-mute)' });
+  drawSpark(document.getElementById('spark-24h'),
+    daily.slice(-14).map(x => x.total), { fill: true, color: 'var(--c-amber)' });
+  drawSpark(document.getElementById('spark-7d'),
+    daily.slice(-7).map(x => x.total), { fill: false, color: 'var(--c-reason)' });
+  drawSpark(document.getElementById('spark-30d'),
+    daily.slice(-30).map(x => x.total), { fill: false, color: 'var(--c-fg-mute)' });
 
   // stacked mini bar for overall composition
   const overall = d.overall;
@@ -851,13 +846,13 @@ function datasetFromSelection(value) {
   if (value === 'all_tracked') {
     const scope = src.scopes.all_tracked;
     return { generated_at_local: src.generated_at_local, timezone: src.timezone, model: scope.model,
-      overall: normalizeOverall(scope.overall), daily: scope.daily, weekly: scope.weekly };
+      overall: normalizeOverall(scope.overall), daily: scope.daily, weekly: scope.weekly, periods: scope.periods };
   }
   const series = src.series_by_model[value];
   if (!series) return datasetFromSelection('all_tracked');
   return { generated_at_local: src.generated_at_local, timezone: src.timezone,
     model: { provider: series.provider, model: series.model, primary: false },
-    overall: normalizeOverall(series.total), daily: series.daily, weekly: series.weekly };
+    overall: normalizeOverall(series.total), daily: series.daily, weekly: series.weekly, periods: series.periods };
 }
 
 function setupModelControl() {
