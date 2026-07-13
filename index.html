@@ -99,7 +99,7 @@
       <span class="ctrl-label">Metric</span>
       <div class="segmented" id="ctrl-metric" role="tablist">
         <button role="tab" data-metric="total" aria-selected="true">Total</button>
-        <button role="tab" data-metric="grouped" aria-selected="false">All metrics</button>
+        <button role="tab" data-metric="grouped" aria-selected="false">Composition</button>
         <button role="tab" data-metric="input" aria-selected="false">Input</button>
         <button role="tab" data-metric="output" aria-selected="false">Output</button>
         <button role="tab" data-metric="cache_read" aria-selected="false">Cache read</button>
@@ -116,51 +116,38 @@
     </div>
   </section>
 
-
-
-
-  <section class="section" aria-labelledby="model-breakdown-title">
-    <div class="section-head"><h2 id="model-breakdown-title">Model breakdown</h2><div class="section-sub">All tracked token telemetry · select a row to isolate it</div></div>
-    <div class="card model-breakdown" id="model-breakdown" role="list" aria-label="Token usage by provider and model"></div>
-  </section>
-
-  <section class="section" aria-labelledby="gpt56-versions-title">
-    <div class="section-head"><h2 id="gpt56-versions-title">GPT-5.6 versions</h2><div class="section-sub">Variants detected in local token telemetry · select a row to isolate it</div></div>
-    <div class="card model-breakdown" id="gpt56-versions" role="list" aria-label="GPT-5.6 version usage"></div>
-  </section>
-
-  <!-- MAIN CHART -->
-  <section class="section" aria-labelledby="chart-main-title">
+  <!-- PRIMARY CHART -->
+  <section class="section primary-chart" aria-labelledby="chart-main-title">
     <div class="section-head">
       <h2 id="chart-main-title">Usage over time</h2>
       <div class="section-sub" id="chart-main-sub">Daily · Total tokens</div>
     </div>
     <div class="card chart-card">
-      <svg id="chart-main" class="chart" viewBox="0 0 1200 380" aria-label="Main usage chart"></svg>
+      <svg id="chart-main" class="chart" viewBox="0 0 1200 380" role="img" aria-label="Token usage over time"></svg>
       <div class="chart-legend" id="chart-main-legend"></div>
     </div>
+  </section>
+
+  <section class="section" aria-labelledby="model-breakdown-title">
+    <div class="section-head model-breakdown-head">
+      <div><h2 id="model-breakdown-title">Model breakdown</h2><div class="section-sub" id="model-breakdown-sub">All time · select a row to isolate it</div></div>
+      <div class="segmented compact-segmented" id="model-breakdown-range" role="group" aria-label="Model breakdown range">
+        <button type="button" data-model-range="7" aria-pressed="false">7d</button>
+        <button type="button" data-model-range="30" aria-pressed="false">30d</button>
+        <button type="button" data-model-range="all" aria-pressed="true">All time</button>
+      </div>
+    </div>
+    <div class="card model-breakdown" id="model-breakdown" role="group" aria-label="Token usage by provider and model"></div>
+  </section>
+
+  <section class="section" aria-labelledby="gpt56-versions-title">
+    <div class="section-head"><h2 id="gpt56-versions-title">GPT-5.6 versions</h2><div class="section-sub">Variants detected in local token telemetry · select a row to isolate it</div></div>
+    <div class="card model-breakdown" id="gpt56-versions" role="group" aria-label="GPT-5.6 version usage"></div>
   </section>
 
 
 
   <section class="section" aria-labelledby="heatmap-title"><div class="section-head"><h2 id="heatmap-title">Daily pressure map</h2><div class="section-sub">Select any day for a full token breakdown</div></div><div class="card heatmap-card"><div class="heatmap-legend" aria-hidden="true"><span>Low</span><i></i><i></i><i></i><i></i><span>Critical</span></div><div class="heatmap" id="usage-heatmap" role="list" aria-label="Daily token usage heatmap"></div></div></section>
-
-  <!-- STACKED COMPOSITION -->
-  <section class="section" aria-labelledby="chart-comp-title">
-    <div class="section-head">
-      <h2 id="chart-comp-title">Composition · last 14 days</h2>
-      <div class="section-sub">Input · Output · Cache read · Cache write</div>
-    </div>
-    <div class="card chart-card">
-      <svg id="chart-comp" class="chart" viewBox="0 0 1200 320" aria-label="Stacked token composition"></svg>
-      <div class="chart-legend" id="chart-comp-legend">
-        <span class="lg-item"><i class="lg-swatch" style="background:var(--c-cache-read)"></i>cache_read</span>
-        <span class="lg-item"><i class="lg-swatch" style="background:var(--c-input)"></i>input</span>
-        <span class="lg-item"><i class="lg-swatch" style="background:var(--c-output)"></i>output</span>
-        <span class="lg-item"><i class="lg-swatch" style="background:var(--c-cache-write)"></i>cache_write</span>
-      </div>
-    </div>
-  </section>
 
   <!-- DUAL: WEEKLY + SCATTER -->
   <div class="grid-2">
@@ -218,6 +205,12 @@
           <li>Route non-critical work to a lower-tier model on days above the pressure threshold.</li>
           <li>Log local <code>state.db</code> daily so future 429s land in this dashboard automatically.</li>
         </ul>
+      </article>
+
+      <article class="card note-card project-analysis">
+        <h3>Top 5 projects by token usage</h3>
+        <div class="project-list" id="project-list" role="list" aria-label="Top five identifiable projects by all-time token usage"></div>
+        <p class="project-coverage" id="project-coverage">—</p>
       </article>
     </div>
   </section>

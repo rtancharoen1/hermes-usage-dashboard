@@ -5,7 +5,7 @@ local Hermes telemetry (`state.db` export → `usage-data.json`).
 
 ## Online dashboard
 
-Published with GitHub Pages. `usage-data.json` is regenerated from the local Hermes database and pushed hourly by a local Hermes cron job. The export contains aggregate token/call counts by date and model only—no session titles or message content.
+Published with GitHub Pages. `usage-data.json` is regenerated from the local Hermes database and pushed hourly by a local Hermes cron job. The export contains aggregate token/call counts by date, model, and public-safe project label—no session titles, message content, or full filesystem paths.
 
 ## Run locally
 
@@ -36,13 +36,15 @@ serve through a local HTTP server.
   plus all-time and quota status. Rolling totals are anchored to the hourly
   generation timestamp. Trend KPIs include sparklines. Overall composition bar shows how much of
   all-time tokens are cache reads.
-- **Controls** — range (14 / 30 / all), metric (total / input / output /
-  cache_read / calls), view (daily / weekly).
-- **Charts** — main bar chart, 14-day stacked composition
-  (`cache_read`/`input`/`output`/`cache_write`), weekly totals with peak
+- **Controls** — range (7 / 14 / 30 / 90 / all), metric (total / composition /
+  input / output / cache read / calls), view (daily / weekly / monthly).
+- **Model breakdown** — independently filterable to last 7 days, last 30 days,
+  or all time.
+- **Charts** — primary usage chart with token composition integrated as a
+  stacked mode (`input`/`output`/`cache_read`/`cache_write`/`reasoning`), weekly totals with peak
   highlighted, calls-vs-tokens scatter sized by session count.
 - **Analysis panels** — usage drivers, quota pressure, operational
-  recommendations.
+  recommendations, and the top five identifiable project contexts by token use.
 - **Daily table** — sortable by every column.
 
 ## Data model reminders
@@ -50,6 +52,8 @@ serve through a local HTTP server.
 - `total = input + output + cache_read + cache_write`
 - `all_in` includes `reasoning`
 - `cache_read` dominates: reused context, not fresh generation
+- Project attribution uses explicit `cwd` or conversation `display_name`
+  metadata only. Unattributed usage is reported separately and never guessed.
 - Remaining OpenAI quota **cannot** be computed from `state.db`. The
   dashboard only surfaces the last observed 429 (`2026-07-05`, reset
   ≈ `19:01 +07`).

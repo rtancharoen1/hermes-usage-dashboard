@@ -13,6 +13,7 @@ const state = {
   range: 30,
   metric: 'total',
   view: 'daily',
+  modelRange: 'all',
   tableSort: { key: 'day', dir: 'desc' },
 };
 
@@ -23,7 +24,7 @@ const METRICS = {
   output:     { label: 'Output tokens',   color: 'var(--c-output)' },
   cache_read: { label: 'Cache read',      color: 'var(--c-cache-read)' },
   calls:      { label: 'API calls',       color: 'var(--c-reason)' },
-  grouped:    { label: 'All token metrics', color: 'var(--c-amber)' },
+  grouped:    { label: 'Token composition', color: 'var(--c-amber)' },
 };
 
 const GROUPED_KEYS = ['input', 'output', 'cache_read', 'cache_write', 'reasoning'];
@@ -152,6 +153,7 @@ async function boot() {
   }
   setupCollapsibleSections();
   wireControls();
+  wireModelBreakdownRange();
   wireDayDialog();
   renderAll();
   window.addEventListener('resize', () => {
@@ -173,7 +175,6 @@ function renderAll() {
 
 function renderCharts() {
   renderMainChart();
-  renderCompositionChart();
   renderWeeklyChart();
   renderScatterChart();
 }
@@ -370,7 +371,7 @@ function renderMainChart() {
     legend.innerHTML = GROUPED_KEYS.map(k =>
       `<span class="lg-item"><i class="lg-swatch" style="background:${GROUPED_META[k].color}"></i>${GROUPED_META[k].label}</span>`
     ).join('') + `<span class="lg-item" style="color:var(--c-fg-dim)">${rows.length} groups</span>`;
-    drawGroupedBarChart(svg, rows.map(rowLabel), rows, { yLabel: 'tokens' });
+    drawStackedCompositionChart(svg, rows.map(rowLabel), rows, { yLabel: 'tokens' });
     return;
   }
 
@@ -460,13 +461,14 @@ function drawBarLineChart(svg, labels, values, opts) {
   svg.appendChild(yLabel);
 }
 
-function drawGroupedBarChart(svg, labels, rows, opts) {
+function drawStackedCompositionChart(svg, labels, rows, opts) {
   const W = 1200, H = 380;
   const pad = { l: 60, r: 20, t: 24, b: 48 };
   const cw = W - pad.l - pad.r;
   const ch = H - pad.t - pad.b;
   const series = GROUPED_KEYS;
-  const max = Math.max(1, ...rows.flatMap(r => series.map(k => r[k] || 0)));
+  const totals = rows.map(r => series.reduce((sum, key) => sum + (r[key] || 0), 0));
+  const max = Math.max(1, ...totals);
   const yTicks = niceTicks(0, max, 5);
   const yMax = yTicks[yTicks.length - 1];
 
@@ -482,23 +484,22 @@ function drawGroupedBarChart(svg, labels, rows, opts) {
   }));
 
   const groupW = cw / Math.max(rows.length, 1);
-  const innerGap = Math.min(3, groupW * 0.04);
-  const clusterW = Math.min(groupW * 0.82, 92);
-  const barW = Math.max(1, (clusterW - innerGap * (series.length - 1)) / series.length);
+  const barW = Math.max(1, Math.min(groupW * 0.72, 48));
   rows.forEach((r, i) => {
-    const gx = pad.l + i * groupW + (groupW - clusterW) / 2;
-    series.forEach((k, j) => {
+    const x = pad.l + i * groupW + (groupW - barW) / 2;
+    let cumulative = 0;
+    series.forEach(k => {
       const v = r[k] || 0;
       const h = (v / yMax) * ch;
-      const x = gx + j * (barW + innerGap);
-      const y = pad.t + ch - h;
+      const y = pad.t + ch - ((cumulative + v) / yMax) * ch;
       const rect = el('rect', {
         class: 'bar', x: x.toFixed(2), y: y.toFixed(2),
-        width: barW.toFixed(2), height: Math.max(h, 0.5).toFixed(2),
-        fill: GROUPED_META[k].color, rx: 1,
+        width: barW.toFixed(2), height: Math.max(h, v ? 0.5 : 0).toFixed(2),
+        fill: GROUPED_META[k].color,
       });
-      attachTooltip(rect, () => `${formatTooltipLabel(labels[i])}\n${GROUPED_META[k].label}: ${fmtInt(v)}\nTotal: ${fmtInt(r.total)}`);
+      attachTooltip(rect, () => `${formatTooltipLabel(labels[i])}\n${GROUPED_META[k].label}: ${fmtInt(v)}\nComposition total: ${fmtInt(totals[i])}`);
       svg.appendChild(rect);
+      cumulative += v;
     });
   });
 
@@ -539,74 +540,6 @@ function niceNum(range, round) {
     else if (frac <= 5) nice = 5; else nice = 10;
   }
   return nice * Math.pow(10, exp);
-}
-
-/* ---------- stacked composition ---------- */
-
-function renderCompositionChart() {
-  const svg = document.getElementById('chart-comp');
-  clear(svg);
-  const rows = state.data.daily.slice(-14);
-
-  const W = 1200, H = 320;
-  const pad = { l: 60, r: 20, t: 24, b: 40 };
-  const cw = W - pad.l - pad.r;
-  const ch = H - pad.t - pad.b;
-
-  const keys = ['cache_read', 'input', 'output', 'cache_write'];
-  const colors = {
-    cache_read: 'var(--c-cache-read)',
-    input: 'var(--c-input)',
-    output: 'var(--c-output)',
-    cache_write: 'var(--c-cache-write)',
-  };
-
-  const totals = rows.map(r => keys.reduce((s, k) => s + (r[k] || 0), 0));
-  const max = Math.max(1, ...totals);
-  const yTicks = niceTicks(0, max, 5);
-  const yMax = yTicks[yTicks.length - 1];
-
-  yTicks.forEach(t => {
-    const y = pad.t + ch - (t / yMax) * ch;
-    svg.appendChild(el('line', { class: 'grid-line', x1: pad.l, y1: y, x2: W - pad.r, y2: y }));
-    svg.appendChild(el('text', {
-      class: 'axis-tick', x: pad.l - 8, y: y + 3, 'text-anchor': 'end'
-    })).textContent = fmtCompact(t);
-  });
-  svg.appendChild(el('line', {
-    class: 'axis-line', x1: pad.l, y1: pad.t + ch, x2: W - pad.r, y2: pad.t + ch
-  }));
-
-  const bw = cw / rows.length;
-  const barW = Math.min(bw * 0.7, 46);
-
-  rows.forEach((r, i) => {
-    let cum = 0;
-    const x = pad.l + i * bw + (bw - barW) / 2;
-    keys.forEach(k => {
-      const v = r[k] || 0;
-      const h = (v / yMax) * ch;
-      const y = pad.t + ch - (cum + v) / yMax * ch;
-      const rect = el('rect', {
-        class: 'bar', x: x.toFixed(2), y: y.toFixed(2),
-        width: barW.toFixed(2), height: Math.max(h, 0).toFixed(2),
-        fill: colors[k],
-      });
-      attachTooltip(rect, () =>
-        `${r.day}\n${k}: ${fmtInt(v)}\nday total: ${fmtInt(totals[i])}`);
-      svg.appendChild(rect);
-      cum += v;
-    });
-    svg.appendChild(el('text', {
-      class: 'axis-tick', x: (x + barW / 2).toFixed(1), y: pad.t + ch + 16, 'text-anchor': 'middle'
-    })).textContent = fmtDay(r.day);
-  });
-
-  const yLabel = el('text', {
-    class: 'axis-label', x: pad.l, y: pad.t - 8, 'text-anchor': 'start'
-  });
-  yLabel.textContent = 'TOKENS';
-  svg.appendChild(yLabel);
 }
 
 /* ---------- weekly ---------- */
@@ -760,6 +693,33 @@ function renderAnalysis() {
   document.getElementById('peak-week').textContent =
     `${fmtShortDate(peakWeek.week_start)}–${fmtShortDate(peakWeek.week_end)}`;
   document.getElementById('peak-week-total').textContent = fmtCompact(peakWeek.total);
+  renderProjectAnalysis();
+}
+
+function renderProjectAnalysis() {
+  const root = document.getElementById('project-list');
+  const coverage = document.getElementById('project-coverage');
+  const data = state.source.project_usage?.all;
+  if (!root || !coverage) return;
+  root.innerHTML = '';
+  if (!data || !data.projects?.length) {
+    root.innerHTML = '<p class="empty-state">No identifiable project metadata is available yet.</p>';
+    coverage.textContent = 'Projects require an explicit working directory or conversation display name.';
+    return;
+  }
+  const rows = data.projects.slice(0, 5);
+  const max = Math.max(...rows.map(row => row.total), 1);
+  const attributed = data.attributed_total || 1;
+  rows.forEach((row, index) => {
+    const item = document.createElement('div');
+    item.className = 'project-row';
+    item.setAttribute('role', 'listitem');
+    item.setAttribute('aria-label', `${row.name}: ${fmtInt(row.total)} tokens across ${fmtInt(row.sessions)} sessions`);
+    const width = Math.max(1.5, row.total / max * 100);
+    item.innerHTML = `<span class="project-rank mono">${String(index + 1).padStart(2, '0')}</span><span class="project-name"><strong>${escapeText(row.name)}</strong><small>${fmtInt(row.sessions)} sessions</small></span><span class="project-track"><i style="width:${width.toFixed(1)}%"></i></span><span class="project-total mono">${fmtInt(row.total)}<small>${fmtPct(row.total / attributed)} of attributed</small></span>`;
+    root.appendChild(item);
+  });
+  coverage.innerHTML = `<strong>${fmtPct(data.coverage)}</strong> of all-time tokens have identifiable project metadata. <span class="mono">${fmtCompact(data.unattributed_total)}</span> tokens remain unattributed and are excluded from the ranking.`;
 }
 
 /* ---------- table ---------- */
@@ -880,19 +840,49 @@ function selectModel(value) {
   renderAll();
 }
 
+function wireModelBreakdownRange() {
+  const root = document.getElementById('model-breakdown-range');
+  if (!root) return;
+  root.querySelectorAll('button[data-model-range]').forEach(button => {
+    button.addEventListener('click', () => {
+      state.modelRange = button.dataset.modelRange;
+      root.querySelectorAll('button[data-model-range]').forEach(item =>
+        item.setAttribute('aria-pressed', item === button ? 'true' : 'false'));
+      renderModelBreakdown();
+    });
+  });
+}
+
+function modelBreakdownRows() {
+  if (state.modelRange === 'all') {
+    return state.source.model_totals.map(item => ({ ...item })).sort((a, b) => b.total - a.total);
+  }
+  const periodKey = state.modelRange === '7' ? 'last_7_days' : 'last_30_days';
+  return state.source.model_totals.map(item => {
+    const period = state.source.series_by_model[item.key]?.periods?.[periodKey] || {};
+    return { ...item, total: period.total || 0, sessions: period.sessions || 0, calls: period.calls || 0 };
+  }).filter(item => item.total > 0).sort((a, b) => b.total - a.total);
+}
+
 function renderModelBreakdown() {
   const root = document.getElementById('model-breakdown');
-  const rows = state.source.model_totals;
+  const rows = modelBreakdownRows();
   const max = Math.max(...rows.map(r => r.total), 1);
-  const allTotal = state.source.scopes.all_tracked.overall.total || 1;
+  const allTotal = rows.reduce((sum, row) => sum + row.total, 0) || 1;
+  const rangeLabel = state.modelRange === '7' ? 'Last 7 days' : state.modelRange === '30' ? 'Last 30 days' : 'All time';
+  document.getElementById('model-breakdown-sub').textContent = `${rangeLabel} · select a row to isolate it`;
+  root.setAttribute('aria-label', `Token usage by provider and model, ${rangeLabel}`);
   root.innerHTML = '';
+  if (!rows.length) {
+    root.innerHTML = `<p class="empty-state">No model token telemetry in ${rangeLabel.toLowerCase()}.</p>`;
+    return;
+  }
   rows.forEach((r, i) => {
     const button = document.createElement('button');
     button.type = 'button';
     button.className = `model-row${state.selection === r.key ? ' selected' : ''}`;
-    button.setAttribute('role', 'listitem');
     button.setAttribute('aria-pressed', state.selection === r.key ? 'true' : 'false');
-    button.setAttribute('aria-label', `${r.provider} ${r.model}: ${fmtInt(r.total)} tokens, ${fmtPct(r.total/allTotal)} of tracked usage`);
+    button.setAttribute('aria-label', `${r.provider} ${r.model}: ${fmtInt(r.total)} tokens in ${rangeLabel}, ${fmtPct(r.total/allTotal)} of tracked usage`);
     const width = Math.max(1.5, r.total / max * 100);
     button.innerHTML = `<span class="model-rank mono">${String(i+1).padStart(2,'0')}</span><span class="model-name"><strong>${escapeText(r.model)}</strong><small>${escapeText(r.provider)}</small></span><span class="model-track"><i style="width:${width.toFixed(1)}%"></i></span><span class="model-total mono">${fmtCompact(r.total)}<small>${fmtPct(r.total/allTotal)}</small></span>`;
     button.addEventListener('click', () => selectModel(r.key));
@@ -915,7 +905,6 @@ function renderGPT56Versions() {
     const button = document.createElement('button');
     button.type = 'button';
     button.className = `model-row${state.selection === r.key ? ' selected' : ''}`;
-    button.setAttribute('role', 'listitem');
     button.setAttribute('aria-pressed', state.selection === r.key ? 'true' : 'false');
     button.setAttribute('aria-label', `${r.model}: ${fmtInt(r.total)} tokens across ${fmtInt(r.sessions)} sessions; first seen ${r.first_local || 'unknown'}, last seen ${r.last_local || 'unknown'}`);
     const width = Math.max(1.5, r.total / max * 100);

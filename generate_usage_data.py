@@ -101,6 +101,60 @@ def fetch_periods_where(where):
 def fetch_periods(scope):
     return fetch_periods_where(where_clause(scope))
 
+def project_name(cwd, display_name):
+    """Return a public-safe project label from explicit session metadata."""
+    if cwd:
+        normalized = os.path.normpath(cwd)
+        workspace_prefix = '/Users/lexx/hermes-workspace/'
+        if normalized.startswith(workspace_prefix):
+            return normalized[len(workspace_prefix):].split(os.sep, 1)[0]
+        if normalized.startswith('/Users/lexx/Documents/Obsidian Vault'):
+            return 'Obsidian Vault'
+        if normalized.startswith('/Users/lexx/.hermes/hermes-agent'):
+            return 'Hermes Agent'
+        if normalized == '/Users/lexx':
+            return 'Home workspace'
+        return os.path.basename(normalized) or 'Unattributed'
+    if display_name:
+        parts = [part.strip() for part in display_name.split('/')]
+        if len(parts) >= 2 and parts[1].startswith('#'):
+            return parts[1].lstrip('#').strip() or 'Unattributed'
+        return display_name.strip()
+    return 'Unattributed'
+
+def fetch_project_usage():
+    rows = conn.execute("""
+      SELECT started_at, cwd, display_name,
+             input_tokens+output_tokens+cache_read_tokens+cache_write_tokens total
+      FROM sessions
+      WHERE (input_tokens+output_tokens+cache_read_tokens+cache_write_tokens) > 0
+    """).fetchall()
+    now = datetime.datetime.now(datetime.timezone.utc).timestamp()
+    specs = [('all', None), ('last_7_days', now - 7 * 86400), ('last_30_days', now - 30 * 86400)]
+    result = {}
+    for key, cutoff in specs:
+        buckets = {}
+        for row in rows:
+            if cutoff is not None and row['started_at'] < cutoff:
+                continue
+            name = project_name(row['cwd'], row['display_name'])
+            bucket = buckets.setdefault(name, {'name': name, 'sessions': 0, 'total': 0})
+            bucket['sessions'] += 1
+            bucket['total'] += row['total'] or 0
+        unattributed = buckets.pop('Unattributed', {'sessions': 0, 'total': 0})
+        projects = sorted(buckets.values(), key=lambda item: item['total'], reverse=True)
+        attributed_total = sum(item['total'] for item in projects)
+        total = attributed_total + unattributed['total']
+        result[key] = {
+          'projects': projects,
+          'attributed_total': attributed_total,
+          'unattributed_total': unattributed['total'],
+          'unattributed_sessions': unattributed['sessions'],
+          'total': total,
+          'coverage': attributed_total / total if total else 0,
+        }
+    return result
+
 def weekly_from_daily(daily):
     buckets={}
     for r in daily:
@@ -202,6 +256,7 @@ data={
   'scopes': scopes,
   'model_totals': model_totals,
   'series_by_model': series_by_model,
+  'project_usage': fetch_project_usage(),
   'metadata_only_models': metadata_only,
   'notes': {
     'quota_remaining':'Not exposed by local state.db',
