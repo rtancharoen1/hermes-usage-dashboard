@@ -10,7 +10,7 @@ const state = {
   source: null,
   data: null,
   selection: 'all_tracked',
-  range: 30,
+  range: '24h',
   metric: 'total',
   view: 'daily',
   modelRange: 'all',
@@ -189,69 +189,36 @@ function renderHeader() {
   document.getElementById('meta-provider').textContent = d.model.provider === 'all' ? 'All tracked models' : `${d.model.provider} · ${d.model.model}`;
   document.getElementById('head-model-name').textContent = d.model.provider === 'all' ? 'All models' : d.model.model;
   document.getElementById('meta-sessions').textContent = fmtInt(d.overall.sessions);
+  document.getElementById('meta-refresh').textContent = `Every ${state.source.realtime?.refresh_minutes || 30} min`;
 }
 
 /* ---------- KPIs ---------- */
 
 function renderKPIs() {
   const d = state.data;
-  const daily = d.daily;
-  const periods = d.periods || {};
-  const periodSpecs = [
-    ['24h', periods.last_24_hours, 1],
-    ['7d', periods.last_7_days, 7],
-    ['30d', periods.last_30_days, 30],
-  ];
-
-  for (const [id, exact, fallbackDays] of periodSpecs) {
-    const fallbackRows = daily.slice(-fallbackDays);
-    const period = exact || {
-      total: fallbackRows.reduce((sum, row) => sum + (row.total || 0), 0),
-      calls: fallbackRows.reduce((sum, row) => sum + (row.calls || 0), 0),
-      start_local: fallbackRows[0] ? `${fallbackRows[0].day}T00:00:00` : '',
-    };
-    const value = document.getElementById(`kpi-${id}-total`);
-    value.textContent = fmtCompact(period.total);
-    value.setAttribute('title', fmtInt(period.total));
-    document.getElementById(`kpi-${id}-range`).textContent = `since ${fmtPeriodStart(period.start_local)}`;
-    document.getElementById(`kpi-${id}-calls`).textContent = fmtInt(period.calls);
-    const average = document.getElementById(`kpi-${id}-average`);
-    if (average) {
-      const tokensPerDay = period.total / fallbackDays;
-      average.textContent = fmtCompact(tokensPerDay);
-      average.setAttribute('title', `${fmtInt(tokensPerDay)} tokens per day`);
-    }
-  }
-
-  document.getElementById('kpi-total').textContent = fmtCompact(d.overall.total);
-  document.getElementById('kpi-total').setAttribute('title', fmtInt(d.overall.total));
-  document.getElementById('kpi-first').textContent = d.overall.first_local.split(' ')[0];
-
-  drawSpark(document.getElementById('spark-24h'),
-    daily.slice(-14).map(x => x.total), { fill: true, color: 'var(--c-amber)' });
-  drawSpark(document.getElementById('spark-7d'),
-    daily.slice(-7).map(x => x.total), { fill: false, color: 'var(--c-reason)' });
-  drawSpark(document.getElementById('spark-30d'),
-    daily.slice(-30).map(x => x.total), { fill: false, color: 'var(--c-fg-mute)' });
-
-  // stacked mini bar for overall composition
-  const overall = d.overall;
-  const parts = [
-    ['cache_read', overall.cache_read, 'var(--c-cache-read)'],
-    ['input',      overall.input,      'var(--c-input)'],
-    ['output',     overall.output,     'var(--c-output)'],
-    ['cache_write',overall.cache_write,'var(--c-cache-write)'],
-  ];
-  const sum = parts.reduce((s, p) => s + p[1], 0);
-  const stack = document.getElementById('stack-mini');
-  stack.innerHTML = '';
-  for (const [k, v, c] of parts) {
-    const seg = document.createElement('span');
-    seg.style.width = (v / sum * 100).toFixed(3) + '%';
-    seg.style.background = c;
-    seg.title = `${k}: ${fmtInt(v)} (${fmtPct(v/sum)})`;
-    stack.appendChild(seg);
-  }
+  const labels = { '10m':'10 minutes', '1h':'1 hour', '12h':'12 hours', '24h':'24 hours', '7d':'7 days', '30d':'30 days' };
+  document.querySelectorAll('[data-window-card]').forEach(card => {
+    const range = card.dataset.windowCard;
+    const callWindow = d.realtime?.windows?.[range];
+    const fallbackKey = range === '7d' ? 'last_7_days' : range === '30d' ? 'last_30_days' : range === '24h' ? 'last_24_hours' : null;
+    const fallback = fallbackKey ? d.periods?.[fallbackKey] : null;
+    const period = callWindow && (callWindow.complete || !['7d','30d'].includes(range)) ? callWindow : fallback;
+    const fromCalls = Boolean(callWindow && period === callWindow);
+    const noCallData = !period && ['10m','1h','12h','24h'].includes(range);
+    const total = period?.total || 0;
+    const cache = period?.cache_read || 0;
+    const cacheRate = total ? cache / total : 0;
+    const fresh = period?.input || 0;
+    const output = period?.output || 0;
+    card.classList.toggle('kpi-current', range === state.range);
+    card.innerHTML = `
+      <div class="kpi-topline"><div class="kpi-label">Last ${labels[range]}</div><span class="source-chip ${fromCalls ? 'exact' : 'fallback'}">${fromCalls ? 'CALL DATA' : noCallData ? 'NO CALL DATA' : 'SESSION DATA'}</span></div>
+      <div class="kpi-value mono" title="${fmtInt(total)} tokens">${fmtCompact(total)}</div>
+      <div class="kpi-statline"><span><strong class="mono">${fmtInt(period?.calls || 0)}</strong> calls</span><span><strong class="mono">${fmtPct(cacheRate)}</strong> cache</span></div>
+      <div class="window-composition" aria-hidden="true"><i style="width:${(cacheRate*100).toFixed(2)}%"></i></div>
+      <div class="kpi-foot mono">fresh ${fmtCompact(fresh)} · output ${fmtCompact(output)}</div>`;
+    card.setAttribute('aria-label', `Last ${labels[range]}: ${fmtInt(total)} tokens, ${fmtInt(period?.calls || 0)} calls, ${fmtPct(cacheRate)} cache read, ${fromCalls ? 'exact call telemetry' : noCallData ? 'no call telemetry for this model' : 'session aggregate fallback'}`);
+  });
 }
 
 function drawSpark(svg, values, opts) {
@@ -279,9 +246,8 @@ function drawSpark(svg, values, opts) {
 /* ---------- controls ---------- */
 
 function wireControls() {
-  wireSegment('ctrl-range', v => { state.range = v === 'all' ? 'all' : parseInt(v, 10); renderCharts(); });
+  wireSegment('ctrl-range', v => { state.range = v; renderKPIs(); renderCharts(); });
   wireSegment('ctrl-metric', v => { state.metric = v; renderMainChart(); renderScatterChart(); });
-  wireSegment('ctrl-view', v => { state.view = v; renderMainChart(); });
   document.querySelectorAll('#daily-table thead th').forEach(th => {
     const btn = th.querySelector('.th-btn');
     btn.addEventListener('click', () => {
@@ -300,8 +266,8 @@ function wireSegment(id, cb) {
   const group = document.getElementById(id);
   group.querySelectorAll('button').forEach(btn => {
     btn.addEventListener('click', () => {
-      group.querySelectorAll('button').forEach(b => b.setAttribute('aria-selected', 'false'));
-      btn.setAttribute('aria-selected', 'true');
+      group.querySelectorAll('button').forEach(b => b.setAttribute('aria-pressed', 'false'));
+      btn.setAttribute('aria-pressed', 'true');
       const v = btn.dataset.range || btn.dataset.metric || btn.dataset.view;
       cb(v);
     });
@@ -312,8 +278,8 @@ function wireSegment(id, cb) {
 
 function slicedDaily() {
   const d = state.data.daily;
-  if (state.range === 'all') return d;
-  return d.slice(-state.range);
+  const days = { '10m':1, '1h':1, '12h':1, '24h':1, '7d':7, '30d':30 }[state.range] || 30;
+  return d.slice(-days);
 }
 
 function monthlyRows() {
@@ -338,24 +304,35 @@ function monthlyRows() {
 }
 
 function mainRows() {
-  if (state.view === 'weekly') return state.data.weekly;
-  if (state.view === 'monthly') return monthlyRows();
+  const rt = state.data.realtime?.series?.[state.range];
+  if (rt && (rt.complete || !['7d','30d'].includes(state.range))) return rt.points;
+  if (['10m','1h','12h','24h'].includes(state.range)) return [];
+  if (state.data.rolling_daily?.[state.range]) return state.data.rolling_daily[state.range];
   return slicedDaily();
 }
 
 function rowLabel(r) {
+  if (r.bucket_start) return r.bucket_start;
   if (state.view === 'weekly') return r.week_start;
   if (state.view === 'monthly') return r.month;
   return r.day;
 }
 
 function formatAxisLabel(label) {
+  if (String(label).includes('T')) {
+    const date = new Date(label);
+    if (['10m','1h','12h','24h'].includes(state.range)) {
+      return date.toLocaleTimeString('en-GB', { hour:'2-digit', minute:'2-digit', hour12:false });
+    }
+    return date.toLocaleDateString('en-US', { month:'short', day:'2-digit' });
+  }
   if (state.view === 'weekly') return fmtShortDate(label);
   if (state.view === 'monthly') return fmtMonth(label);
   return fmtDay(label);
 }
 
 function formatTooltipLabel(label) {
+  if (String(label).includes('T')) return new Date(label).toLocaleString('en-GB', { dateStyle:'medium', timeStyle:'short' });
   if (state.view === 'monthly') return fmtMonth(label);
   return label;
 }
@@ -368,22 +345,28 @@ function renderMainChart() {
   const rows = mainRows();
   const metric = state.metric;
   const meta = METRICS[metric];
-  const viewLabel = state.view === 'weekly' ? 'Weekly' : state.view === 'monthly' ? 'Monthly' : 'Daily';
+  const rt = state.data.realtime?.series?.[state.range];
+  const usingCalls = rt && (rt.complete || !['7d','30d'].includes(state.range));
+  const bucketSeconds = usingCalls ? rt.bucket_seconds : 86400;
+  const bucketLabel = bucketSeconds < 60 ? `${bucketSeconds}-second` : bucketSeconds < 3600 ? `${bucketSeconds/60}-minute` : bucketSeconds < 86400 ? `${bucketSeconds/3600}-hour` : 'Daily';
+  const sourceLabel = usingCalls ? 'exact API-call telemetry' : ['10m','1h','12h','24h'].includes(state.range) ? 'call telemetry unavailable for selected model' : 'session-start aggregate while call archive matures';
 
-  document.getElementById('chart-main-sub').textContent = `${viewLabel} · ${meta.label}`;
+  document.getElementById('chart-main-sub').textContent = `${state.range} · ${bucketLabel} buckets · ${meta.label}`;
 
   const legend = document.getElementById('chart-main-legend');
   if (metric === 'grouped') {
     legend.innerHTML = GROUPED_KEYS.map(k =>
       `<span class="lg-item"><i class="lg-swatch" style="background:${GROUPED_META[k].color}"></i>${GROUPED_META[k].label}</span>`
-    ).join('') + `<span class="lg-item" style="color:var(--c-fg-dim)">${rows.length} groups</span>`;
+    ).join('') + `<span class="lg-item" style="color:var(--c-fg-dim)">${rows.length} buckets · ${sourceLabel}</span>`;
+    document.getElementById('chart-main-summary').textContent = chartSummary(rows, state.range, sourceLabel);
     drawStackedCompositionChart(svg, rows.map(rowLabel), rows, { yLabel: 'tokens' });
     return;
   }
 
   legend.innerHTML =
     `<span class="lg-item"><i class="lg-swatch" style="background:${meta.color}"></i>${meta.label}</span>` +
-    `<span class="lg-item" style="color:var(--c-fg-dim)">${rows.length} points</span>`;
+    `<span class="lg-item" style="color:var(--c-fg-dim)">${rows.length} buckets · ${sourceLabel}</span>`;
+  document.getElementById('chart-main-summary').textContent = chartSummary(rows, state.range, sourceLabel);
 
   const values = rows.map(r => metric === 'calls' ? r.calls : r[metric]);
   const labels = rows.map(rowLabel);
@@ -393,6 +376,13 @@ function renderMainChart() {
     kind: 'bar',
     yLabel: metric === 'calls' ? 'calls' : 'tokens',
   });
+}
+
+function chartSummary(rows, range, sourceLabel) {
+  const total = rows.reduce((sum, row) => sum + (row.total || 0), 0);
+  const calls = rows.reduce((sum, row) => sum + (row.calls || 0), 0);
+  const cache = rows.reduce((sum, row) => sum + (row.cache_read || 0), 0);
+  return `${range} summary: ${fmtInt(total)} tokens across ${fmtInt(calls)} API calls; ${fmtPct(total ? cache/total : 0)} cache read. Source: ${sourceLabel}.`;
 }
 
 function drawBarLineChart(svg, labels, values, opts) {
@@ -812,13 +802,15 @@ function datasetFromSelection(value) {
   if (value === 'all_tracked') {
     const scope = src.scopes.all_tracked;
     return { generated_at_local: src.generated_at_local, timezone: src.timezone, model: scope.model,
-      overall: normalizeOverall(scope.overall), daily: scope.daily, weekly: scope.weekly, periods: scope.periods };
+      overall: normalizeOverall(scope.overall), daily: scope.daily, weekly: scope.weekly, periods: scope.periods,
+      rolling_daily: scope.rolling_daily, realtime: src.realtime?.scopes?.all_tracked || null };
   }
   const series = src.series_by_model[value];
   if (!series) return datasetFromSelection('all_tracked');
   return { generated_at_local: src.generated_at_local, timezone: src.timezone,
     model: { provider: series.provider, model: series.model, primary: false },
-    overall: normalizeOverall(series.total), daily: series.daily, weekly: series.weekly, periods: series.periods };
+    overall: normalizeOverall(series.total), daily: series.daily, weekly: series.weekly, periods: series.periods,
+    rolling_daily: series.rolling_daily, realtime: src.realtime?.scopes?.[value] || null };
 }
 
 function setupModelControl() {

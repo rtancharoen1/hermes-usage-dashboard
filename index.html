@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="color-scheme" content="dark light">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 64 64%22><rect width=%2264%22 height=%2264%22 rx=%2212%22 fill=%22%230a0b0d%22/><path d=%22M14 18h8v10h20V18h8v28h-8V36H22v10h-8z%22 fill=%22%23f5a524%22/></svg>">
-<title>Hermes Usage · Codex gpt-5.5</title>
+<title>Hermes Usage · Live token telemetry</title>
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -22,11 +22,12 @@
       <div><dt>Generated</dt><dd id="meta-generated">—</dd></div>
       <div><dt>Timezone</dt><dd id="meta-tz">—</dd></div>
       <div><dt>Provider</dt><dd id="meta-provider">—</dd></div>
+      <div><dt>Refresh</dt><dd id="meta-refresh" class="mono">Every 30 min</dd></div>
       <div><dt>Sessions on record</dt><dd id="meta-sessions" class="mono">—</dd></div>
     </dl>
   </div>
   <p class="head-note" id="head-note">
-    Local <code>state.db</code> telemetry. Select all tracked usage or isolate one provider/model. Metadata-only sessions are excluded from token totals.
+    Call-level telemetry for recent windows, backed by a private local archive. Only aggregate buckets are published; no prompts, paths, titles, or session IDs.
   </p>
 </header>
 
@@ -36,47 +37,15 @@
   <section class="section hero" aria-labelledby="hero-title">
     <div class="section-head">
       <h2 id="hero-title">At a glance</h2>
-      <div class="section-sub">Rolling 24 hours, 7 days, 30 days, and all time.</div>
+      <div class="section-sub"><span class="live-dot" aria-hidden="true"></span> Rolling call telemetry · published every 30 minutes.</div>
     </div>
     <div class="kpi-grid">
-      <article class="kpi kpi-current">
-        <div class="kpi-label">Last 24 hours · tokens</div>
-        <div class="kpi-value mono" id="kpi-24h-total">—</div>
-        <div class="kpi-foot"><span id="kpi-24h-range" class="mono">—</span> · <span id="kpi-24h-calls" class="mono">—</span> calls</div>
-        <svg class="spark" id="spark-24h" viewBox="0 0 200 40" preserveAspectRatio="none" aria-hidden="true"></svg>
-      </article>
-
-      <article class="kpi">
-        <div class="kpi-label">Last 7 days · tokens</div>
-        <div class="kpi-value mono" id="kpi-7d-total">—</div>
-        <div class="kpi-average"><span>Average/day</span> <strong class="mono" id="kpi-7d-average">—</strong> tokens</div>
-        <div class="kpi-foot"><span id="kpi-7d-range" class="mono">—</span> · <span id="kpi-7d-calls" class="mono">—</span> calls</div>
-        <svg class="spark" id="spark-7d" viewBox="0 0 200 40" preserveAspectRatio="none" aria-hidden="true"></svg>
-      </article>
-
-      <article class="kpi">
-        <div class="kpi-label">Last 30 days · tokens</div>
-        <div class="kpi-value mono" id="kpi-30d-total">—</div>
-        <div class="kpi-average"><span>Average/day</span> <strong class="mono" id="kpi-30d-average">—</strong> tokens</div>
-        <div class="kpi-foot"><span id="kpi-30d-range" class="mono">—</span> · <span id="kpi-30d-calls" class="mono">—</span> calls</div>
-        <svg class="spark" id="spark-30d" viewBox="0 0 200 40" preserveAspectRatio="none" aria-hidden="true"></svg>
-      </article>
-
-      <article class="kpi">
-        <div class="kpi-label">All time · tokens</div>
-        <div class="kpi-value mono" id="kpi-total">—</div>
-        <div class="kpi-foot">since <span id="kpi-first" class="mono">—</span></div>
-        <div class="stack-mini" id="stack-mini" aria-hidden="true"></div>
-      </article>
-
-      <article class="kpi kpi-quota">
-        <div class="kpi-label">Quota status</div>
-        <div class="kpi-value quota-badge" id="kpi-quota-state">Not exposed</div>
-        <div class="kpi-foot">
-          Remaining quota is not in local <code>state.db</code>.
-          Last <span class="mono">HTTP 429</span> on <span class="mono">2026-07-05</span>, reset ≈ <span class="mono">19:01 +07</span>.
-        </div>
-      </article>
+      <article class="kpi kpi-current" data-window-card="10m"></article>
+      <article class="kpi" data-window-card="1h"></article>
+      <article class="kpi" data-window-card="12h"></article>
+      <article class="kpi" data-window-card="24h"></article>
+      <article class="kpi" data-window-card="7d"></article>
+      <article class="kpi" data-window-card="30d"></article>
     </div>
   </section>
 
@@ -87,33 +56,26 @@
       <select id="model-select" aria-describedby="model-filter-status"></select>
       <span class="sr-only" id="model-filter-status" aria-live="polite"></span>
     </div>
-    <div class="ctrl-group" role="group" aria-label="Date range">
+    <div class="ctrl-group" role="group" aria-label="Rolling time range">
       <span class="ctrl-label">Range</span>
-      <div class="segmented" id="ctrl-range" role="tablist">
-        <button role="tab" data-range="7" aria-selected="false">7d</button>
-        <button role="tab" data-range="14" aria-selected="false">14d</button>
-        <button role="tab" data-range="30" aria-selected="true">30d</button>
-        <button role="tab" data-range="90" aria-selected="false">90d</button>
-        <button role="tab" data-range="all" aria-selected="false">All</button>
+      <div class="segmented" id="ctrl-range">
+        <button type="button" data-range="10m" aria-pressed="false">10m</button>
+        <button type="button" data-range="1h" aria-pressed="false">1h</button>
+        <button type="button" data-range="12h" aria-pressed="false">12h</button>
+        <button type="button" data-range="24h" aria-pressed="true">24h</button>
+        <button type="button" data-range="7d" aria-pressed="false">7d</button>
+        <button type="button" data-range="30d" aria-pressed="false">30d</button>
       </div>
     </div>
     <div class="ctrl-group" role="group" aria-label="Metric">
       <span class="ctrl-label">Metric</span>
-      <div class="segmented" id="ctrl-metric" role="tablist">
-        <button role="tab" data-metric="total" aria-selected="true">Total</button>
-        <button role="tab" data-metric="grouped" aria-selected="false">Composition</button>
-        <button role="tab" data-metric="input" aria-selected="false">Input</button>
-        <button role="tab" data-metric="output" aria-selected="false">Output</button>
-        <button role="tab" data-metric="cache_read" aria-selected="false">Cache read</button>
-        <button role="tab" data-metric="calls" aria-selected="false">Calls</button>
-      </div>
-    </div>
-    <div class="ctrl-group" role="group" aria-label="View">
-      <span class="ctrl-label">View</span>
-      <div class="segmented" id="ctrl-view" role="tablist">
-        <button role="tab" data-view="daily" aria-selected="true">Daily</button>
-        <button role="tab" data-view="weekly" aria-selected="false">Weekly</button>
-        <button role="tab" data-view="monthly" aria-selected="false">Monthly</button>
+      <div class="segmented" id="ctrl-metric">
+        <button type="button" data-metric="total" aria-pressed="true">Total</button>
+        <button type="button" data-metric="grouped" aria-pressed="false">Composition</button>
+        <button type="button" data-metric="input" aria-pressed="false">Fresh input</button>
+        <button type="button" data-metric="output" aria-pressed="false">Output</button>
+        <button type="button" data-metric="cache_read" aria-pressed="false">Cache read</button>
+        <button type="button" data-metric="calls" aria-pressed="false">Calls</button>
       </div>
     </div>
   </section>
@@ -125,8 +87,9 @@
       <div class="section-sub" id="chart-main-sub">Daily · Total tokens</div>
     </div>
     <div class="card chart-card">
-      <svg id="chart-main" class="chart" viewBox="0 0 1200 380" role="img" aria-label="Token usage over time"></svg>
+      <svg id="chart-main" class="chart" viewBox="0 0 1200 380" role="img" aria-label="Token usage over the selected rolling window" aria-describedby="chart-main-summary"></svg>
       <div class="chart-legend" id="chart-main-legend"></div>
+      <p class="chart-summary" id="chart-main-summary" aria-live="polite"></p>
     </div>
   </section>
 

@@ -1,11 +1,18 @@
 # Hermes Usage Dashboard
 
-Static, offline dashboard that summarises OpenAI Codex `gpt-5.5` usage from
-local Hermes telemetry (`state.db` export → `usage-data.json`).
+Static, offline dashboard that summarises Hermes token usage from local
+`state.db` totals plus call-level `agent.log` telemetry.
 
 ## Online dashboard
 
-Published with GitHub Pages. `usage-data.json` is regenerated from the local Hermes database and pushed hourly by a local Hermes cron job. The export contains aggregate token/call counts by date, model, and public-safe project label—no session titles, message content, or full filesystem paths.
+Published with GitHub Pages. `usage-data.json` is regenerated and pushed every
+30 minutes by a script-only local Hermes cron job. The public export contains
+aggregate time buckets, token/call counts, model labels, and public-safe project
+labels—no session IDs, titles, prompts, message content, or filesystem paths.
+
+Call-level events are retained in the private ignored file
+`.runtime/realtime-telemetry.sqlite3` so rotating logs do not erase the 7-day
+and 30-day history. That archive never enters Git.
 
 ## Run locally
 
@@ -32,12 +39,12 @@ serve through a local HTTP server.
 
 - **Header** — provider, model, timezone, generated timestamp, 429 note.
 - **GPT-5.6 versions** — an auto-updating panel that lists each billed `gpt-5.6-*` variant, its sessions, first/last-seen dates, total tokens, and share of GPT-5.6 usage. A newly used third variant appears after its first telemetry record.
-- **KPIs** — exact rolling totals for the last 24 hours, 7 days, and 30 days,
-  plus all-time and quota status. Rolling totals are anchored to the hourly
-  generation timestamp. Trend KPIs include sparklines. Overall composition bar shows how much of
-  all-time tokens are cache reads.
-- **Controls** — range (7 / 14 / 30 / 90 / all), metric (total / composition /
-  input / output / cache read / calls), view (daily / weekly / monthly).
+- **KPIs** — rolling totals for 10 minutes, 1 hour, 12 hours, 24 hours, 7 days,
+  and 30 days, with calls, cache rate, fresh input, output, and source badges.
+- **Controls** — range (10m / 1h / 12h / 24h / 7d / 30d) and metric (total /
+  composition / fresh input / output / cache read / calls).
+- **Adaptive chart buckets** — 30 seconds, 1 minute, 15 minutes, 30 minutes,
+  6 hours, and 1 day respectively.
 - **Model breakdown** — independently filterable to last 7 days, last 30 days,
   or all time.
 - **Charts** — primary usage chart with token composition integrated as a
@@ -57,6 +64,10 @@ serve through a local HTTP server.
 - Remaining OpenAI quota **cannot** be computed from `state.db`. The
   dashboard only surfaces the last observed 429 (`2026-07-05`, reset
   ≈ `19:01 +07`).
+- Recent call telemetry separates fresh input from cache read using the API-call
+  log line. Reasoning is not separately exposed on those lines.
+- Until the private call archive has a complete 7-day or 30-day history, those
+  windows use clearly labeled rolling session-start aggregates from `state.db`.
 
 ## Accessibility & UX
 
