@@ -219,7 +219,7 @@ main { padding: 8px 48px 96px; max-width: 1600px; margin: 0 auto; }
 
 .kpi-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 0;
   border: var(--hairline);
   container-type: inline-size;
@@ -235,9 +235,29 @@ main { padding: 8px 48px 96px; max-width: 1600px; margin: 0 auto; }
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  overflow: hidden;
+  isolation: isolate;
 }
+.kpi::before {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  width: var(--token-bubble-size, 0%);
+  aspect-ratio: 1;
+  right: -11%;
+  top: 50%;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  border: 1px solid rgba(245, 165, 36, 0.24);
+  background: radial-gradient(circle at 34% 30%, rgba(245, 165, 36, 0.20), rgba(245, 165, 36, 0.07) 48%, rgba(245, 165, 36, 0.015) 72%);
+  box-shadow: inset 0 0 28px rgba(245, 165, 36, 0.08), 0 0 34px rgba(245, 165, 36, 0.055);
+}
+.kpi > * { position: relative; z-index: 1; }
 .kpi:last-child { border-right: none; }
+.kpi:nth-child(3n) { border-right: none; }
 .kpi-current { box-shadow: inset 0 3px var(--c-amber); }
+.kpi-current::before { border-color: rgba(245, 165, 36, 0.48); background: radial-gradient(circle at 34% 30%, rgba(245, 165, 36, 0.28), rgba(245, 165, 36, 0.09) 50%, rgba(245, 165, 36, 0.02) 72%); }
 .kpi-topline { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
 .source-chip {
   flex: 0 0 auto;
@@ -256,10 +276,14 @@ main { padding: 8px 48px 96px; max-width: 1600px; margin: 0 auto; }
 .window-composition i { display: block; height: 100%; background: var(--c-cache-read); }
 
 @container (max-width: 900px) {
+  .kpi:nth-child(3n) { border-right: var(--hairline); }
   .kpi:nth-child(2n) { border-right: none; }
 }
 @container (max-width: 560px) {
   .kpi { border-right: none; }
+}
+@media (max-width: 1000px) {
+  .kpi-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 
 .kpi-label {

@@ -40,7 +40,9 @@ serve through a local HTTP server.
 - **Header** — provider, model, timezone, generated timestamp, 429 note.
 - **GPT-5.6 versions** — an auto-updating panel that lists each billed `gpt-5.6-*` variant, its sessions, first/last-seen dates, total tokens, and share of GPT-5.6 usage. A newly used third variant appears after its first telemetry record.
 - **KPIs** — rolling totals for 10 minutes, 1 hour, 12 hours, 24 hours, 7 days,
-  and 30 days, with calls, cache rate, fresh input, output, and source badges.
+  and 30 days, with calls, cache rate, fresh input, output, source badges, and
+  proportional background circles whose diameter uses a square-root scale so
+  low-volume windows remain visible while higher token totals appear larger.
 - **Controls** — range (10m / 1h / 12h / 24h / 7d / 30d) and metric (total /
   composition / fresh input / output / cache read / calls).
 - **Adaptive chart buckets** — 30 seconds, 1 minute, 15 minutes, 30 minutes,

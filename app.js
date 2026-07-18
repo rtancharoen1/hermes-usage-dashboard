@@ -197,12 +197,18 @@ function renderHeader() {
 function renderKPIs() {
   const d = state.data;
   const labels = { '10m':'10 minutes', '1h':'1 hour', '12h':'12 hours', '24h':'24 hours', '7d':'7 days', '30d':'30 days' };
-  document.querySelectorAll('[data-window-card]').forEach(card => {
+  const cards = Array.from(document.querySelectorAll('[data-window-card]'));
+  const entries = cards.map(card => {
     const range = card.dataset.windowCard;
     const callWindow = d.realtime?.windows?.[range];
     const fallbackKey = range === '7d' ? 'last_7_days' : range === '30d' ? 'last_30_days' : range === '24h' ? 'last_24_hours' : null;
     const fallback = fallbackKey ? d.periods?.[fallbackKey] : null;
     const period = callWindow && (callWindow.complete || !['7d','30d'].includes(range)) ? callWindow : fallback;
+    return { card, range, callWindow, period };
+  });
+  const maxTotal = Math.max(1, ...entries.map(({ period }) => period?.total || 0));
+
+  entries.forEach(({ card, range, callWindow, period }) => {
     const fromCalls = Boolean(callWindow && period === callWindow);
     const noCallData = !period && ['10m','1h','12h','24h'].includes(range);
     const total = period?.total || 0;
@@ -210,6 +216,8 @@ function renderKPIs() {
     const cacheRate = total ? cache / total : 0;
     const fresh = period?.input || 0;
     const output = period?.output || 0;
+    const bubbleSize = total ? 18 + 90 * Math.sqrt(total / maxTotal) : 0;
+    card.style.setProperty('--token-bubble-size', `${bubbleSize.toFixed(1)}%`);
     card.classList.toggle('kpi-current', range === state.range);
     card.innerHTML = `
       <div class="kpi-topline"><div class="kpi-label">Last ${labels[range]}</div><span class="source-chip ${fromCalls ? 'exact' : 'fallback'}">${fromCalls ? 'CALL DATA' : noCallData ? 'NO CALL DATA' : 'SESSION DATA'}</span></div>
