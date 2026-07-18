@@ -1,5 +1,5 @@
 {
-  "generated_at_local": "2026-07-19T03:00:27.969032+07:00",
+  "generated_at_local": "2026-07-19T04:00:37.815723+07:00",
   "timezone": "Asia/Bangkok",
   "model": {
     "provider": "openai-codex",
@@ -7,18 +7,18 @@
     "primary": true
   },
   "overall": {
-    "sessions": 1143,
+    "sessions": 1144,
     "first_local": "2026-05-02 02:26:14",
-    "last_local": "2026-07-10 21:52:09",
-    "api_calls": 27360,
+    "last_local": "2026-07-19 03:00:35",
+    "api_calls": 27361,
     "tool_calls": 37522,
-    "input": 364347808,
-    "output": 10221357,
+    "input": 364384036,
+    "output": 10221365,
     "cache_read": 1500421328,
     "cache_write": 2325506,
     "reasoning": 1785354,
-    "total": 1877315999,
-    "all_in": 1879101353
+    "total": 1877352235,
+    "all_in": 1879137589
   },
   "daily": [
     {
@@ -891,6 +891,19 @@
       "reasoning": 31008,
       "total": 56218657,
       "all_in": 56249665
+    },
+    {
+      "day": "2026-07-19",
+      "sessions": 1,
+      "calls": 1,
+      "tool_calls": 0,
+      "input": 36228,
+      "output": 8,
+      "cache_read": 0,
+      "cache_write": 0,
+      "reasoning": 0,
+      "total": 36236,
+      "all_in": 36236
     }
   ],
   "weekly": [
@@ -1047,6 +1060,20 @@
       "total": 313635083,
       "all_in": 313935774,
       "week_end": "2026-07-12"
+    },
+    {
+      "week_start": "2026-07-13",
+      "sessions": 1,
+      "calls": 1,
+      "tool_calls": 0,
+      "input": 36228,
+      "output": 8,
+      "cache_read": 0,
+      "cache_write": 0,
+      "reasoning": 0,
+      "total": 36236,
+      "all_in": 36236,
+      "week_end": "2026-07-19"
     }
   ],
   "scopes": {
@@ -1059,18 +1086,18 @@
         "primary": true
       },
       "overall": {
-        "sessions": 1143,
+        "sessions": 1144,
         "first_local": "2026-05-02 02:26:14",
-        "last_local": "2026-07-10 21:52:09",
-        "api_calls": 27360,
+        "last_local": "2026-07-19 03:00:35",
+        "api_calls": 27361,
         "tool_calls": 37522,
-        "input": 364347808,
-        "output": 10221357,
+        "input": 364384036,
+        "output": 10221365,
         "cache_read": 1500421328,
         "cache_write": 2325506,
         "reasoning": 1785354,
-        "total": 1877315999,
-        "all_in": 1879101353
+        "total": 1877352235,
+        "all_in": 1879137589
       },
       "daily": [
         {
@@ -1943,6 +1970,19 @@
           "reasoning": 31008,
           "total": 56218657,
           "all_in": 56249665
+        },
+        {
+          "day": "2026-07-19",
+          "sessions": 1,
+          "calls": 1,
+          "tool_calls": 0,
+          "input": 36228,
+          "output": 8,
+          "cache_read": 0,
+          "cache_write": 0,
+          "reasoning": 0,
+          "total": 36236,
+          "all_in": 36236
         }
       ],
       "weekly": [
@@ -2099,50 +2139,64 @@
           "total": 313635083,
           "all_in": 313935774,
           "week_end": "2026-07-12"
+        },
+        {
+          "week_start": "2026-07-13",
+          "sessions": 1,
+          "calls": 1,
+          "tool_calls": 0,
+          "input": 36228,
+          "output": 8,
+          "cache_read": 0,
+          "cache_write": 0,
+          "reasoning": 0,
+          "total": 36236,
+          "all_in": 36236,
+          "week_end": "2026-07-19"
         }
       ],
       "periods": {
         "last_24_hours": {
-          "sessions": 0,
-          "calls": 0,
+          "sessions": 1,
+          "calls": 1,
           "tool_calls": 0,
-          "input": 0,
-          "output": 0,
+          "input": 36228,
+          "output": 8,
           "cache_read": 0,
           "cache_write": 0,
           "reasoning": 0,
-          "total": 0,
-          "all_in": 0,
-          "start_local": "2026-07-18T03:00:27+07:00",
-          "end_local": "2026-07-19T03:00:27+07:00"
+          "total": 36236,
+          "all_in": 36236,
+          "start_local": "2026-07-18T04:00:36+07:00",
+          "end_local": "2026-07-19T04:00:36+07:00"
         },
         "last_7_days": {
-          "sessions": 0,
-          "calls": 0,
+          "sessions": 1,
+          "calls": 1,
           "tool_calls": 0,
-          "input": 0,
-          "output": 0,
+          "input": 36228,
+          "output": 8,
           "cache_read": 0,
           "cache_write": 0,
           "reasoning": 0,
-          "total": 0,
-          "all_in": 0,
-          "start_local": "2026-07-12T03:00:27+07:00",
-          "end_local": "2026-07-19T03:00:27+07:00"
+          "total": 36236,
+          "all_in": 36236,
+          "start_local": "2026-07-12T04:00:36+07:00",
+          "end_local": "2026-07-19T04:00:36+07:00"
         },
         "last_30_days": {
-          "sessions": 517,
-          "calls": 9702,
+          "sessions": 518,
+          "calls": 9703,
           "tool_calls": 17354,
-          "input": 81624688,
-          "output": 4587814,
+          "input": 81660916,
+          "output": 4587822,
           "cache_read": 739930176,
           "cache_write": 0,
           "reasoning": 904782,
-          "total": 826142678,
-          "all_in": 827047460,
-          "start_local": "2026-06-19T03:00:27+07:00",
-          "end_local": "2026-07-19T03:00:27+07:00"
+          "total": 826178914,
+          "all_in": 827083696,
+          "start_local": "2026-06-19T04:00:36+07:00",
+          "end_local": "2026-07-19T04:00:36+07:00"
         }
       }
     },
@@ -2155,18 +2209,18 @@
         "primary": false
       },
       "overall": {
-        "sessions": 1737,
+        "sessions": 1740,
         "first_local": "2026-04-24 15:59:57",
-        "last_local": "2026-07-19 02:21:12",
-        "api_calls": 43529,
-        "tool_calls": 68242,
-        "input": 601277578,
-        "output": 16664698,
-        "cache_read": 2792266370,
+        "last_local": "2026-07-19 03:52:45",
+        "api_calls": 43630,
+        "tool_calls": 68474,
+        "input": 602015563,
+        "output": 16746767,
+        "cache_read": 2807155842,
         "cache_write": 2544417,
-        "reasoning": 3389973,
-        "total": 3412753063,
-        "all_in": 3416143036
+        "reasoning": 3407308,
+        "total": 3428462589,
+        "all_in": 3431869897
       },
       "daily": [
         {
@@ -3173,28 +3227,28 @@
         {
           "day": "2026-07-18",
           "sessions": 9,
-          "calls": 441,
-          "tool_calls": 912,
-          "input": 4628557,
-          "output": 211533,
-          "cache_read": 65609216,
+          "calls": 478,
+          "tool_calls": 961,
+          "input": 4940275,
+          "output": 232920,
+          "cache_read": 72697344,
           "cache_write": 0,
-          "reasoning": 46298,
-          "total": 70449306,
-          "all_in": 70495604
+          "reasoning": 52874,
+          "total": 77870539,
+          "all_in": 77923413
         },
         {
           "day": "2026-07-19",
-          "sessions": 2,
-          "calls": 47,
-          "tool_calls": 56,
-          "input": 177514,
-          "output": 18220,
-          "cache_read": 2544128,
+          "sessions": 5,
+          "calls": 111,
+          "tool_calls": 239,
+          "input": 603781,
+          "output": 78902,
+          "cache_read": 10345472,
           "cache_write": 0,
-          "reasoning": 6411,
-          "total": 2739862,
-          "all_in": 2746273
+          "reasoning": 17170,
+          "total": 11028155,
+          "all_in": 11045325
         }
       ],
       "weekly": [
@@ -3368,61 +3422,61 @@
         },
         {
           "week_start": "2026-07-13",
-          "sessions": 316,
-          "calls": 7761,
-          "tool_calls": 16529,
-          "input": 62602017,
-          "output": 3404309,
-          "cache_read": 821296640,
+          "sessions": 319,
+          "calls": 7862,
+          "tool_calls": 16761,
+          "input": 63340002,
+          "output": 3486378,
+          "cache_read": 836186112,
           "cache_write": 0,
-          "reasoning": 946860,
-          "total": 887302966,
-          "all_in": 888249826,
+          "reasoning": 964195,
+          "total": 903012492,
+          "all_in": 903976687,
           "week_end": "2026-07-19"
         }
       ],
       "periods": {
         "last_24_hours": {
           "sessions": 9,
-          "calls": 375,
-          "tool_calls": 773,
-          "input": 3330794,
-          "output": 171214,
-          "cache_read": 49678848,
+          "calls": 291,
+          "tool_calls": 560,
+          "input": 1918654,
+          "output": 142427,
+          "cache_read": 31422976,
           "cache_write": 0,
-          "reasoning": 40044,
-          "total": 53180856,
-          "all_in": 53220900,
-          "start_local": "2026-07-18T03:00:27+07:00",
-          "end_local": "2026-07-19T03:00:27+07:00"
+          "reasoning": 36858,
+          "total": 33484057,
+          "all_in": 33520915,
+          "start_local": "2026-07-18T04:00:37+07:00",
+          "end_local": "2026-07-19T04:00:37+07:00"
         },
         "last_7_days": {
-          "sessions": 384,
-          "calls": 9543,
-          "tool_calls": 20100,
-          "input": 74948537,
-          "output": 4195166,
-          "cache_read": 986422784,
+          "sessions": 387,
+          "calls": 9644,
+          "tool_calls": 20332,
+          "input": 75686522,
+          "output": 4277235,
+          "cache_read": 1001312256,
           "cache_write": 0,
-          "reasoning": 1075653,
-          "total": 1065566487,
-          "all_in": 1066642140,
-          "start_local": "2026-07-12T03:00:27+07:00",
-          "end_local": "2026-07-19T03:00:27+07:00"
+          "reasoning": 1092988,
+          "total": 1081276013,
+          "all_in": 1082369001,
+          "start_local": "2026-07-12T04:00:37+07:00",
+          "end_local": "2026-07-19T04:00:37+07:00"
         },
         "last_30_days": {
-          "sessions": 996,
-          "calls": 21233,
-          "tool_calls": 42231,
-          "input": 171705687,
-          "output": 9585168,
-          "cache_read": 1909512128,
+          "sessions": 999,
+          "calls": 21334,
+          "tool_calls": 42463,
+          "input": 172443672,
+          "output": 9667237,
+          "cache_read": 1924401600,
           "cache_write": 0,
-          "reasoning": 2113342,
-          "total": 2090802983,
-          "all_in": 2092916325,
-          "start_local": "2026-06-19T03:00:27+07:00",
-          "end_local": "2026-07-19T03:00:27+07:00"
+          "reasoning": 2130677,
+          "total": 2106512509,
+          "all_in": 2108643186,
+          "start_local": "2026-06-19T04:00:37+07:00",
+          "end_local": "2026-07-19T04:00:37+07:00"
         }
       }
     }
@@ -3431,36 +3485,36 @@
     {
       "provider": "openai-codex",
       "model": "gpt-5.5",
-      "sessions": 1143,
-      "calls": 27360,
+      "sessions": 1144,
+      "calls": 27361,
       "tool_calls": 37522,
-      "input": 364347808,
-      "output": 10221357,
+      "input": 364384036,
+      "output": 10221365,
       "cache_read": 1500421328,
       "cache_write": 2325506,
       "reasoning": 1785354,
-      "total": 1877315999,
-      "all_in": 1879101353,
+      "total": 1877352235,
+      "all_in": 1879137589,
       "key": "openai-codex / gpt-5.5",
       "first_local": "2026-05-02 02:26:14",
-      "last_local": "2026-07-10 21:52:09"
+      "last_local": "2026-07-19 03:00:35"
     },
     {
       "provider": "openai-codex",
       "model": "gpt-5.6-sol",
-      "sessions": 434,
-      "calls": 11081,
-      "tool_calls": 24069,
-      "input": 86542348,
-      "output": 4812475,
-      "cache_read": 1121168896,
+      "sessions": 436,
+      "calls": 11181,
+      "tool_calls": 24301,
+      "input": 87244105,
+      "output": 4894536,
+      "cache_read": 1136058368,
       "cache_write": 0,
-      "reasoning": 1156470,
-      "total": 1212523719,
-      "all_in": 1213680189,
+      "reasoning": 1173805,
+      "total": 1228197009,
+      "all_in": 1229370814,
       "key": "openai-codex / gpt-5.6-sol",
       "first_local": "2026-07-07 03:21:20",
-      "last_local": "2026-07-19 02:21:12"
+      "last_local": "2026-07-19 03:52:45"
     },
     {
       "provider": "openai-codex",
@@ -4525,6 +4579,19 @@
           "reasoning": 31008,
           "total": 56218657,
           "all_in": 56249665
+        },
+        {
+          "day": "2026-07-19",
+          "sessions": 1,
+          "calls": 1,
+          "tool_calls": 0,
+          "input": 36228,
+          "output": 8,
+          "cache_read": 0,
+          "cache_write": 0,
+          "reasoning": 0,
+          "total": 36236,
+          "all_in": 36236
         }
       ],
       "weekly": [
@@ -4681,68 +4748,82 @@
           "total": 313635083,
           "all_in": 313935774,
           "week_end": "2026-07-12"
+        },
+        {
+          "week_start": "2026-07-13",
+          "sessions": 1,
+          "calls": 1,
+          "tool_calls": 0,
+          "input": 36228,
+          "output": 8,
+          "cache_read": 0,
+          "cache_write": 0,
+          "reasoning": 0,
+          "total": 36236,
+          "all_in": 36236,
+          "week_end": "2026-07-19"
         }
       ],
       "periods": {
         "last_24_hours": {
-          "sessions": 0,
-          "calls": 0,
+          "sessions": 1,
+          "calls": 1,
           "tool_calls": 0,
-          "input": 0,
-          "output": 0,
+          "input": 36228,
+          "output": 8,
           "cache_read": 0,
           "cache_write": 0,
           "reasoning": 0,
-          "total": 0,
-          "all_in": 0,
-          "start_local": "2026-07-18T03:00:27+07:00",
-          "end_local": "2026-07-19T03:00:27+07:00"
+          "total": 36236,
+          "all_in": 36236,
+          "start_local": "2026-07-18T04:00:28+07:00",
+          "end_local": "2026-07-19T04:00:28+07:00"
         },
         "last_7_days": {
-          "sessions": 0,
-          "calls": 0,
+          "sessions": 1,
+          "calls": 1,
           "tool_calls": 0,
-          "input": 0,
-          "output": 0,
+          "input": 36228,
+          "output": 8,
           "cache_read": 0,
           "cache_write": 0,
           "reasoning": 0,
-          "total": 0,
-          "all_in": 0,
-          "start_local": "2026-07-12T03:00:27+07:00",
-          "end_local": "2026-07-19T03:00:27+07:00"
+          "total": 36236,
+          "all_in": 36236,
+          "start_local": "2026-07-12T04:00:28+07:00",
+          "end_local": "2026-07-19T04:00:28+07:00"
         },
         "last_30_days": {
-          "sessions": 517,
-          "calls": 9702,
+          "sessions": 518,
+          "calls": 9703,
           "tool_calls": 17354,
-          "input": 81624688,
-          "output": 4587814,
+          "input": 81660916,
+          "output": 4587822,
           "cache_read": 739930176,
           "cache_write": 0,
           "reasoning": 904782,
-          "total": 826142678,
-          "all_in": 827047460,
-          "start_local": "2026-06-19T03:00:27+07:00",
-          "end_local": "2026-07-19T03:00:27+07:00"
+          "total": 826178914,
+          "all_in": 827083696,
+          "start_local": "2026-06-19T04:00:28+07:00",
+          "end_local": "2026-07-19T04:00:28+07:00"
         }
       },
       "total": {
         "provider": "openai-codex",
         "model": "gpt-5.5",
-        "sessions": 1143,
-        "calls": 27360,
+        "sessions": 1144,
+        "calls": 27361,
         "tool_calls": 37522,
-        "input": 364347808,
-        "output": 10221357,
+        "input": 364384036,
+        "output": 10221365,
         "cache_read": 1500421328,
         "cache_write": 2325506,
         "reasoning": 1785354,
-        "total": 1877315999,
-        "all_in": 1879101353,
+        "total": 1877352235,
+        "all_in": 1879137589,
         "key": "openai-codex / gpt-5.5",
         "first_local": "2026-05-02 02:26:14",
-        "last_local": "2026-07-10 21:52:09"
+        "last_local": "2026-07-19 03:00:35"
       }
     },
     "openai-codex / gpt-5.6-sol": {
@@ -4895,28 +4976,28 @@
         {
           "day": "2026-07-18",
           "sessions": 9,
-          "calls": 441,
-          "tool_calls": 912,
-          "input": 4628557,
-          "output": 211533,
-          "cache_read": 65609216,
+          "calls": 478,
+          "tool_calls": 961,
+          "input": 4940275,
+          "output": 232920,
+          "cache_read": 72697344,
           "cache_write": 0,
-          "reasoning": 46298,
-          "total": 70449306,
-          "all_in": 70495604
+          "reasoning": 52874,
+          "total": 77870539,
+          "all_in": 77923413
         },
         {
           "day": "2026-07-19",
-          "sessions": 2,
-          "calls": 47,
-          "tool_calls": 56,
-          "input": 177514,
-          "output": 18220,
-          "cache_read": 2544128,
+          "sessions": 4,
+          "calls": 110,
+          "tool_calls": 239,
+          "input": 567553,
+          "output": 78894,
+          "cache_read": 10345472,
           "cache_write": 0,
-          "reasoning": 6411,
-          "total": 2739862,
-          "all_in": 2746273
+          "reasoning": 17170,
+          "total": 10991919,
+          "all_in": 11009089
         }
       ],
       "weekly": [
@@ -4936,79 +5017,79 @@
         },
         {
           "week_start": "2026-07-13",
-          "sessions": 298,
-          "calls": 7548,
-          "tool_calls": 16059,
-          "input": 60924329,
-          "output": 3307889,
-          "cache_read": 793313280,
+          "sessions": 300,
+          "calls": 7648,
+          "tool_calls": 16291,
+          "input": 61626086,
+          "output": 3389950,
+          "cache_read": 808202752,
           "cache_write": 0,
-          "reasoning": 914672,
-          "total": 857545498,
-          "all_in": 858460170,
+          "reasoning": 932007,
+          "total": 873218788,
+          "all_in": 874150795,
           "week_end": "2026-07-19"
         }
       ],
       "periods": {
         "last_24_hours": {
-          "sessions": 9,
-          "calls": 375,
-          "tool_calls": 773,
-          "input": 3330794,
-          "output": 171214,
-          "cache_read": 49678848,
+          "sessions": 8,
+          "calls": 290,
+          "tool_calls": 560,
+          "input": 1882426,
+          "output": 142419,
+          "cache_read": 31422976,
           "cache_write": 0,
-          "reasoning": 40044,
-          "total": 53180856,
-          "all_in": 53220900,
-          "start_local": "2026-07-18T03:00:27+07:00",
-          "end_local": "2026-07-19T03:00:27+07:00"
+          "reasoning": 36858,
+          "total": 33447821,
+          "all_in": 33484679,
+          "start_local": "2026-07-18T04:00:29+07:00",
+          "end_local": "2026-07-19T04:00:29+07:00"
         },
         "last_7_days": {
-          "sessions": 359,
-          "calls": 9155,
-          "tool_calls": 19364,
-          "input": 72377056,
-          "output": 4029352,
-          "cache_read": 942705152,
+          "sessions": 361,
+          "calls": 9255,
+          "tool_calls": 19596,
+          "input": 73078813,
+          "output": 4111413,
+          "cache_read": 957594624,
           "cache_write": 0,
-          "reasoning": 1029370,
-          "total": 1019111560,
-          "all_in": 1020140930,
-          "start_local": "2026-07-12T03:00:27+07:00",
-          "end_local": "2026-07-19T03:00:27+07:00"
+          "reasoning": 1046705,
+          "total": 1034784850,
+          "all_in": 1035831555,
+          "start_local": "2026-07-12T04:00:29+07:00",
+          "end_local": "2026-07-19T04:00:29+07:00"
         },
         "last_30_days": {
-          "sessions": 434,
-          "calls": 11081,
-          "tool_calls": 24069,
-          "input": 86542348,
-          "output": 4812475,
-          "cache_read": 1121168896,
+          "sessions": 436,
+          "calls": 11181,
+          "tool_calls": 24301,
+          "input": 87244105,
+          "output": 4894536,
+          "cache_read": 1136058368,
           "cache_write": 0,
-          "reasoning": 1156470,
-          "total": 1212523719,
-          "all_in": 1213680189,
-          "start_local": "2026-06-19T03:00:27+07:00",
-          "end_local": "2026-07-19T03:00:27+07:00"
+          "reasoning": 1173805,
+          "total": 1228197009,
+          "all_in": 1229370814,
+          "start_local": "2026-06-19T04:00:29+07:00",
+          "end_local": "2026-07-19T04:00:29+07:00"
         }
       },
       "total": {
         "provider": "openai-codex",
         "model": "gpt-5.6-sol",
-        "sessions": 434,
-        "calls": 11081,
-        "tool_calls": 24069,
-        "input": 86542348,
-        "output": 4812475,
-        "cache_read": 1121168896,
+        "sessions": 436,
+        "calls": 11181,
+        "tool_calls": 24301,
+        "input": 87244105,
+        "output": 4894536,
+        "cache_read": 1136058368,
         "cache_write": 0,
-        "reasoning": 1156470,
-        "total": 1212523719,
-        "all_in": 1213680189,
+        "reasoning": 1173805,
+        "total": 1228197009,
+        "all_in": 1229370814,
         "key": "openai-codex / gpt-5.6-sol",
         "first_local": "2026-07-07 03:21:20",
-        "last_local": "2026-07-19 02:21:12"
+        "last_local": "2026-07-19 03:52:45"
       }
     },
     "openai-codex / gpt-5.4": {
@@ -5164,8 +5245,8 @@
           "reasoning": 0,
           "total": 0,
           "all_in": 0,
-          "start_local": "2026-07-18T03:00:27+07:00",
-          "end_local": "2026-07-19T03:00:27+07:00"
+          "start_local": "2026-07-18T04:00:29+07:00",
+          "end_local": "2026-07-19T04:00:29+07:00"
         },
         "last_7_days": {
           "sessions": 0,
@@ -5178,8 +5259,8 @@
           "reasoning": 0,
           "total": 0,
           "all_in": 0,
-          "start_local": "2026-07-12T03:00:27+07:00",
-          "end_local": "2026-07-19T03:00:27+07:00"
+          "start_local": "2026-07-12T04:00:29+07:00",
+          "end_local": "2026-07-19T04:00:29+07:00"
         },
         "last_30_days": {
           "sessions": 2,
@@ -5192,8 +5273,8 @@
           "reasoning": 29,
           "total": 71770,
           "all_in": 71799,
-          "start_local": "2026-06-19T03:00:27+07:00",
-          "end_local": "2026-07-19T03:00:27+07:00"
+          "start_local": "2026-06-19T04:00:29+07:00",
+          "end_local": "2026-07-19T04:00:29+07:00"
         }
       },
       "total": {
@@ -5313,8 +5394,8 @@
           "reasoning": 0,
           "total": 0,
           "all_in": 0,
-          "start_local": "2026-07-18T03:00:27+07:00",
-          "end_local": "2026-07-19T03:00:27+07:00"
+          "start_local": "2026-07-18T04:00:30+07:00",
+          "end_local": "2026-07-19T04:00:30+07:00"
         },
         "last_7_days": {
           "sessions": 23,
@@ -5327,8 +5408,8 @@
           "reasoning": 43510,
           "total": 42007358,
           "all_in": 42050868,
-          "start_local": "2026-07-12T03:00:27+07:00",
-          "end_local": "2026-07-19T03:00:27+07:00"
+          "start_local": "2026-07-12T04:00:30+07:00",
+          "end_local": "2026-07-19T04:00:30+07:00"
         },
         "last_30_days": {
           "sessions": 24,
@@ -5341,8 +5422,8 @@
           "reasoning": 48931,
           "total": 46844600,
           "all_in": 46893531,
-          "start_local": "2026-06-19T03:00:27+07:00",
-          "end_local": "2026-07-19T03:00:27+07:00"
+          "start_local": "2026-06-19T04:00:30+07:00",
+          "end_local": "2026-07-19T04:00:30+07:00"
         }
       },
       "total": {
@@ -5436,8 +5517,8 @@
           "reasoning": 0,
           "total": 0,
           "all_in": 0,
-          "start_local": "2026-07-18T03:00:27+07:00",
-          "end_local": "2026-07-19T03:00:27+07:00"
+          "start_local": "2026-07-18T04:00:31+07:00",
+          "end_local": "2026-07-19T04:00:31+07:00"
         },
         "last_7_days": {
           "sessions": 0,
@@ -5450,8 +5531,8 @@
           "reasoning": 0,
           "total": 0,
           "all_in": 0,
-          "start_local": "2026-07-12T03:00:27+07:00",
-          "end_local": "2026-07-19T03:00:27+07:00"
+          "start_local": "2026-07-12T04:00:31+07:00",
+          "end_local": "2026-07-19T04:00:31+07:00"
         },
         "last_30_days": {
           "sessions": 0,
@@ -5464,8 +5545,8 @@
           "reasoning": 0,
           "total": 0,
           "all_in": 0,
-          "start_local": "2026-06-19T03:00:27+07:00",
-          "end_local": "2026-07-19T03:00:27+07:00"
+          "start_local": "2026-06-19T04:00:31+07:00",
+          "end_local": "2026-07-19T04:00:31+07:00"
         }
       },
       "total": {
@@ -5559,8 +5640,8 @@
           "reasoning": 0,
           "total": 0,
           "all_in": 0,
-          "start_local": "2026-07-18T03:00:27+07:00",
-          "end_local": "2026-07-19T03:00:27+07:00"
+          "start_local": "2026-07-18T04:00:31+07:00",
+          "end_local": "2026-07-19T04:00:31+07:00"
         },
         "last_7_days": {
           "sessions": 2,
@@ -5573,8 +5654,8 @@
           "reasoning": 2773,
           "total": 4447569,
           "all_in": 4450342,
-          "start_local": "2026-07-12T03:00:27+07:00",
-          "end_local": "2026-07-19T03:00:27+07:00"
+          "start_local": "2026-07-12T04:00:31+07:00",
+          "end_local": "2026-07-19T04:00:31+07:00"
         },
         "last_30_days": {
           "sessions": 2,
@@ -5587,8 +5668,8 @@
           "reasoning": 2773,
           "total": 4447569,
           "all_in": 4450342,
-          "start_local": "2026-06-19T03:00:27+07:00",
-          "end_local": "2026-07-19T03:00:27+07:00"
+          "start_local": "2026-06-19T04:00:31+07:00",
+          "end_local": "2026-07-19T04:00:31+07:00"
         }
       },
       "total": {
@@ -5655,8 +5736,8 @@
           "reasoning": 0,
           "total": 0,
           "all_in": 0,
-          "start_local": "2026-07-18T03:00:27+07:00",
-          "end_local": "2026-07-19T03:00:27+07:00"
+          "start_local": "2026-07-18T04:00:32+07:00",
+          "end_local": "2026-07-19T04:00:32+07:00"
         },
         "last_7_days": {
           "sessions": 0,
@@ -5669,8 +5750,8 @@
           "reasoning": 0,
           "total": 0,
           "all_in": 0,
-          "start_local": "2026-07-12T03:00:27+07:00",
-          "end_local": "2026-07-19T03:00:27+07:00"
+          "start_local": "2026-07-12T04:00:32+07:00",
+          "end_local": "2026-07-19T04:00:32+07:00"
         },
         "last_30_days": {
           "sessions": 1,
@@ -5683,8 +5764,8 @@
           "reasoning": 357,
           "total": 311033,
           "all_in": 311390,
-          "start_local": "2026-06-19T03:00:27+07:00",
-          "end_local": "2026-07-19T03:00:27+07:00"
+          "start_local": "2026-06-19T04:00:32+07:00",
+          "end_local": "2026-07-19T04:00:32+07:00"
         }
       },
       "total": {
@@ -5751,8 +5832,8 @@
           "reasoning": 0,
           "total": 0,
           "all_in": 0,
-          "start_local": "2026-07-18T03:00:27+07:00",
-          "end_local": "2026-07-19T03:00:27+07:00"
+          "start_local": "2026-07-18T04:00:32+07:00",
+          "end_local": "2026-07-19T04:00:32+07:00"
         },
         "last_7_days": {
           "sessions": 0,
@@ -5765,8 +5846,8 @@
           "reasoning": 0,
           "total": 0,
           "all_in": 0,
-          "start_local": "2026-07-12T03:00:27+07:00",
-          "end_local": "2026-07-19T03:00:27+07:00"
+          "start_local": "2026-07-12T04:00:32+07:00",
+          "end_local": "2026-07-19T04:00:32+07:00"
         },
         "last_30_days": {
           "sessions": 5,
@@ -5779,8 +5860,8 @@
           "reasoning": 0,
           "total": 163640,
           "all_in": 163640,
-          "start_local": "2026-06-19T03:00:27+07:00",
-          "end_local": "2026-07-19T03:00:27+07:00"
+          "start_local": "2026-06-19T04:00:32+07:00",
+          "end_local": "2026-07-19T04:00:32+07:00"
         }
       },
       "total": {
@@ -5874,8 +5955,8 @@
           "reasoning": 0,
           "total": 0,
           "all_in": 0,
-          "start_local": "2026-07-18T03:00:27+07:00",
-          "end_local": "2026-07-19T03:00:27+07:00"
+          "start_local": "2026-07-18T04:00:33+07:00",
+          "end_local": "2026-07-19T04:00:33+07:00"
         },
         "last_7_days": {
           "sessions": 0,
@@ -5888,8 +5969,8 @@
           "reasoning": 0,
           "total": 0,
           "all_in": 0,
-          "start_local": "2026-07-12T03:00:27+07:00",
-          "end_local": "2026-07-19T03:00:27+07:00"
+          "start_local": "2026-07-12T04:00:33+07:00",
+          "end_local": "2026-07-19T04:00:33+07:00"
         },
         "last_30_days": {
           "sessions": 5,
@@ -5902,8 +5983,8 @@
           "reasoning": 0,
           "total": 142077,
           "all_in": 142077,
-          "start_local": "2026-06-19T03:00:27+07:00",
-          "end_local": "2026-07-19T03:00:27+07:00"
+          "start_local": "2026-06-19T04:00:33+07:00",
+          "end_local": "2026-07-19T04:00:33+07:00"
         }
       },
       "total": {
@@ -5970,8 +6051,8 @@
           "reasoning": 0,
           "total": 0,
           "all_in": 0,
-          "start_local": "2026-07-18T03:00:27+07:00",
-          "end_local": "2026-07-19T03:00:27+07:00"
+          "start_local": "2026-07-18T04:00:33+07:00",
+          "end_local": "2026-07-19T04:00:33+07:00"
         },
         "last_7_days": {
           "sessions": 0,
@@ -5984,8 +6065,8 @@
           "reasoning": 0,
           "total": 0,
           "all_in": 0,
-          "start_local": "2026-07-12T03:00:27+07:00",
-          "end_local": "2026-07-19T03:00:27+07:00"
+          "start_local": "2026-07-12T04:00:33+07:00",
+          "end_local": "2026-07-19T04:00:33+07:00"
         },
         "last_30_days": {
           "sessions": 3,
@@ -5998,8 +6079,8 @@
           "reasoning": 0,
           "total": 81929,
           "all_in": 81929,
-          "start_local": "2026-06-19T03:00:27+07:00",
-          "end_local": "2026-07-19T03:00:27+07:00"
+          "start_local": "2026-06-19T04:00:33+07:00",
+          "end_local": "2026-07-19T04:00:33+07:00"
         }
       },
       "total": {
@@ -6066,8 +6147,8 @@
           "reasoning": 0,
           "total": 0,
           "all_in": 0,
-          "start_local": "2026-07-18T03:00:27+07:00",
-          "end_local": "2026-07-19T03:00:27+07:00"
+          "start_local": "2026-07-18T04:00:34+07:00",
+          "end_local": "2026-07-19T04:00:34+07:00"
         },
         "last_7_days": {
           "sessions": 0,
@@ -6080,8 +6161,8 @@
           "reasoning": 0,
           "total": 0,
           "all_in": 0,
-          "start_local": "2026-07-12T03:00:27+07:00",
-          "end_local": "2026-07-19T03:00:27+07:00"
+          "start_local": "2026-07-12T04:00:34+07:00",
+          "end_local": "2026-07-19T04:00:34+07:00"
         },
         "last_30_days": {
           "sessions": 2,
@@ -6094,8 +6175,8 @@
           "reasoning": 0,
           "total": 50677,
           "all_in": 50677,
-          "start_local": "2026-06-19T03:00:27+07:00",
-          "end_local": "2026-07-19T03:00:27+07:00"
+          "start_local": "2026-06-19T04:00:34+07:00",
+          "end_local": "2026-07-19T04:00:34+07:00"
         }
       },
       "total": {
@@ -6162,8 +6243,8 @@
           "reasoning": 0,
           "total": 0,
           "all_in": 0,
-          "start_local": "2026-07-18T03:00:27+07:00",
-          "end_local": "2026-07-19T03:00:27+07:00"
+          "start_local": "2026-07-18T04:00:35+07:00",
+          "end_local": "2026-07-19T04:00:35+07:00"
         },
         "last_7_days": {
           "sessions": 0,
@@ -6176,8 +6257,8 @@
           "reasoning": 0,
           "total": 0,
           "all_in": 0,
-          "start_local": "2026-07-12T03:00:27+07:00",
-          "end_local": "2026-07-19T03:00:27+07:00"
+          "start_local": "2026-07-12T04:00:35+07:00",
+          "end_local": "2026-07-19T04:00:35+07:00"
         },
         "last_30_days": {
           "sessions": 1,
@@ -6190,8 +6271,8 @@
           "reasoning": 0,
           "total": 23291,
           "all_in": 23291,
-          "start_local": "2026-06-19T03:00:27+07:00",
-          "end_local": "2026-07-19T03:00:27+07:00"
+          "start_local": "2026-06-19T04:00:35+07:00",
+          "end_local": "2026-07-19T04:00:35+07:00"
         }
       },
       "total": {
@@ -6258,8 +6339,8 @@
           "reasoning": 0,
           "total": 0,
           "all_in": 0,
-          "start_local": "2026-07-18T03:00:27+07:00",
-          "end_local": "2026-07-19T03:00:27+07:00"
+          "start_local": "2026-07-18T04:00:35+07:00",
+          "end_local": "2026-07-19T04:00:35+07:00"
         },
         "last_7_days": {
           "sessions": 0,
@@ -6272,8 +6353,8 @@
           "reasoning": 0,
           "total": 0,
           "all_in": 0,
-          "start_local": "2026-07-12T03:00:27+07:00",
-          "end_local": "2026-07-19T03:00:27+07:00"
+          "start_local": "2026-07-12T04:00:35+07:00",
+          "end_local": "2026-07-19T04:00:35+07:00"
         },
         "last_30_days": {
           "sessions": 0,
@@ -6286,8 +6367,8 @@
           "reasoning": 0,
           "total": 0,
           "all_in": 0,
-          "start_local": "2026-06-19T03:00:27+07:00",
-          "end_local": "2026-07-19T03:00:27+07:00"
+          "start_local": "2026-06-19T04:00:35+07:00",
+          "end_local": "2026-07-19T04:00:35+07:00"
         }
       },
       "total": {
@@ -6319,8 +6400,8 @@
         },
         {
           "name": "Wilson PA",
-          "sessions": 45,
-          "total": 132561376
+          "sessions": 46,
+          "total": 133524220
         },
         {
           "name": "Fatty Subtitle Project",
@@ -6343,14 +6424,14 @@
           "total": 53405163
         },
         {
+          "name": "FU Album Dev",
+          "sessions": 4,
+          "total": 44548444
+        },
+        {
           "name": "Projects",
           "sessions": 12,
           "total": 41331647
-        },
-        {
-          "name": "FU Album Dev",
-          "sessions": 4,
-          "total": 37842606
         },
         {
           "name": "FU Subtitle Correction Project",
@@ -6386,6 +6467,11 @@
           "name": "Tourist wallet project",
           "sessions": 2,
           "total": 6718289
+        },
+        {
+          "name": "FU HR website",
+          "sessions": 1,
+          "total": 6113340
         },
         {
           "name": "#Maker",
@@ -6431,11 +6517,6 @@
           "name": "maker",
           "sessions": 1,
           "total": 1397803
-        },
-        {
-          "name": "FU HR website",
-          "sessions": 1,
-          "total": 1390270
         },
         {
           "name": "agent-fleet",
@@ -6498,6 +6579,11 @@
           "total": 85617
         },
         {
+          "name": "tmp",
+          "sessions": 3,
+          "total": 84995
+        },
+        {
           "name": "general-chat",
           "sessions": 3,
           "total": 67425
@@ -6511,11 +6597,6 @@
           "name": "app-building",
           "sessions": 1,
           "total": 54292
-        },
-        {
-          "name": "tmp",
-          "sessions": 2,
-          "total": 48759
         },
         {
           "name": "fu_subtitle_fix_3aE3rUUbrJE",
@@ -6543,11 +6624,11 @@
           "total": 4532
         }
       ],
-      "attributed_total": 1103717205,
-      "unattributed_total": 2309035858,
-      "unattributed_sessions": 1409,
-      "total": 3412753063,
-      "coverage": 0.3234096298868372
+      "attributed_total": 1116145193,
+      "unattributed_total": 2312317396,
+      "unattributed_sessions": 1410,
+      "total": 3428462589,
+      "coverage": 0.325552682587548
     },
     "last_7_days": {
       "projects": [
@@ -6573,8 +6654,8 @@
         },
         {
           "name": "Wilson PA",
-          "sessions": 8,
-          "total": 60127262
+          "sessions": 9,
+          "total": 61090106
         },
         {
           "name": "Lexx",
@@ -6584,7 +6665,7 @@
         {
           "name": "FU Album Dev",
           "sessions": 4,
-          "total": 37842606
+          "total": 44548444
         },
         {
           "name": "FU Subtitle Correction Project",
@@ -6624,7 +6705,7 @@
         {
           "name": "FU HR website",
           "sessions": 1,
-          "total": 1390270
+          "total": 6113340
         },
         {
           "name": "agent-fleet",
@@ -6647,14 +6728,14 @@
           "total": 248355
         },
         {
+          "name": "tmp",
+          "sessions": 3,
+          "total": 84995
+        },
+        {
           "name": "general-chat",
           "sessions": 3,
           "total": 67425
-        },
-        {
-          "name": "tmp",
-          "sessions": 2,
-          "total": 48759
         },
         {
           "name": "hermes-usage-dashboard",
@@ -6672,11 +6753,11 @@
           "total": 4532
         }
       ],
-      "attributed_total": 743702378,
-      "unattributed_total": 321864109,
-      "unattributed_sessions": 219,
-      "total": 1065566487,
-      "coverage": 0.6979408484343596
+      "attributed_total": 756130366,
+      "unattributed_total": 325145647,
+      "unattributed_sessions": 220,
+      "total": 1081276013,
+      "coverage": 0.6992944973431127
     },
     "last_30_days": {
       "projects": [
@@ -6687,8 +6768,8 @@
         },
         {
           "name": "Wilson PA",
-          "sessions": 40,
-          "total": 129967265
+          "sessions": 41,
+          "total": 130930109
         },
         {
           "name": "Fatty Subtitle Project",
@@ -6711,14 +6792,14 @@
           "total": 53128318
         },
         {
+          "name": "FU Album Dev",
+          "sessions": 4,
+          "total": 44548444
+        },
+        {
           "name": "Projects",
           "sessions": 10,
           "total": 38518067
-        },
-        {
-          "name": "FU Album Dev",
-          "sessions": 4,
-          "total": 37842606
         },
         {
           "name": "FU Subtitle Correction Project",
@@ -6751,6 +6832,11 @@
           "total": 6718289
         },
         {
+          "name": "FU HR website",
+          "sessions": 1,
+          "total": 6113340
+        },
+        {
           "name": "Tourist Wallet",
           "sessions": 1,
           "total": 2569807
@@ -6759,11 +6845,6 @@
           "name": "Lexx & Johnny, Wilson the Volley",
           "sessions": 1,
           "total": 2023561
-        },
-        {
-          "name": "FU HR website",
-          "sessions": 1,
-          "total": 1390270
         },
         {
           "name": "agent-fleet",
@@ -6791,6 +6872,11 @@
           "total": 191132
         },
         {
+          "name": "tmp",
+          "sessions": 3,
+          "total": 84995
+        },
+        {
           "name": "general-chat",
           "sessions": 3,
           "total": 67425
@@ -6799,11 +6885,6 @@
           "name": "fu_youtube_studio",
           "sessions": 3,
           "total": 65197
-        },
-        {
-          "name": "tmp",
-          "sessions": 2,
-          "total": 48759
         },
         {
           "name": "fu_subtitle_fix_3aE3rUUbrJE",
@@ -6831,11 +6912,11 @@
           "total": 4532
         }
       ],
-      "attributed_total": 1037956813,
-      "unattributed_total": 1052846170,
-      "unattributed_sessions": 714,
-      "total": 2090802983,
-      "coverage": 0.49643932089224496
+      "attributed_total": 1050384801,
+      "unattributed_total": 1056127708,
+      "unattributed_sessions": 715,
+      "total": 2106512509,
+      "coverage": 0.4986368685266611
     }
   },
   "metadata_only_models": [
