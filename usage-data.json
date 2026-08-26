@@ -1,5 +1,5 @@
 {
-  "generated_at_local": "2026-08-27T01:00:25.732951+07:00",
+  "generated_at_local": "2026-08-27T01:47:12.091654+07:00",
   "timezone": "Asia/Bangkok",
   "model": {
     "provider": "openai-codex",
@@ -2167,8 +2167,8 @@
           "reasoning": 0,
           "total": 0,
           "all_in": 0,
-          "start_local": "2026-08-26T01:00:25+07:00",
-          "end_local": "2026-08-27T01:00:25+07:00"
+          "start_local": "2026-08-26T01:47:12+07:00",
+          "end_local": "2026-08-27T01:47:12+07:00"
         },
         "last_7_days": {
           "sessions": 0,
@@ -2181,8 +2181,8 @@
           "reasoning": 0,
           "total": 0,
           "all_in": 0,
-          "start_local": "2026-08-20T01:00:25+07:00",
-          "end_local": "2026-08-27T01:00:25+07:00"
+          "start_local": "2026-08-20T01:47:12+07:00",
+          "end_local": "2026-08-27T01:47:12+07:00"
         },
         "last_30_days": {
           "sessions": 0,
@@ -2195,8 +2195,8 @@
           "reasoning": 0,
           "total": 0,
           "all_in": 0,
-          "start_local": "2026-07-28T01:00:25+07:00",
-          "end_local": "2026-08-27T01:00:25+07:00"
+          "start_local": "2026-07-28T01:47:12+07:00",
+          "end_local": "2026-08-27T01:47:12+07:00"
         }
       },
       "rolling_daily": {
@@ -2213,18 +2213,18 @@
         "primary": false
       },
       "overall": {
-        "sessions": 2146,
+        "sessions": 2147,
         "first_local": "2026-04-24 15:59:57",
-        "last_local": "2026-08-26 16:20:29",
-        "api_calls": 57593,
-        "tool_calls": 98098,
-        "input": 707133685,
-        "output": 23743868,
-        "cache_read": 4882564610,
+        "last_local": "2026-08-27 01:18:44",
+        "api_calls": 57597,
+        "tool_calls": 98103,
+        "input": 707170565,
+        "output": 23745170,
+        "cache_read": 4882656258,
         "cache_write": 2544417,
-        "reasoning": 5310687,
-        "total": 5615986580,
-        "all_in": 5621297267
+        "reasoning": 5311044,
+        "total": 5616116410,
+        "all_in": 5621427454
       },
       "daily": [
         {
@@ -3747,6 +3747,19 @@
           "reasoning": 228,
           "total": 141322,
           "all_in": 141550
+        },
+        {
+          "day": "2026-08-27",
+          "sessions": 1,
+          "calls": 4,
+          "tool_calls": 5,
+          "input": 36880,
+          "output": 1302,
+          "cache_read": 91648,
+          "cache_write": 0,
+          "reasoning": 357,
+          "total": 129830,
+          "all_in": 130187
         }
       ],
       "weekly": [
@@ -4004,61 +4017,61 @@
         },
         {
           "week_start": "2026-08-24",
-          "sessions": 8,
-          "calls": 67,
-          "tool_calls": 104,
-          "input": 531247,
-          "output": 21079,
-          "cache_read": 3344896,
+          "sessions": 9,
+          "calls": 71,
+          "tool_calls": 109,
+          "input": 568127,
+          "output": 22381,
+          "cache_read": 3436544,
           "cache_write": 0,
-          "reasoning": 6736,
-          "total": 3897222,
-          "all_in": 3903958,
+          "reasoning": 7093,
+          "total": 4027052,
+          "all_in": 4034145,
           "week_end": "2026-08-30"
         }
       ],
       "periods": {
         "last_24_hours": {
-          "sessions": 2,
-          "calls": 5,
-          "tool_calls": 0,
-          "input": 112728,
-          "output": 434,
-          "cache_read": 28160,
+          "sessions": 3,
+          "calls": 9,
+          "tool_calls": 5,
+          "input": 149608,
+          "output": 1736,
+          "cache_read": 119808,
           "cache_write": 0,
-          "reasoning": 228,
-          "total": 141322,
-          "all_in": 141550,
-          "start_local": "2026-08-26T01:00:25+07:00",
-          "end_local": "2026-08-27T01:00:25+07:00"
+          "reasoning": 585,
+          "total": 271152,
+          "all_in": 271737,
+          "start_local": "2026-08-26T01:47:12+07:00",
+          "end_local": "2026-08-27T01:47:12+07:00"
         },
         "last_7_days": {
-          "sessions": 22,
-          "calls": 569,
-          "tool_calls": 735,
-          "input": 3478040,
-          "output": 258480,
-          "cache_read": 126859008,
+          "sessions": 23,
+          "calls": 573,
+          "tool_calls": 740,
+          "input": 3514920,
+          "output": 259782,
+          "cache_read": 126950656,
           "cache_write": 0,
-          "reasoning": 76251,
-          "total": 130595528,
-          "all_in": 130671779,
-          "start_local": "2026-08-20T01:00:25+07:00",
-          "end_local": "2026-08-27T01:00:25+07:00"
+          "reasoning": 76608,
+          "total": 130725358,
+          "all_in": 130801966,
+          "start_local": "2026-08-20T01:47:12+07:00",
+          "end_local": "2026-08-27T01:47:12+07:00"
         },
         "last_30_days": {
-          "sessions": 203,
-          "calls": 5025,
-          "tool_calls": 10301,
-          "input": 40025481,
-          "output": 2562127,
-          "cache_read": 697861888,
+          "sessions": 202,
+          "calls": 5001,
+          "tool_calls": 10256,
+          "input": 39668025,
+          "output": 2546972,
+          "cache_read": 695412480,
           "cache_write": 0,
-          "reasoning": 718880,
-          "total": 740449496,
-          "all_in": 741168376,
-          "start_local": "2026-07-28T01:00:25+07:00",
-          "end_local": "2026-08-27T01:00:25+07:00"
+          "reasoning": 716735,
+          "total": 737627477,
+          "all_in": 738344212,
+          "start_local": "2026-07-28T01:47:12+07:00",
+          "end_local": "2026-08-27T01:47:12+07:00"
         }
       },
       "rolling_daily": {
@@ -4153,21 +4166,34 @@
             "reasoning": 228,
             "total": 141322,
             "all_in": 141550
+          },
+          {
+            "day": "2026-08-27",
+            "sessions": 1,
+            "calls": 4,
+            "tool_calls": 5,
+            "input": 36880,
+            "output": 1302,
+            "cache_read": 91648,
+            "cache_write": 0,
+            "reasoning": 357,
+            "total": 129830,
+            "all_in": 130187
           }
         ],
         "30d": [
           {
             "day": "2026-07-28",
-            "sessions": 5,
-            "calls": 62,
-            "tool_calls": 93,
-            "input": 679261,
-            "output": 37512,
-            "cache_read": 4173824,
+            "sessions": 3,
+            "calls": 34,
+            "tool_calls": 43,
+            "input": 284925,
+            "output": 21055,
+            "cache_read": 1632768,
             "cache_write": 0,
-            "reasoning": 6327,
-            "total": 4890597,
-            "all_in": 4896924
+            "reasoning": 3825,
+            "total": 1938748,
+            "all_in": 1942573
           },
           {
             "day": "2026-07-29",
@@ -4545,6 +4571,19 @@
             "reasoning": 228,
             "total": 141322,
             "all_in": 141550
+          },
+          {
+            "day": "2026-08-27",
+            "sessions": 1,
+            "calls": 4,
+            "tool_calls": 5,
+            "input": 36880,
+            "output": 1302,
+            "cache_read": 91648,
+            "cache_write": 0,
+            "reasoning": 357,
+            "total": 129830,
+            "all_in": 130187
           }
         ]
       }
@@ -4554,19 +4593,19 @@
     {
       "provider": "openai-codex",
       "model": "gpt-5.6-sol",
-      "sessions": 801,
-      "calls": 24438,
-      "tool_calls": 52636,
-      "input": 183439012,
-      "output": 11417091,
-      "cache_read": 3137367168,
+      "sessions": 802,
+      "calls": 24442,
+      "tool_calls": 52641,
+      "input": 183475892,
+      "output": 11418393,
+      "cache_read": 3137458816,
       "cache_write": 0,
-      "reasoning": 2866276,
-      "total": 3332223271,
-      "all_in": 3335089547,
+      "reasoning": 2866633,
+      "total": 3332353101,
+      "all_in": 3335219734,
       "key": "openai-codex / gpt-5.6-sol",
       "first_local": "2026-07-07 03:21:20",
-      "last_local": "2026-08-26 16:20:29"
+      "last_local": "2026-08-27 01:18:44"
     },
     {
       "provider": "openai-codex",
@@ -5461,6 +5500,19 @@
           "reasoning": 228,
           "total": 141322,
           "all_in": 141550
+        },
+        {
+          "day": "2026-08-27",
+          "sessions": 1,
+          "calls": 4,
+          "tool_calls": 5,
+          "input": 36880,
+          "output": 1302,
+          "cache_read": 91648,
+          "cache_write": 0,
+          "reasoning": 357,
+          "total": 129830,
+          "all_in": 130187
         }
       ],
       "weekly": [
@@ -5564,61 +5616,61 @@
         },
         {
           "week_start": "2026-08-24",
-          "sessions": 8,
-          "calls": 67,
-          "tool_calls": 104,
-          "input": 531247,
-          "output": 21079,
-          "cache_read": 3344896,
+          "sessions": 9,
+          "calls": 71,
+          "tool_calls": 109,
+          "input": 568127,
+          "output": 22381,
+          "cache_read": 3436544,
           "cache_write": 0,
-          "reasoning": 6736,
-          "total": 3897222,
-          "all_in": 3903958,
+          "reasoning": 7093,
+          "total": 4027052,
+          "all_in": 4034145,
           "week_end": "2026-08-30"
         }
       ],
       "periods": {
         "last_24_hours": {
-          "sessions": 2,
-          "calls": 5,
-          "tool_calls": 0,
-          "input": 112728,
-          "output": 434,
-          "cache_read": 28160,
+          "sessions": 3,
+          "calls": 9,
+          "tool_calls": 5,
+          "input": 149608,
+          "output": 1736,
+          "cache_read": 119808,
           "cache_write": 0,
-          "reasoning": 228,
-          "total": 141322,
-          "all_in": 141550,
-          "start_local": "2026-08-26T01:00:25+07:00",
-          "end_local": "2026-08-27T01:00:25+07:00"
+          "reasoning": 585,
+          "total": 271152,
+          "all_in": 271737,
+          "start_local": "2026-08-26T01:47:12+07:00",
+          "end_local": "2026-08-27T01:47:12+07:00"
         },
         "last_7_days": {
-          "sessions": 22,
-          "calls": 569,
-          "tool_calls": 735,
-          "input": 3478040,
-          "output": 258480,
-          "cache_read": 126859008,
+          "sessions": 23,
+          "calls": 573,
+          "tool_calls": 740,
+          "input": 3514920,
+          "output": 259782,
+          "cache_read": 126950656,
           "cache_write": 0,
-          "reasoning": 76251,
-          "total": 130595528,
-          "all_in": 130671779,
-          "start_local": "2026-08-20T01:00:25+07:00",
-          "end_local": "2026-08-27T01:00:25+07:00"
+          "reasoning": 76608,
+          "total": 130725358,
+          "all_in": 130801966,
+          "start_local": "2026-08-20T01:47:12+07:00",
+          "end_local": "2026-08-27T01:47:12+07:00"
         },
         "last_30_days": {
-          "sessions": 176,
-          "calls": 4628,
-          "tool_calls": 9566,
-          "input": 35170142,
-          "output": 2273514,
-          "cache_read": 661371264,
+          "sessions": 175,
+          "calls": 4604,
+          "tool_calls": 9521,
+          "input": 34812686,
+          "output": 2258359,
+          "cache_read": 658921856,
           "cache_write": 0,
-          "reasoning": 550659,
-          "total": 698814920,
-          "all_in": 699365579,
-          "start_local": "2026-07-28T01:00:25+07:00",
-          "end_local": "2026-08-27T01:00:25+07:00"
+          "reasoning": 548514,
+          "total": 695992901,
+          "all_in": 696541415,
+          "start_local": "2026-07-28T01:47:12+07:00",
+          "end_local": "2026-08-27T01:47:12+07:00"
         }
       },
       "rolling_daily": {
@@ -5713,21 +5765,34 @@
             "reasoning": 228,
             "total": 141322,
             "all_in": 141550
+          },
+          {
+            "day": "2026-08-27",
+            "sessions": 1,
+            "calls": 4,
+            "tool_calls": 5,
+            "input": 36880,
+            "output": 1302,
+            "cache_read": 91648,
+            "cache_write": 0,
+            "reasoning": 357,
+            "total": 129830,
+            "all_in": 130187
           }
         ],
         "30d": [
           {
             "day": "2026-07-28",
-            "sessions": 5,
-            "calls": 62,
-            "tool_calls": 93,
-            "input": 679261,
-            "output": 37512,
-            "cache_read": 4173824,
+            "sessions": 3,
+            "calls": 34,
+            "tool_calls": 43,
+            "input": 284925,
+            "output": 21055,
+            "cache_read": 1632768,
             "cache_write": 0,
-            "reasoning": 6327,
-            "total": 4890597,
-            "all_in": 4896924
+            "reasoning": 3825,
+            "total": 1938748,
+            "all_in": 1942573
           },
           {
             "day": "2026-07-29",
@@ -6092,25 +6157,38 @@
             "reasoning": 228,
             "total": 141322,
             "all_in": 141550
+          },
+          {
+            "day": "2026-08-27",
+            "sessions": 1,
+            "calls": 4,
+            "tool_calls": 5,
+            "input": 36880,
+            "output": 1302,
+            "cache_read": 91648,
+            "cache_write": 0,
+            "reasoning": 357,
+            "total": 129830,
+            "all_in": 130187
           }
         ]
       },
       "total": {
         "provider": "openai-codex",
         "model": "gpt-5.6-sol",
-        "sessions": 801,
-        "calls": 24438,
-        "tool_calls": 52636,
-        "input": 183439012,
-        "output": 11417091,
-        "cache_read": 3137367168,
+        "sessions": 802,
+        "calls": 24442,
+        "tool_calls": 52641,
+        "input": 183475892,
+        "output": 11418393,
+        "cache_read": 3137458816,
         "cache_write": 0,
-        "reasoning": 2866276,
-        "total": 3332223271,
-        "all_in": 3335089547,
+        "reasoning": 2866633,
+        "total": 3332353101,
+        "all_in": 3335219734,
         "key": "openai-codex / gpt-5.6-sol",
         "first_local": "2026-07-07 03:21:20",
-        "last_local": "2026-08-26 16:20:29"
+        "last_local": "2026-08-27 01:18:44"
       }
     },
     "openai-codex / gpt-5.5": {
@@ -7184,8 +7262,8 @@
           "reasoning": 0,
           "total": 0,
           "all_in": 0,
-          "start_local": "2026-08-26T01:00:25+07:00",
-          "end_local": "2026-08-27T01:00:25+07:00"
+          "start_local": "2026-08-26T01:47:12+07:00",
+          "end_local": "2026-08-27T01:47:12+07:00"
         },
         "last_7_days": {
           "sessions": 0,
@@ -7198,8 +7276,8 @@
           "reasoning": 0,
           "total": 0,
           "all_in": 0,
-          "start_local": "2026-08-20T01:00:25+07:00",
-          "end_local": "2026-08-27T01:00:25+07:00"
+          "start_local": "2026-08-20T01:47:12+07:00",
+          "end_local": "2026-08-27T01:47:12+07:00"
         },
         "last_30_days": {
           "sessions": 0,
@@ -7212,8 +7290,8 @@
           "reasoning": 0,
           "total": 0,
           "all_in": 0,
-          "start_local": "2026-07-28T01:00:25+07:00",
-          "end_local": "2026-08-27T01:00:25+07:00"
+          "start_local": "2026-07-28T01:47:12+07:00",
+          "end_local": "2026-08-27T01:47:12+07:00"
         }
       },
       "rolling_daily": {
@@ -7391,8 +7469,8 @@
           "reasoning": 0,
           "total": 0,
           "all_in": 0,
-          "start_local": "2026-08-26T01:00:25+07:00",
-          "end_local": "2026-08-27T01:00:25+07:00"
+          "start_local": "2026-08-26T01:47:12+07:00",
+          "end_local": "2026-08-27T01:47:12+07:00"
         },
         "last_7_days": {
           "sessions": 0,
@@ -7405,8 +7483,8 @@
           "reasoning": 0,
           "total": 0,
           "all_in": 0,
-          "start_local": "2026-08-20T01:00:25+07:00",
-          "end_local": "2026-08-27T01:00:25+07:00"
+          "start_local": "2026-08-20T01:47:12+07:00",
+          "end_local": "2026-08-27T01:47:12+07:00"
         },
         "last_30_days": {
           "sessions": 0,
@@ -7419,8 +7497,8 @@
           "reasoning": 0,
           "total": 0,
           "all_in": 0,
-          "start_local": "2026-07-28T01:00:25+07:00",
-          "end_local": "2026-08-27T01:00:25+07:00"
+          "start_local": "2026-07-28T01:47:12+07:00",
+          "end_local": "2026-08-27T01:47:12+07:00"
         }
       },
       "rolling_daily": {
@@ -7557,8 +7635,8 @@
           "reasoning": 0,
           "total": 0,
           "all_in": 0,
-          "start_local": "2026-08-26T01:00:25+07:00",
-          "end_local": "2026-08-27T01:00:25+07:00"
+          "start_local": "2026-08-26T01:47:12+07:00",
+          "end_local": "2026-08-27T01:47:12+07:00"
         },
         "last_7_days": {
           "sessions": 0,
@@ -7571,8 +7649,8 @@
           "reasoning": 0,
           "total": 0,
           "all_in": 0,
-          "start_local": "2026-08-20T01:00:25+07:00",
-          "end_local": "2026-08-27T01:00:25+07:00"
+          "start_local": "2026-08-20T01:47:12+07:00",
+          "end_local": "2026-08-27T01:47:12+07:00"
         },
         "last_30_days": {
           "sessions": 0,
@@ -7585,8 +7663,8 @@
           "reasoning": 0,
           "total": 0,
           "all_in": 0,
-          "start_local": "2026-07-28T01:00:25+07:00",
-          "end_local": "2026-08-27T01:00:25+07:00"
+          "start_local": "2026-07-28T01:47:12+07:00",
+          "end_local": "2026-08-27T01:47:12+07:00"
         }
       },
       "rolling_daily": {
@@ -7697,8 +7775,8 @@
           "reasoning": 0,
           "total": 0,
           "all_in": 0,
-          "start_local": "2026-08-26T01:00:25+07:00",
-          "end_local": "2026-08-27T01:00:25+07:00"
+          "start_local": "2026-08-26T01:47:12+07:00",
+          "end_local": "2026-08-27T01:47:12+07:00"
         },
         "last_7_days": {
           "sessions": 0,
@@ -7711,8 +7789,8 @@
           "reasoning": 0,
           "total": 0,
           "all_in": 0,
-          "start_local": "2026-08-20T01:00:25+07:00",
-          "end_local": "2026-08-27T01:00:25+07:00"
+          "start_local": "2026-08-20T01:47:12+07:00",
+          "end_local": "2026-08-27T01:47:12+07:00"
         },
         "last_30_days": {
           "sessions": 26,
@@ -7725,8 +7803,8 @@
           "reasoning": 161210,
           "total": 35626645,
           "all_in": 35787855,
-          "start_local": "2026-07-28T01:00:25+07:00",
-          "end_local": "2026-08-27T01:00:25+07:00"
+          "start_local": "2026-07-28T01:47:12+07:00",
+          "end_local": "2026-08-27T01:47:12+07:00"
         }
       },
       "rolling_daily": {
@@ -7944,8 +8022,8 @@
           "reasoning": 0,
           "total": 0,
           "all_in": 0,
-          "start_local": "2026-08-26T01:00:25+07:00",
-          "end_local": "2026-08-27T01:00:25+07:00"
+          "start_local": "2026-08-26T01:47:12+07:00",
+          "end_local": "2026-08-27T01:47:12+07:00"
         },
         "last_7_days": {
           "sessions": 0,
@@ -7958,8 +8036,8 @@
           "reasoning": 0,
           "total": 0,
           "all_in": 0,
-          "start_local": "2026-08-20T01:00:25+07:00",
-          "end_local": "2026-08-27T01:00:25+07:00"
+          "start_local": "2026-08-20T01:47:12+07:00",
+          "end_local": "2026-08-27T01:47:12+07:00"
         },
         "last_30_days": {
           "sessions": 1,
@@ -7972,8 +8050,8 @@
           "reasoning": 7011,
           "total": 6007931,
           "all_in": 6014942,
-          "start_local": "2026-07-28T01:00:25+07:00",
-          "end_local": "2026-08-27T01:00:25+07:00"
+          "start_local": "2026-07-28T01:47:12+07:00",
+          "end_local": "2026-08-27T01:47:12+07:00"
         }
       },
       "rolling_daily": {
@@ -8058,8 +8136,8 @@
           "reasoning": 0,
           "total": 0,
           "all_in": 0,
-          "start_local": "2026-08-26T01:00:25+07:00",
-          "end_local": "2026-08-27T01:00:25+07:00"
+          "start_local": "2026-08-26T01:47:12+07:00",
+          "end_local": "2026-08-27T01:47:12+07:00"
         },
         "last_7_days": {
           "sessions": 0,
@@ -8072,8 +8150,8 @@
           "reasoning": 0,
           "total": 0,
           "all_in": 0,
-          "start_local": "2026-08-20T01:00:25+07:00",
-          "end_local": "2026-08-27T01:00:25+07:00"
+          "start_local": "2026-08-20T01:47:12+07:00",
+          "end_local": "2026-08-27T01:47:12+07:00"
         },
         "last_30_days": {
           "sessions": 0,
@@ -8086,8 +8164,8 @@
           "reasoning": 0,
           "total": 0,
           "all_in": 0,
-          "start_local": "2026-07-28T01:00:25+07:00",
-          "end_local": "2026-08-27T01:00:25+07:00"
+          "start_local": "2026-07-28T01:47:12+07:00",
+          "end_local": "2026-08-27T01:47:12+07:00"
         }
       },
       "rolling_daily": {
@@ -8185,8 +8263,8 @@
           "reasoning": 0,
           "total": 0,
           "all_in": 0,
-          "start_local": "2026-08-26T01:00:25+07:00",
-          "end_local": "2026-08-27T01:00:25+07:00"
+          "start_local": "2026-08-26T01:47:12+07:00",
+          "end_local": "2026-08-27T01:47:12+07:00"
         },
         "last_7_days": {
           "sessions": 0,
@@ -8199,8 +8277,8 @@
           "reasoning": 0,
           "total": 0,
           "all_in": 0,
-          "start_local": "2026-08-20T01:00:25+07:00",
-          "end_local": "2026-08-27T01:00:25+07:00"
+          "start_local": "2026-08-20T01:47:12+07:00",
+          "end_local": "2026-08-27T01:47:12+07:00"
         },
         "last_30_days": {
           "sessions": 0,
@@ -8213,8 +8291,8 @@
           "reasoning": 0,
           "total": 0,
           "all_in": 0,
-          "start_local": "2026-07-28T01:00:25+07:00",
-          "end_local": "2026-08-27T01:00:25+07:00"
+          "start_local": "2026-07-28T01:47:12+07:00",
+          "end_local": "2026-08-27T01:47:12+07:00"
         }
       },
       "rolling_daily": {
@@ -8285,8 +8363,8 @@
           "reasoning": 0,
           "total": 0,
           "all_in": 0,
-          "start_local": "2026-08-26T01:00:25+07:00",
-          "end_local": "2026-08-27T01:00:25+07:00"
+          "start_local": "2026-08-26T01:47:12+07:00",
+          "end_local": "2026-08-27T01:47:12+07:00"
         },
         "last_7_days": {
           "sessions": 0,
@@ -8299,8 +8377,8 @@
           "reasoning": 0,
           "total": 0,
           "all_in": 0,
-          "start_local": "2026-08-20T01:00:25+07:00",
-          "end_local": "2026-08-27T01:00:25+07:00"
+          "start_local": "2026-08-20T01:47:12+07:00",
+          "end_local": "2026-08-27T01:47:12+07:00"
         },
         "last_30_days": {
           "sessions": 0,
@@ -8313,8 +8391,8 @@
           "reasoning": 0,
           "total": 0,
           "all_in": 0,
-          "start_local": "2026-07-28T01:00:25+07:00",
-          "end_local": "2026-08-27T01:00:25+07:00"
+          "start_local": "2026-07-28T01:47:12+07:00",
+          "end_local": "2026-08-27T01:47:12+07:00"
         }
       },
       "rolling_daily": {
@@ -8385,8 +8463,8 @@
           "reasoning": 0,
           "total": 0,
           "all_in": 0,
-          "start_local": "2026-08-26T01:00:25+07:00",
-          "end_local": "2026-08-27T01:00:25+07:00"
+          "start_local": "2026-08-26T01:47:12+07:00",
+          "end_local": "2026-08-27T01:47:12+07:00"
         },
         "last_7_days": {
           "sessions": 0,
@@ -8399,8 +8477,8 @@
           "reasoning": 0,
           "total": 0,
           "all_in": 0,
-          "start_local": "2026-08-20T01:00:25+07:00",
-          "end_local": "2026-08-27T01:00:25+07:00"
+          "start_local": "2026-08-20T01:47:12+07:00",
+          "end_local": "2026-08-27T01:47:12+07:00"
         },
         "last_30_days": {
           "sessions": 0,
@@ -8413,8 +8491,8 @@
           "reasoning": 0,
           "total": 0,
           "all_in": 0,
-          "start_local": "2026-07-28T01:00:25+07:00",
-          "end_local": "2026-08-27T01:00:25+07:00"
+          "start_local": "2026-07-28T01:47:12+07:00",
+          "end_local": "2026-08-27T01:47:12+07:00"
         }
       },
       "rolling_daily": {
@@ -8512,8 +8590,8 @@
           "reasoning": 0,
           "total": 0,
           "all_in": 0,
-          "start_local": "2026-08-26T01:00:25+07:00",
-          "end_local": "2026-08-27T01:00:25+07:00"
+          "start_local": "2026-08-26T01:47:12+07:00",
+          "end_local": "2026-08-27T01:47:12+07:00"
         },
         "last_7_days": {
           "sessions": 0,
@@ -8526,8 +8604,8 @@
           "reasoning": 0,
           "total": 0,
           "all_in": 0,
-          "start_local": "2026-08-20T01:00:25+07:00",
-          "end_local": "2026-08-27T01:00:25+07:00"
+          "start_local": "2026-08-20T01:47:12+07:00",
+          "end_local": "2026-08-27T01:47:12+07:00"
         },
         "last_30_days": {
           "sessions": 0,
@@ -8540,8 +8618,8 @@
           "reasoning": 0,
           "total": 0,
           "all_in": 0,
-          "start_local": "2026-07-28T01:00:25+07:00",
-          "end_local": "2026-08-27T01:00:25+07:00"
+          "start_local": "2026-07-28T01:47:12+07:00",
+          "end_local": "2026-08-27T01:47:12+07:00"
         }
       },
       "rolling_daily": {
@@ -8612,8 +8690,8 @@
           "reasoning": 0,
           "total": 0,
           "all_in": 0,
-          "start_local": "2026-08-26T01:00:25+07:00",
-          "end_local": "2026-08-27T01:00:25+07:00"
+          "start_local": "2026-08-26T01:47:12+07:00",
+          "end_local": "2026-08-27T01:47:12+07:00"
         },
         "last_7_days": {
           "sessions": 0,
@@ -8626,8 +8704,8 @@
           "reasoning": 0,
           "total": 0,
           "all_in": 0,
-          "start_local": "2026-08-20T01:00:25+07:00",
-          "end_local": "2026-08-27T01:00:25+07:00"
+          "start_local": "2026-08-20T01:47:12+07:00",
+          "end_local": "2026-08-27T01:47:12+07:00"
         },
         "last_30_days": {
           "sessions": 0,
@@ -8640,8 +8718,8 @@
           "reasoning": 0,
           "total": 0,
           "all_in": 0,
-          "start_local": "2026-07-28T01:00:25+07:00",
-          "end_local": "2026-08-27T01:00:25+07:00"
+          "start_local": "2026-07-28T01:47:12+07:00",
+          "end_local": "2026-08-27T01:47:12+07:00"
         }
       },
       "rolling_daily": {
@@ -8712,8 +8790,8 @@
           "reasoning": 0,
           "total": 0,
           "all_in": 0,
-          "start_local": "2026-08-26T01:00:25+07:00",
-          "end_local": "2026-08-27T01:00:25+07:00"
+          "start_local": "2026-08-26T01:47:12+07:00",
+          "end_local": "2026-08-27T01:47:12+07:00"
         },
         "last_7_days": {
           "sessions": 0,
@@ -8726,8 +8804,8 @@
           "reasoning": 0,
           "total": 0,
           "all_in": 0,
-          "start_local": "2026-08-20T01:00:25+07:00",
-          "end_local": "2026-08-27T01:00:25+07:00"
+          "start_local": "2026-08-20T01:47:12+07:00",
+          "end_local": "2026-08-27T01:47:12+07:00"
         },
         "last_30_days": {
           "sessions": 0,
@@ -8740,8 +8818,8 @@
           "reasoning": 0,
           "total": 0,
           "all_in": 0,
-          "start_local": "2026-07-28T01:00:25+07:00",
-          "end_local": "2026-08-27T01:00:25+07:00"
+          "start_local": "2026-07-28T01:47:12+07:00",
+          "end_local": "2026-08-27T01:47:12+07:00"
         }
       },
       "rolling_daily": {
@@ -8812,8 +8890,8 @@
           "reasoning": 0,
           "total": 0,
           "all_in": 0,
-          "start_local": "2026-08-26T01:00:25+07:00",
-          "end_local": "2026-08-27T01:00:25+07:00"
+          "start_local": "2026-08-26T01:47:12+07:00",
+          "end_local": "2026-08-27T01:47:12+07:00"
         },
         "last_7_days": {
           "sessions": 0,
@@ -8826,8 +8904,8 @@
           "reasoning": 0,
           "total": 0,
           "all_in": 0,
-          "start_local": "2026-08-20T01:00:25+07:00",
-          "end_local": "2026-08-27T01:00:25+07:00"
+          "start_local": "2026-08-20T01:47:12+07:00",
+          "end_local": "2026-08-27T01:47:12+07:00"
         },
         "last_30_days": {
           "sessions": 0,
@@ -8840,8 +8918,8 @@
           "reasoning": 0,
           "total": 0,
           "all_in": 0,
-          "start_local": "2026-07-28T01:00:25+07:00",
-          "end_local": "2026-08-27T01:00:25+07:00"
+          "start_local": "2026-07-28T01:47:12+07:00",
+          "end_local": "2026-08-27T01:47:12+07:00"
         }
       },
       "rolling_daily": {
@@ -8912,8 +8990,8 @@
           "reasoning": 0,
           "total": 0,
           "all_in": 0,
-          "start_local": "2026-08-26T01:00:25+07:00",
-          "end_local": "2026-08-27T01:00:25+07:00"
+          "start_local": "2026-08-26T01:47:12+07:00",
+          "end_local": "2026-08-27T01:47:12+07:00"
         },
         "last_7_days": {
           "sessions": 0,
@@ -8926,8 +9004,8 @@
           "reasoning": 0,
           "total": 0,
           "all_in": 0,
-          "start_local": "2026-08-20T01:00:25+07:00",
-          "end_local": "2026-08-27T01:00:25+07:00"
+          "start_local": "2026-08-20T01:47:12+07:00",
+          "end_local": "2026-08-27T01:47:12+07:00"
         },
         "last_30_days": {
           "sessions": 0,
@@ -8940,8 +9018,8 @@
           "reasoning": 0,
           "total": 0,
           "all_in": 0,
-          "start_local": "2026-07-28T01:00:25+07:00",
-          "end_local": "2026-08-27T01:00:25+07:00"
+          "start_local": "2026-07-28T01:47:12+07:00",
+          "end_local": "2026-08-27T01:47:12+07:00"
         }
       },
       "rolling_daily": {
@@ -9032,8 +9110,8 @@
         },
         {
           "name": "Lexx",
-          "sessions": 33,
-          "total": 82174627
+          "sessions": 34,
+          "total": 82304457
         },
         {
           "name": "research📖",
@@ -9286,11 +9364,11 @@
           "total": 4532
         }
       ],
-      "attributed_total": 3090764346,
+      "attributed_total": 3090894176,
       "unattributed_total": 2525222234,
       "unattributed_sessions": 1523,
-      "total": 5615986580,
-      "coverage": 0.5503510918289979
+      "total": 5616116410,
+      "coverage": 0.5503614865419073
     },
     "last_7_days": {
       "projects": [
@@ -9311,15 +9389,15 @@
         },
         {
           "name": "Lexx",
-          "sessions": 2,
-          "total": 170838
+          "sessions": 3,
+          "total": 300668
         }
       ],
-      "attributed_total": 128930330,
+      "attributed_total": 129060160,
       "unattributed_total": 1665198,
       "unattributed_sessions": 8,
-      "total": 130595528,
-      "coverage": 0.9872491958530157
+      "total": 130725358,
+      "coverage": 0.9872618593249521
     },
     "last_30_days": {
       "projects": [
@@ -9355,13 +9433,13 @@
         },
         {
           "name": "personal-life",
-          "sessions": 14,
-          "total": 27732973
+          "sessions": 12,
+          "total": 24781124
         },
         {
           "name": "Lexx",
-          "sessions": 12,
-          "total": 18453087
+          "sessions": 13,
+          "total": 18582917
         },
         {
           "name": "เบื้องหลัง Chabad ในประเทศไทย",
@@ -9404,11 +9482,11 @@
           "total": 33759
         }
       ],
-      "attributed_total": 671110537,
+      "attributed_total": 668288518,
       "unattributed_total": 69338959,
       "unattributed_sessions": 62,
-      "total": 740449496,
-      "coverage": 0.9063555862019251
+      "total": 737627477,
+      "coverage": 0.9059973209213843
     }
   },
   "metadata_only_models": [
@@ -9858,7 +9936,7 @@
   "realtime": {
     "refresh_minutes": 30,
     "archive_private": true,
-    "ingested_this_run": 0,
+    "ingested_this_run": 4,
     "scopes": {
       "all_tracked": {
         "windows": {
@@ -9870,8 +9948,8 @@
             "cache_write": 0,
             "reasoning": 0,
             "total": 0,
-            "start_local": "2026-08-27T00:50:25+07:00",
-            "end_local": "2026-08-27T01:00:25+07:00",
+            "start_local": "2026-08-27T01:37:12+07:00",
+            "end_local": "2026-08-27T01:47:12+07:00",
             "coverage_start_local": "2026-07-23T09:00:18+07:00",
             "complete": true,
             "source": "agent.log call telemetry",
@@ -9885,8 +9963,8 @@
             "cache_write": 0,
             "reasoning": 0,
             "total": 0,
-            "start_local": "2026-08-27T00:00:25+07:00",
-            "end_local": "2026-08-27T01:00:25+07:00",
+            "start_local": "2026-08-27T00:47:12+07:00",
+            "end_local": "2026-08-27T01:47:12+07:00",
             "coverage_start_local": "2026-07-23T09:00:18+07:00",
             "complete": true,
             "source": "agent.log call telemetry",
@@ -9900,8 +9978,8 @@
             "cache_write": 0,
             "reasoning": 0,
             "total": 141322,
-            "start_local": "2026-08-26T13:00:25+07:00",
-            "end_local": "2026-08-27T01:00:25+07:00",
+            "start_local": "2026-08-26T13:47:12+07:00",
+            "end_local": "2026-08-27T01:47:12+07:00",
             "coverage_start_local": "2026-07-23T09:00:18+07:00",
             "complete": true,
             "source": "agent.log call telemetry",
@@ -9915,8 +9993,8 @@
             "cache_write": 0,
             "reasoning": 0,
             "total": 141322,
-            "start_local": "2026-08-26T01:00:25+07:00",
-            "end_local": "2026-08-27T01:00:25+07:00",
+            "start_local": "2026-08-26T01:47:12+07:00",
+            "end_local": "2026-08-27T01:47:12+07:00",
             "coverage_start_local": "2026-07-23T09:00:18+07:00",
             "complete": true,
             "source": "agent.log call telemetry",
@@ -9930,27 +10008,27 @@
             "cache_write": 0,
             "reasoning": 0,
             "total": 148866491,
-            "start_local": "2026-08-20T01:00:25+07:00",
-            "end_local": "2026-08-27T01:00:25+07:00",
+            "start_local": "2026-08-20T01:47:12+07:00",
+            "end_local": "2026-08-27T01:47:12+07:00",
             "coverage_start_local": "2026-07-23T09:00:18+07:00",
             "complete": true,
             "source": "agent.log call telemetry",
             "all_in": 148866491
           },
           "30d": {
-            "calls": 5663,
-            "input": 59258827,
-            "output": 2929694,
-            "cache_read": 795605120,
+            "calls": 5634,
+            "input": 58862287,
+            "output": 2914720,
+            "cache_read": 792898688,
             "cache_write": 0,
             "reasoning": 0,
-            "total": 857793641,
-            "start_local": "2026-07-28T01:00:25+07:00",
-            "end_local": "2026-08-27T01:00:25+07:00",
+            "total": 854675695,
+            "start_local": "2026-07-28T01:47:12+07:00",
+            "end_local": "2026-08-27T01:47:12+07:00",
             "coverage_start_local": "2026-07-23T09:00:18+07:00",
             "complete": true,
             "source": "agent.log call telemetry",
-            "all_in": 857793641
+            "all_in": 854675695
           }
         },
         "series": {
@@ -9959,7 +10037,7 @@
             "complete": true,
             "points": [
               {
-                "bucket": 1787766600,
+                "bucket": 1787769420,
                 "calls": 0,
                 "input": 0,
                 "output": 0,
@@ -9968,10 +10046,10 @@
                 "reasoning": 0,
                 "total": 0,
                 "all_in": 0,
-                "bucket_start": "2026-08-27T00:50:00+07:00"
+                "bucket_start": "2026-08-27T01:37:00+07:00"
               },
               {
-                "bucket": 1787766630,
+                "bucket": 1787769450,
                 "calls": 0,
                 "input": 0,
                 "output": 0,
@@ -9980,10 +10058,10 @@
                 "reasoning": 0,
                 "total": 0,
                 "all_in": 0,
-                "bucket_start": "2026-08-27T00:50:30+07:00"
+                "bucket_start": "2026-08-27T01:37:30+07:00"
               },
               {
-                "bucket": 1787766660,
+                "bucket": 1787769480,
                 "calls": 0,
                 "input": 0,
                 "output": 0,
@@ -9992,10 +10070,10 @@
                 "reasoning": 0,
                 "total": 0,
                 "all_in": 0,
-                "bucket_start": "2026-08-27T00:51:00+07:00"
+                "bucket_start": "2026-08-27T01:38:00+07:00"
               },
               {
-                "bucket": 1787766690,
+                "bucket": 1787769510,
                 "calls": 0,
                 "input": 0,
                 "output": 0,
@@ -10004,10 +10082,10 @@
                 "reasoning": 0,
                 "total": 0,
                 "all_in": 0,
-                "bucket_start": "2026-08-27T00:51:30+07:00"
+                "bucket_start": "2026-08-27T01:38:30+07:00"
               },
               {
-                "bucket": 1787766720,
+                "bucket": 1787769540,
                 "calls": 0,
                 "input": 0,
                 "output": 0,
@@ -10016,10 +10094,10 @@
                 "reasoning": 0,
                 "total": 0,
                 "all_in": 0,
-                "bucket_start": "2026-08-27T00:52:00+07:00"
+                "bucket_start": "2026-08-27T01:39:00+07:00"
               },
               {
-                "bucket": 1787766750,
+                "bucket": 1787769570,
                 "calls": 0,
                 "input": 0,
                 "output": 0,
@@ -10028,10 +10106,10 @@
                 "reasoning": 0,
                 "total": 0,
                 "all_in": 0,
-                "bucket_start": "2026-08-27T00:52:30+07:00"
+                "bucket_start": "2026-08-27T01:39:30+07:00"
               },
               {
-                "bucket": 1787766780,
+                "bucket": 1787769600,
                 "calls": 0,
                 "input": 0,
                 "output": 0,
@@ -10040,10 +10118,10 @@
                 "reasoning": 0,
                 "total": 0,
                 "all_in": 0,
-                "bucket_start": "2026-08-27T00:53:00+07:00"
+                "bucket_start": "2026-08-27T01:40:00+07:00"
               },
               {
-                "bucket": 1787766810,
+                "bucket": 1787769630,
                 "calls": 0,
                 "input": 0,
                 "output": 0,
@@ -10052,10 +10130,10 @@
                 "reasoning": 0,
                 "total": 0,
                 "all_in": 0,
-                "bucket_start": "2026-08-27T00:53:30+07:00"
+                "bucket_start": "2026-08-27T01:40:30+07:00"
               },
               {
-                "bucket": 1787766840,
+                "bucket": 1787769660,
                 "calls": 0,
                 "input": 0,
                 "output": 0,
@@ -10064,10 +10142,10 @@
                 "reasoning": 0,
                 "total": 0,
                 "all_in": 0,
-                "bucket_start": "2026-08-27T00:54:00+07:00"
+                "bucket_start": "2026-08-27T01:41:00+07:00"
               },
               {
-                "bucket": 1787766870,
+                "bucket": 1787769690,
                 "calls": 0,
                 "input": 0,
                 "output": 0,
@@ -10076,10 +10154,10 @@
                 "reasoning": 0,
                 "total": 0,
                 "all_in": 0,
-                "bucket_start": "2026-08-27T00:54:30+07:00"
+                "bucket_start": "2026-08-27T01:41:30+07:00"
               },
               {
-                "bucket": 1787766900,
+                "bucket": 1787769720,
                 "calls": 0,
                 "input": 0,
                 "output": 0,
@@ -10088,10 +10166,10 @@
                 "reasoning": 0,
                 "total": 0,
                 "all_in": 0,
-                "bucket_start": "2026-08-27T00:55:00+07:00"
+                "bucket_start": "2026-08-27T01:42:00+07:00"
               },
               {
-                "bucket": 1787766930,
+                "bucket": 1787769750,
                 "calls": 0,
                 "input": 0,
                 "output": 0,
@@ -10100,10 +10178,10 @@
                 "reasoning": 0,
                 "total": 0,
                 "all_in": 0,
-                "bucket_start": "2026-08-27T00:55:30+07:00"
+                "bucket_start": "2026-08-27T01:42:30+07:00"
               },
               {
-                "bucket": 1787766960,
+                "bucket": 1787769780,
                 "calls": 0,
                 "input": 0,
                 "output": 0,
@@ -10112,10 +10190,10 @@
                 "reasoning": 0,
                 "total": 0,
                 "all_in": 0,
-                "bucket_start": "2026-08-27T00:56:00+07:00"
+                "bucket_start": "2026-08-27T01:43:00+07:00"
               },
               {
-                "bucket": 1787766990,
+                "bucket": 1787769810,
                 "calls": 0,
                 "input": 0,
                 "output": 0,
@@ -10124,10 +10202,10 @@
                 "reasoning": 0,
                 "total": 0,
                 "all_in": 0,
-                "bucket_start": "2026-08-27T00:56:30+07:00"
+                "bucket_start": "2026-08-27T01:43:30+07:00"
               },
               {
-                "bucket": 1787767020,
+                "bucket": 1787769840,
                 "calls": 0,
                 "input": 0,
                 "output": 0,
@@ -10136,10 +10214,10 @@
                 "reasoning": 0,
                 "total": 0,
                 "all_in": 0,
-                "bucket_start": "2026-08-27T00:57:00+07:00"
+                "bucket_start": "2026-08-27T01:44:00+07:00"
               },
               {
-                "bucket": 1787767050,
+                "bucket": 1787769870,
                 "calls": 0,
                 "input": 0,
                 "output": 0,
@@ -10148,10 +10226,10 @@
                 "reasoning": 0,
                 "total": 0,
                 "all_in": 0,
-                "bucket_start": "2026-08-27T00:57:30+07:00"
+                "bucket_start": "2026-08-27T01:44:30+07:00"
               },
               {
-                "bucket": 1787767080,
+                "bucket": 1787769900,
                 "calls": 0,
                 "input": 0,
                 "output": 0,
@@ -10160,10 +10238,10 @@
                 "reasoning": 0,
                 "total": 0,
                 "all_in": 0,
-                "bucket_start": "2026-08-27T00:58:00+07:00"
+                "bucket_start": "2026-08-27T01:45:00+07:00"
               },
               {
-                "bucket": 1787767110,
+                "bucket": 1787769930,
                 "calls": 0,
                 "input": 0,
                 "output": 0,
@@ -10172,10 +10250,10 @@
                 "reasoning": 0,
                 "total": 0,
                 "all_in": 0,
-                "bucket_start": "2026-08-27T00:58:30+07:00"
+                "bucket_start": "2026-08-27T01:45:30+07:00"
               },
               {
-                "bucket": 1787767140,
+                "bucket": 1787769960,
                 "calls": 0,
                 "input": 0,
                 "output": 0,
@@ -10184,10 +10262,10 @@
                 "reasoning": 0,
                 "total": 0,
                 "all_in": 0,
-                "bucket_start": "2026-08-27T00:59:00+07:00"
+                "bucket_start": "2026-08-27T01:46:00+07:00"
               },
               {
-                "bucket": 1787767170,
+                "bucket": 1787769990,
                 "calls": 0,
                 "input": 0,
                 "output": 0,
@@ -10196,10 +10274,10 @@
                 "reasoning": 0,
                 "total": 0,
                 "all_in": 0,
-                "bucket_start": "2026-08-27T00:59:30+07:00"
+                "bucket_start": "2026-08-27T01:46:30+07:00"
               },
               {
-                "bucket": 1787767200,
+                "bucket": 1787770020,
                 "calls": 0,
                 "input": 0,
                 "output": 0,
@@ -10208,7 +10286,7 @@
                 "reasoning": 0,
                 "total": 0,
                 "all_in": 0,
-                "bucket_start": "2026-08-27T01:00:00+07:00"
+                "bucket_start": "2026-08-27T01:47:00+07:00"
               }
             ]
           },
@@ -10216,570 +10294,6 @@
             "bucket_seconds": 60,
             "complete": true,
             "points": [
-              {
-                "bucket": 1787763600,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:00:00+07:00"
-              },
-              {
-                "bucket": 1787763660,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:01:00+07:00"
-              },
-              {
-                "bucket": 1787763720,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:02:00+07:00"
-              },
-              {
-                "bucket": 1787763780,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:03:00+07:00"
-              },
-              {
-                "bucket": 1787763840,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:04:00+07:00"
-              },
-              {
-                "bucket": 1787763900,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:05:00+07:00"
-              },
-              {
-                "bucket": 1787763960,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:06:00+07:00"
-              },
-              {
-                "bucket": 1787764020,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:07:00+07:00"
-              },
-              {
-                "bucket": 1787764080,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:08:00+07:00"
-              },
-              {
-                "bucket": 1787764140,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:09:00+07:00"
-              },
-              {
-                "bucket": 1787764200,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:10:00+07:00"
-              },
-              {
-                "bucket": 1787764260,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:11:00+07:00"
-              },
-              {
-                "bucket": 1787764320,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:12:00+07:00"
-              },
-              {
-                "bucket": 1787764380,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:13:00+07:00"
-              },
-              {
-                "bucket": 1787764440,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:14:00+07:00"
-              },
-              {
-                "bucket": 1787764500,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:15:00+07:00"
-              },
-              {
-                "bucket": 1787764560,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:16:00+07:00"
-              },
-              {
-                "bucket": 1787764620,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:17:00+07:00"
-              },
-              {
-                "bucket": 1787764680,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:18:00+07:00"
-              },
-              {
-                "bucket": 1787764740,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:19:00+07:00"
-              },
-              {
-                "bucket": 1787764800,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:20:00+07:00"
-              },
-              {
-                "bucket": 1787764860,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:21:00+07:00"
-              },
-              {
-                "bucket": 1787764920,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:22:00+07:00"
-              },
-              {
-                "bucket": 1787764980,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:23:00+07:00"
-              },
-              {
-                "bucket": 1787765040,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:24:00+07:00"
-              },
-              {
-                "bucket": 1787765100,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:25:00+07:00"
-              },
-              {
-                "bucket": 1787765160,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:26:00+07:00"
-              },
-              {
-                "bucket": 1787765220,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:27:00+07:00"
-              },
-              {
-                "bucket": 1787765280,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:28:00+07:00"
-              },
-              {
-                "bucket": 1787765340,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:29:00+07:00"
-              },
-              {
-                "bucket": 1787765400,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:30:00+07:00"
-              },
-              {
-                "bucket": 1787765460,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:31:00+07:00"
-              },
-              {
-                "bucket": 1787765520,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:32:00+07:00"
-              },
-              {
-                "bucket": 1787765580,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:33:00+07:00"
-              },
-              {
-                "bucket": 1787765640,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:34:00+07:00"
-              },
-              {
-                "bucket": 1787765700,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:35:00+07:00"
-              },
-              {
-                "bucket": 1787765760,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:36:00+07:00"
-              },
-              {
-                "bucket": 1787765820,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:37:00+07:00"
-              },
-              {
-                "bucket": 1787765880,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:38:00+07:00"
-              },
-              {
-                "bucket": 1787765940,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:39:00+07:00"
-              },
-              {
-                "bucket": 1787766000,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:40:00+07:00"
-              },
-              {
-                "bucket": 1787766060,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:41:00+07:00"
-              },
-              {
-                "bucket": 1787766120,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:42:00+07:00"
-              },
-              {
-                "bucket": 1787766180,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:43:00+07:00"
-              },
-              {
-                "bucket": 1787766240,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:44:00+07:00"
-              },
-              {
-                "bucket": 1787766300,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:45:00+07:00"
-              },
-              {
-                "bucket": 1787766360,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:46:00+07:00"
-              },
               {
                 "bucket": 1787766420,
                 "calls": 0,
@@ -10947,6 +10461,570 @@
                 "total": 0,
                 "all_in": 0,
                 "bucket_start": "2026-08-27T01:00:00+07:00"
+              },
+              {
+                "bucket": 1787767260,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:01:00+07:00"
+              },
+              {
+                "bucket": 1787767320,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:02:00+07:00"
+              },
+              {
+                "bucket": 1787767380,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:03:00+07:00"
+              },
+              {
+                "bucket": 1787767440,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:04:00+07:00"
+              },
+              {
+                "bucket": 1787767500,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:05:00+07:00"
+              },
+              {
+                "bucket": 1787767560,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:06:00+07:00"
+              },
+              {
+                "bucket": 1787767620,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:07:00+07:00"
+              },
+              {
+                "bucket": 1787767680,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:08:00+07:00"
+              },
+              {
+                "bucket": 1787767740,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:09:00+07:00"
+              },
+              {
+                "bucket": 1787767800,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:10:00+07:00"
+              },
+              {
+                "bucket": 1787767860,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:11:00+07:00"
+              },
+              {
+                "bucket": 1787767920,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:12:00+07:00"
+              },
+              {
+                "bucket": 1787767980,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:13:00+07:00"
+              },
+              {
+                "bucket": 1787768040,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:14:00+07:00"
+              },
+              {
+                "bucket": 1787768100,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:15:00+07:00"
+              },
+              {
+                "bucket": 1787768160,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:16:00+07:00"
+              },
+              {
+                "bucket": 1787768220,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:17:00+07:00"
+              },
+              {
+                "bucket": 1787768280,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:18:00+07:00"
+              },
+              {
+                "bucket": 1787768340,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:19:00+07:00"
+              },
+              {
+                "bucket": 1787768400,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:20:00+07:00"
+              },
+              {
+                "bucket": 1787768460,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:21:00+07:00"
+              },
+              {
+                "bucket": 1787768520,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:22:00+07:00"
+              },
+              {
+                "bucket": 1787768580,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:23:00+07:00"
+              },
+              {
+                "bucket": 1787768640,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:24:00+07:00"
+              },
+              {
+                "bucket": 1787768700,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:25:00+07:00"
+              },
+              {
+                "bucket": 1787768760,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:26:00+07:00"
+              },
+              {
+                "bucket": 1787768820,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:27:00+07:00"
+              },
+              {
+                "bucket": 1787768880,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:28:00+07:00"
+              },
+              {
+                "bucket": 1787768940,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:29:00+07:00"
+              },
+              {
+                "bucket": 1787769000,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:30:00+07:00"
+              },
+              {
+                "bucket": 1787769060,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:31:00+07:00"
+              },
+              {
+                "bucket": 1787769120,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:32:00+07:00"
+              },
+              {
+                "bucket": 1787769180,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:33:00+07:00"
+              },
+              {
+                "bucket": 1787769240,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:34:00+07:00"
+              },
+              {
+                "bucket": 1787769300,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:35:00+07:00"
+              },
+              {
+                "bucket": 1787769360,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:36:00+07:00"
+              },
+              {
+                "bucket": 1787769420,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:37:00+07:00"
+              },
+              {
+                "bucket": 1787769480,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:38:00+07:00"
+              },
+              {
+                "bucket": 1787769540,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:39:00+07:00"
+              },
+              {
+                "bucket": 1787769600,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:40:00+07:00"
+              },
+              {
+                "bucket": 1787769660,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:41:00+07:00"
+              },
+              {
+                "bucket": 1787769720,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:42:00+07:00"
+              },
+              {
+                "bucket": 1787769780,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:43:00+07:00"
+              },
+              {
+                "bucket": 1787769840,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:44:00+07:00"
+              },
+              {
+                "bucket": 1787769900,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:45:00+07:00"
+              },
+              {
+                "bucket": 1787769960,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:46:00+07:00"
+              },
+              {
+                "bucket": 1787770020,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:47:00+07:00"
               }
             ]
           },
@@ -10954,42 +11032,6 @@
             "bucket_seconds": 900,
             "complete": true,
             "points": [
-              {
-                "bucket": 1787724000,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-26T13:00:00+07:00"
-              },
-              {
-                "bucket": 1787724900,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-26T13:15:00+07:00"
-              },
-              {
-                "bucket": 1787725800,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-26T13:30:00+07:00"
-              },
               {
                 "bucket": 1787726700,
                 "calls": 0,
@@ -11541,15 +11583,9 @@
                 "total": 0,
                 "all_in": 0,
                 "bucket_start": "2026-08-27T01:00:00+07:00"
-              }
-            ]
-          },
-          "24h": {
-            "bucket_seconds": 1800,
-            "complete": true,
-            "points": [
+              },
               {
-                "bucket": 1787680800,
+                "bucket": 1787768100,
                 "calls": 0,
                 "input": 0,
                 "output": 0,
@@ -11558,8 +11594,38 @@
                 "reasoning": 0,
                 "total": 0,
                 "all_in": 0,
-                "bucket_start": "2026-08-26T01:00:00+07:00"
+                "bucket_start": "2026-08-27T01:15:00+07:00"
               },
+              {
+                "bucket": 1787769000,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:30:00+07:00"
+              },
+              {
+                "bucket": 1787769900,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:45:00+07:00"
+              }
+            ]
+          },
+          "24h": {
+            "bucket_seconds": 1800,
+            "complete": true,
+            "points": [
               {
                 "bucket": 1787682600,
                 "calls": 0,
@@ -12135,6 +12201,18 @@
                 "total": 0,
                 "all_in": 0,
                 "bucket_start": "2026-08-27T01:00:00+07:00"
+              },
+              {
+                "bucket": 1787769000,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:30:00+07:00"
               }
             ]
           },
@@ -12498,14 +12576,14 @@
             "points": [
               {
                 "bucket": 1785110400,
-                "calls": 30,
-                "input": 562685,
-                "output": 17474,
-                "cache_read": 2706432,
+                "calls": 1,
+                "input": 166145,
+                "output": 2500,
+                "cache_read": 0,
                 "cache_write": 0,
                 "reasoning": 0,
-                "total": 3286591,
-                "all_in": 3286591,
+                "total": 168645,
+                "all_in": 168645,
                 "bucket_start": "2026-07-27T07:00:00+07:00"
               },
               {
@@ -12882,8 +12960,8 @@
             "cache_write": 0,
             "reasoning": 0,
             "total": 0,
-            "start_local": "2026-08-27T00:50:25+07:00",
-            "end_local": "2026-08-27T01:00:25+07:00",
+            "start_local": "2026-08-27T01:37:12+07:00",
+            "end_local": "2026-08-27T01:47:12+07:00",
             "coverage_start_local": "2026-07-23T09:00:18+07:00",
             "complete": true,
             "source": "agent.log call telemetry",
@@ -12897,8 +12975,8 @@
             "cache_write": 0,
             "reasoning": 0,
             "total": 0,
-            "start_local": "2026-08-27T00:00:25+07:00",
-            "end_local": "2026-08-27T01:00:25+07:00",
+            "start_local": "2026-08-27T00:47:12+07:00",
+            "end_local": "2026-08-27T01:47:12+07:00",
             "coverage_start_local": "2026-07-23T09:00:18+07:00",
             "complete": true,
             "source": "agent.log call telemetry",
@@ -12912,8 +12990,8 @@
             "cache_write": 0,
             "reasoning": 0,
             "total": 141322,
-            "start_local": "2026-08-26T13:00:25+07:00",
-            "end_local": "2026-08-27T01:00:25+07:00",
+            "start_local": "2026-08-26T13:47:12+07:00",
+            "end_local": "2026-08-27T01:47:12+07:00",
             "coverage_start_local": "2026-07-23T09:00:18+07:00",
             "complete": true,
             "source": "agent.log call telemetry",
@@ -12927,8 +13005,8 @@
             "cache_write": 0,
             "reasoning": 0,
             "total": 141322,
-            "start_local": "2026-08-26T01:00:25+07:00",
-            "end_local": "2026-08-27T01:00:25+07:00",
+            "start_local": "2026-08-26T01:47:12+07:00",
+            "end_local": "2026-08-27T01:47:12+07:00",
             "coverage_start_local": "2026-07-23T09:00:18+07:00",
             "complete": true,
             "source": "agent.log call telemetry",
@@ -12942,27 +13020,27 @@
             "cache_write": 0,
             "reasoning": 0,
             "total": 148866491,
-            "start_local": "2026-08-20T01:00:25+07:00",
-            "end_local": "2026-08-27T01:00:25+07:00",
+            "start_local": "2026-08-20T01:47:12+07:00",
+            "end_local": "2026-08-27T01:47:12+07:00",
             "coverage_start_local": "2026-07-23T09:00:18+07:00",
             "complete": true,
             "source": "agent.log call telemetry",
             "all_in": 148866491
           },
           "30d": {
-            "calls": 5223,
-            "input": 52132881,
-            "output": 2574791,
-            "cache_read": 751454592,
+            "calls": 5194,
+            "input": 51736341,
+            "output": 2559817,
+            "cache_read": 748748160,
             "cache_write": 0,
             "reasoning": 0,
-            "total": 806162264,
-            "start_local": "2026-07-28T01:00:25+07:00",
-            "end_local": "2026-08-27T01:00:25+07:00",
+            "total": 803044318,
+            "start_local": "2026-07-28T01:47:12+07:00",
+            "end_local": "2026-08-27T01:47:12+07:00",
             "coverage_start_local": "2026-07-23T09:00:18+07:00",
             "complete": true,
             "source": "agent.log call telemetry",
-            "all_in": 806162264
+            "all_in": 803044318
           }
         },
         "series": {
@@ -12971,7 +13049,7 @@
             "complete": true,
             "points": [
               {
-                "bucket": 1787766600,
+                "bucket": 1787769420,
                 "calls": 0,
                 "input": 0,
                 "output": 0,
@@ -12980,10 +13058,10 @@
                 "reasoning": 0,
                 "total": 0,
                 "all_in": 0,
-                "bucket_start": "2026-08-27T00:50:00+07:00"
+                "bucket_start": "2026-08-27T01:37:00+07:00"
               },
               {
-                "bucket": 1787766630,
+                "bucket": 1787769450,
                 "calls": 0,
                 "input": 0,
                 "output": 0,
@@ -12992,10 +13070,10 @@
                 "reasoning": 0,
                 "total": 0,
                 "all_in": 0,
-                "bucket_start": "2026-08-27T00:50:30+07:00"
+                "bucket_start": "2026-08-27T01:37:30+07:00"
               },
               {
-                "bucket": 1787766660,
+                "bucket": 1787769480,
                 "calls": 0,
                 "input": 0,
                 "output": 0,
@@ -13004,10 +13082,10 @@
                 "reasoning": 0,
                 "total": 0,
                 "all_in": 0,
-                "bucket_start": "2026-08-27T00:51:00+07:00"
+                "bucket_start": "2026-08-27T01:38:00+07:00"
               },
               {
-                "bucket": 1787766690,
+                "bucket": 1787769510,
                 "calls": 0,
                 "input": 0,
                 "output": 0,
@@ -13016,10 +13094,10 @@
                 "reasoning": 0,
                 "total": 0,
                 "all_in": 0,
-                "bucket_start": "2026-08-27T00:51:30+07:00"
+                "bucket_start": "2026-08-27T01:38:30+07:00"
               },
               {
-                "bucket": 1787766720,
+                "bucket": 1787769540,
                 "calls": 0,
                 "input": 0,
                 "output": 0,
@@ -13028,10 +13106,10 @@
                 "reasoning": 0,
                 "total": 0,
                 "all_in": 0,
-                "bucket_start": "2026-08-27T00:52:00+07:00"
+                "bucket_start": "2026-08-27T01:39:00+07:00"
               },
               {
-                "bucket": 1787766750,
+                "bucket": 1787769570,
                 "calls": 0,
                 "input": 0,
                 "output": 0,
@@ -13040,10 +13118,10 @@
                 "reasoning": 0,
                 "total": 0,
                 "all_in": 0,
-                "bucket_start": "2026-08-27T00:52:30+07:00"
+                "bucket_start": "2026-08-27T01:39:30+07:00"
               },
               {
-                "bucket": 1787766780,
+                "bucket": 1787769600,
                 "calls": 0,
                 "input": 0,
                 "output": 0,
@@ -13052,10 +13130,10 @@
                 "reasoning": 0,
                 "total": 0,
                 "all_in": 0,
-                "bucket_start": "2026-08-27T00:53:00+07:00"
+                "bucket_start": "2026-08-27T01:40:00+07:00"
               },
               {
-                "bucket": 1787766810,
+                "bucket": 1787769630,
                 "calls": 0,
                 "input": 0,
                 "output": 0,
@@ -13064,10 +13142,10 @@
                 "reasoning": 0,
                 "total": 0,
                 "all_in": 0,
-                "bucket_start": "2026-08-27T00:53:30+07:00"
+                "bucket_start": "2026-08-27T01:40:30+07:00"
               },
               {
-                "bucket": 1787766840,
+                "bucket": 1787769660,
                 "calls": 0,
                 "input": 0,
                 "output": 0,
@@ -13076,10 +13154,10 @@
                 "reasoning": 0,
                 "total": 0,
                 "all_in": 0,
-                "bucket_start": "2026-08-27T00:54:00+07:00"
+                "bucket_start": "2026-08-27T01:41:00+07:00"
               },
               {
-                "bucket": 1787766870,
+                "bucket": 1787769690,
                 "calls": 0,
                 "input": 0,
                 "output": 0,
@@ -13088,10 +13166,10 @@
                 "reasoning": 0,
                 "total": 0,
                 "all_in": 0,
-                "bucket_start": "2026-08-27T00:54:30+07:00"
+                "bucket_start": "2026-08-27T01:41:30+07:00"
               },
               {
-                "bucket": 1787766900,
+                "bucket": 1787769720,
                 "calls": 0,
                 "input": 0,
                 "output": 0,
@@ -13100,10 +13178,10 @@
                 "reasoning": 0,
                 "total": 0,
                 "all_in": 0,
-                "bucket_start": "2026-08-27T00:55:00+07:00"
+                "bucket_start": "2026-08-27T01:42:00+07:00"
               },
               {
-                "bucket": 1787766930,
+                "bucket": 1787769750,
                 "calls": 0,
                 "input": 0,
                 "output": 0,
@@ -13112,10 +13190,10 @@
                 "reasoning": 0,
                 "total": 0,
                 "all_in": 0,
-                "bucket_start": "2026-08-27T00:55:30+07:00"
+                "bucket_start": "2026-08-27T01:42:30+07:00"
               },
               {
-                "bucket": 1787766960,
+                "bucket": 1787769780,
                 "calls": 0,
                 "input": 0,
                 "output": 0,
@@ -13124,10 +13202,10 @@
                 "reasoning": 0,
                 "total": 0,
                 "all_in": 0,
-                "bucket_start": "2026-08-27T00:56:00+07:00"
+                "bucket_start": "2026-08-27T01:43:00+07:00"
               },
               {
-                "bucket": 1787766990,
+                "bucket": 1787769810,
                 "calls": 0,
                 "input": 0,
                 "output": 0,
@@ -13136,10 +13214,10 @@
                 "reasoning": 0,
                 "total": 0,
                 "all_in": 0,
-                "bucket_start": "2026-08-27T00:56:30+07:00"
+                "bucket_start": "2026-08-27T01:43:30+07:00"
               },
               {
-                "bucket": 1787767020,
+                "bucket": 1787769840,
                 "calls": 0,
                 "input": 0,
                 "output": 0,
@@ -13148,10 +13226,10 @@
                 "reasoning": 0,
                 "total": 0,
                 "all_in": 0,
-                "bucket_start": "2026-08-27T00:57:00+07:00"
+                "bucket_start": "2026-08-27T01:44:00+07:00"
               },
               {
-                "bucket": 1787767050,
+                "bucket": 1787769870,
                 "calls": 0,
                 "input": 0,
                 "output": 0,
@@ -13160,10 +13238,10 @@
                 "reasoning": 0,
                 "total": 0,
                 "all_in": 0,
-                "bucket_start": "2026-08-27T00:57:30+07:00"
+                "bucket_start": "2026-08-27T01:44:30+07:00"
               },
               {
-                "bucket": 1787767080,
+                "bucket": 1787769900,
                 "calls": 0,
                 "input": 0,
                 "output": 0,
@@ -13172,10 +13250,10 @@
                 "reasoning": 0,
                 "total": 0,
                 "all_in": 0,
-                "bucket_start": "2026-08-27T00:58:00+07:00"
+                "bucket_start": "2026-08-27T01:45:00+07:00"
               },
               {
-                "bucket": 1787767110,
+                "bucket": 1787769930,
                 "calls": 0,
                 "input": 0,
                 "output": 0,
@@ -13184,10 +13262,10 @@
                 "reasoning": 0,
                 "total": 0,
                 "all_in": 0,
-                "bucket_start": "2026-08-27T00:58:30+07:00"
+                "bucket_start": "2026-08-27T01:45:30+07:00"
               },
               {
-                "bucket": 1787767140,
+                "bucket": 1787769960,
                 "calls": 0,
                 "input": 0,
                 "output": 0,
@@ -13196,10 +13274,10 @@
                 "reasoning": 0,
                 "total": 0,
                 "all_in": 0,
-                "bucket_start": "2026-08-27T00:59:00+07:00"
+                "bucket_start": "2026-08-27T01:46:00+07:00"
               },
               {
-                "bucket": 1787767170,
+                "bucket": 1787769990,
                 "calls": 0,
                 "input": 0,
                 "output": 0,
@@ -13208,10 +13286,10 @@
                 "reasoning": 0,
                 "total": 0,
                 "all_in": 0,
-                "bucket_start": "2026-08-27T00:59:30+07:00"
+                "bucket_start": "2026-08-27T01:46:30+07:00"
               },
               {
-                "bucket": 1787767200,
+                "bucket": 1787770020,
                 "calls": 0,
                 "input": 0,
                 "output": 0,
@@ -13220,7 +13298,7 @@
                 "reasoning": 0,
                 "total": 0,
                 "all_in": 0,
-                "bucket_start": "2026-08-27T01:00:00+07:00"
+                "bucket_start": "2026-08-27T01:47:00+07:00"
               }
             ]
           },
@@ -13228,570 +13306,6 @@
             "bucket_seconds": 60,
             "complete": true,
             "points": [
-              {
-                "bucket": 1787763600,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:00:00+07:00"
-              },
-              {
-                "bucket": 1787763660,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:01:00+07:00"
-              },
-              {
-                "bucket": 1787763720,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:02:00+07:00"
-              },
-              {
-                "bucket": 1787763780,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:03:00+07:00"
-              },
-              {
-                "bucket": 1787763840,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:04:00+07:00"
-              },
-              {
-                "bucket": 1787763900,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:05:00+07:00"
-              },
-              {
-                "bucket": 1787763960,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:06:00+07:00"
-              },
-              {
-                "bucket": 1787764020,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:07:00+07:00"
-              },
-              {
-                "bucket": 1787764080,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:08:00+07:00"
-              },
-              {
-                "bucket": 1787764140,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:09:00+07:00"
-              },
-              {
-                "bucket": 1787764200,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:10:00+07:00"
-              },
-              {
-                "bucket": 1787764260,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:11:00+07:00"
-              },
-              {
-                "bucket": 1787764320,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:12:00+07:00"
-              },
-              {
-                "bucket": 1787764380,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:13:00+07:00"
-              },
-              {
-                "bucket": 1787764440,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:14:00+07:00"
-              },
-              {
-                "bucket": 1787764500,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:15:00+07:00"
-              },
-              {
-                "bucket": 1787764560,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:16:00+07:00"
-              },
-              {
-                "bucket": 1787764620,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:17:00+07:00"
-              },
-              {
-                "bucket": 1787764680,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:18:00+07:00"
-              },
-              {
-                "bucket": 1787764740,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:19:00+07:00"
-              },
-              {
-                "bucket": 1787764800,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:20:00+07:00"
-              },
-              {
-                "bucket": 1787764860,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:21:00+07:00"
-              },
-              {
-                "bucket": 1787764920,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:22:00+07:00"
-              },
-              {
-                "bucket": 1787764980,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:23:00+07:00"
-              },
-              {
-                "bucket": 1787765040,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:24:00+07:00"
-              },
-              {
-                "bucket": 1787765100,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:25:00+07:00"
-              },
-              {
-                "bucket": 1787765160,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:26:00+07:00"
-              },
-              {
-                "bucket": 1787765220,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:27:00+07:00"
-              },
-              {
-                "bucket": 1787765280,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:28:00+07:00"
-              },
-              {
-                "bucket": 1787765340,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:29:00+07:00"
-              },
-              {
-                "bucket": 1787765400,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:30:00+07:00"
-              },
-              {
-                "bucket": 1787765460,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:31:00+07:00"
-              },
-              {
-                "bucket": 1787765520,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:32:00+07:00"
-              },
-              {
-                "bucket": 1787765580,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:33:00+07:00"
-              },
-              {
-                "bucket": 1787765640,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:34:00+07:00"
-              },
-              {
-                "bucket": 1787765700,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:35:00+07:00"
-              },
-              {
-                "bucket": 1787765760,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:36:00+07:00"
-              },
-              {
-                "bucket": 1787765820,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:37:00+07:00"
-              },
-              {
-                "bucket": 1787765880,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:38:00+07:00"
-              },
-              {
-                "bucket": 1787765940,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:39:00+07:00"
-              },
-              {
-                "bucket": 1787766000,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:40:00+07:00"
-              },
-              {
-                "bucket": 1787766060,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:41:00+07:00"
-              },
-              {
-                "bucket": 1787766120,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:42:00+07:00"
-              },
-              {
-                "bucket": 1787766180,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:43:00+07:00"
-              },
-              {
-                "bucket": 1787766240,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:44:00+07:00"
-              },
-              {
-                "bucket": 1787766300,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:45:00+07:00"
-              },
-              {
-                "bucket": 1787766360,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:46:00+07:00"
-              },
               {
                 "bucket": 1787766420,
                 "calls": 0,
@@ -13959,6 +13473,570 @@
                 "total": 0,
                 "all_in": 0,
                 "bucket_start": "2026-08-27T01:00:00+07:00"
+              },
+              {
+                "bucket": 1787767260,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:01:00+07:00"
+              },
+              {
+                "bucket": 1787767320,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:02:00+07:00"
+              },
+              {
+                "bucket": 1787767380,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:03:00+07:00"
+              },
+              {
+                "bucket": 1787767440,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:04:00+07:00"
+              },
+              {
+                "bucket": 1787767500,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:05:00+07:00"
+              },
+              {
+                "bucket": 1787767560,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:06:00+07:00"
+              },
+              {
+                "bucket": 1787767620,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:07:00+07:00"
+              },
+              {
+                "bucket": 1787767680,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:08:00+07:00"
+              },
+              {
+                "bucket": 1787767740,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:09:00+07:00"
+              },
+              {
+                "bucket": 1787767800,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:10:00+07:00"
+              },
+              {
+                "bucket": 1787767860,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:11:00+07:00"
+              },
+              {
+                "bucket": 1787767920,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:12:00+07:00"
+              },
+              {
+                "bucket": 1787767980,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:13:00+07:00"
+              },
+              {
+                "bucket": 1787768040,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:14:00+07:00"
+              },
+              {
+                "bucket": 1787768100,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:15:00+07:00"
+              },
+              {
+                "bucket": 1787768160,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:16:00+07:00"
+              },
+              {
+                "bucket": 1787768220,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:17:00+07:00"
+              },
+              {
+                "bucket": 1787768280,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:18:00+07:00"
+              },
+              {
+                "bucket": 1787768340,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:19:00+07:00"
+              },
+              {
+                "bucket": 1787768400,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:20:00+07:00"
+              },
+              {
+                "bucket": 1787768460,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:21:00+07:00"
+              },
+              {
+                "bucket": 1787768520,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:22:00+07:00"
+              },
+              {
+                "bucket": 1787768580,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:23:00+07:00"
+              },
+              {
+                "bucket": 1787768640,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:24:00+07:00"
+              },
+              {
+                "bucket": 1787768700,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:25:00+07:00"
+              },
+              {
+                "bucket": 1787768760,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:26:00+07:00"
+              },
+              {
+                "bucket": 1787768820,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:27:00+07:00"
+              },
+              {
+                "bucket": 1787768880,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:28:00+07:00"
+              },
+              {
+                "bucket": 1787768940,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:29:00+07:00"
+              },
+              {
+                "bucket": 1787769000,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:30:00+07:00"
+              },
+              {
+                "bucket": 1787769060,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:31:00+07:00"
+              },
+              {
+                "bucket": 1787769120,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:32:00+07:00"
+              },
+              {
+                "bucket": 1787769180,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:33:00+07:00"
+              },
+              {
+                "bucket": 1787769240,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:34:00+07:00"
+              },
+              {
+                "bucket": 1787769300,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:35:00+07:00"
+              },
+              {
+                "bucket": 1787769360,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:36:00+07:00"
+              },
+              {
+                "bucket": 1787769420,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:37:00+07:00"
+              },
+              {
+                "bucket": 1787769480,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:38:00+07:00"
+              },
+              {
+                "bucket": 1787769540,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:39:00+07:00"
+              },
+              {
+                "bucket": 1787769600,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:40:00+07:00"
+              },
+              {
+                "bucket": 1787769660,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:41:00+07:00"
+              },
+              {
+                "bucket": 1787769720,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:42:00+07:00"
+              },
+              {
+                "bucket": 1787769780,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:43:00+07:00"
+              },
+              {
+                "bucket": 1787769840,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:44:00+07:00"
+              },
+              {
+                "bucket": 1787769900,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:45:00+07:00"
+              },
+              {
+                "bucket": 1787769960,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:46:00+07:00"
+              },
+              {
+                "bucket": 1787770020,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:47:00+07:00"
               }
             ]
           },
@@ -13966,42 +14044,6 @@
             "bucket_seconds": 900,
             "complete": true,
             "points": [
-              {
-                "bucket": 1787724000,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-26T13:00:00+07:00"
-              },
-              {
-                "bucket": 1787724900,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-26T13:15:00+07:00"
-              },
-              {
-                "bucket": 1787725800,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-26T13:30:00+07:00"
-              },
               {
                 "bucket": 1787726700,
                 "calls": 0,
@@ -14553,15 +14595,9 @@
                 "total": 0,
                 "all_in": 0,
                 "bucket_start": "2026-08-27T01:00:00+07:00"
-              }
-            ]
-          },
-          "24h": {
-            "bucket_seconds": 1800,
-            "complete": true,
-            "points": [
+              },
               {
-                "bucket": 1787680800,
+                "bucket": 1787768100,
                 "calls": 0,
                 "input": 0,
                 "output": 0,
@@ -14570,8 +14606,38 @@
                 "reasoning": 0,
                 "total": 0,
                 "all_in": 0,
-                "bucket_start": "2026-08-26T01:00:00+07:00"
+                "bucket_start": "2026-08-27T01:15:00+07:00"
               },
+              {
+                "bucket": 1787769000,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:30:00+07:00"
+              },
+              {
+                "bucket": 1787769900,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:45:00+07:00"
+              }
+            ]
+          },
+          "24h": {
+            "bucket_seconds": 1800,
+            "complete": true,
+            "points": [
               {
                 "bucket": 1787682600,
                 "calls": 0,
@@ -15147,6 +15213,18 @@
                 "total": 0,
                 "all_in": 0,
                 "bucket_start": "2026-08-27T01:00:00+07:00"
+              },
+              {
+                "bucket": 1787769000,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:30:00+07:00"
               }
             ]
           },
@@ -15510,14 +15588,14 @@
             "points": [
               {
                 "bucket": 1785110400,
-                "calls": 30,
-                "input": 562685,
-                "output": 17474,
-                "cache_read": 2706432,
+                "calls": 1,
+                "input": 166145,
+                "output": 2500,
+                "cache_read": 0,
                 "cache_write": 0,
                 "reasoning": 0,
-                "total": 3286591,
-                "all_in": 3286591,
+                "total": 168645,
+                "all_in": 168645,
                 "bucket_start": "2026-07-27T07:00:00+07:00"
               },
               {
@@ -15894,8 +15972,8 @@
             "cache_write": 0,
             "reasoning": 0,
             "total": 0,
-            "start_local": "2026-08-27T00:50:25+07:00",
-            "end_local": "2026-08-27T01:00:25+07:00",
+            "start_local": "2026-08-27T01:37:12+07:00",
+            "end_local": "2026-08-27T01:47:12+07:00",
             "coverage_start_local": "2026-08-15T02:48:19+07:00",
             "complete": true,
             "source": "agent.log call telemetry",
@@ -15909,8 +15987,8 @@
             "cache_write": 0,
             "reasoning": 0,
             "total": 0,
-            "start_local": "2026-08-27T00:00:25+07:00",
-            "end_local": "2026-08-27T01:00:25+07:00",
+            "start_local": "2026-08-27T00:47:12+07:00",
+            "end_local": "2026-08-27T01:47:12+07:00",
             "coverage_start_local": "2026-08-15T02:48:19+07:00",
             "complete": true,
             "source": "agent.log call telemetry",
@@ -15924,8 +16002,8 @@
             "cache_write": 0,
             "reasoning": 0,
             "total": 0,
-            "start_local": "2026-08-26T13:00:25+07:00",
-            "end_local": "2026-08-27T01:00:25+07:00",
+            "start_local": "2026-08-26T13:47:12+07:00",
+            "end_local": "2026-08-27T01:47:12+07:00",
             "coverage_start_local": "2026-08-15T02:48:19+07:00",
             "complete": true,
             "source": "agent.log call telemetry",
@@ -15939,8 +16017,8 @@
             "cache_write": 0,
             "reasoning": 0,
             "total": 0,
-            "start_local": "2026-08-26T01:00:25+07:00",
-            "end_local": "2026-08-27T01:00:25+07:00",
+            "start_local": "2026-08-26T01:47:12+07:00",
+            "end_local": "2026-08-27T01:47:12+07:00",
             "coverage_start_local": "2026-08-15T02:48:19+07:00",
             "complete": true,
             "source": "agent.log call telemetry",
@@ -15954,8 +16032,8 @@
             "cache_write": 0,
             "reasoning": 0,
             "total": 0,
-            "start_local": "2026-08-20T01:00:25+07:00",
-            "end_local": "2026-08-27T01:00:25+07:00",
+            "start_local": "2026-08-20T01:47:12+07:00",
+            "end_local": "2026-08-27T01:47:12+07:00",
             "coverage_start_local": "2026-08-15T02:48:19+07:00",
             "complete": true,
             "source": "agent.log call telemetry",
@@ -15969,8 +16047,8 @@
             "cache_write": 0,
             "reasoning": 0,
             "total": 51631377,
-            "start_local": "2026-07-28T01:00:25+07:00",
-            "end_local": "2026-08-27T01:00:25+07:00",
+            "start_local": "2026-07-28T01:47:12+07:00",
+            "end_local": "2026-08-27T01:47:12+07:00",
             "coverage_start_local": "2026-08-15T02:48:19+07:00",
             "complete": false,
             "source": "agent.log call telemetry",
@@ -15983,7 +16061,7 @@
             "complete": true,
             "points": [
               {
-                "bucket": 1787766600,
+                "bucket": 1787769420,
                 "calls": 0,
                 "input": 0,
                 "output": 0,
@@ -15992,10 +16070,10 @@
                 "reasoning": 0,
                 "total": 0,
                 "all_in": 0,
-                "bucket_start": "2026-08-27T00:50:00+07:00"
+                "bucket_start": "2026-08-27T01:37:00+07:00"
               },
               {
-                "bucket": 1787766630,
+                "bucket": 1787769450,
                 "calls": 0,
                 "input": 0,
                 "output": 0,
@@ -16004,10 +16082,10 @@
                 "reasoning": 0,
                 "total": 0,
                 "all_in": 0,
-                "bucket_start": "2026-08-27T00:50:30+07:00"
+                "bucket_start": "2026-08-27T01:37:30+07:00"
               },
               {
-                "bucket": 1787766660,
+                "bucket": 1787769480,
                 "calls": 0,
                 "input": 0,
                 "output": 0,
@@ -16016,10 +16094,10 @@
                 "reasoning": 0,
                 "total": 0,
                 "all_in": 0,
-                "bucket_start": "2026-08-27T00:51:00+07:00"
+                "bucket_start": "2026-08-27T01:38:00+07:00"
               },
               {
-                "bucket": 1787766690,
+                "bucket": 1787769510,
                 "calls": 0,
                 "input": 0,
                 "output": 0,
@@ -16028,10 +16106,10 @@
                 "reasoning": 0,
                 "total": 0,
                 "all_in": 0,
-                "bucket_start": "2026-08-27T00:51:30+07:00"
+                "bucket_start": "2026-08-27T01:38:30+07:00"
               },
               {
-                "bucket": 1787766720,
+                "bucket": 1787769540,
                 "calls": 0,
                 "input": 0,
                 "output": 0,
@@ -16040,10 +16118,10 @@
                 "reasoning": 0,
                 "total": 0,
                 "all_in": 0,
-                "bucket_start": "2026-08-27T00:52:00+07:00"
+                "bucket_start": "2026-08-27T01:39:00+07:00"
               },
               {
-                "bucket": 1787766750,
+                "bucket": 1787769570,
                 "calls": 0,
                 "input": 0,
                 "output": 0,
@@ -16052,10 +16130,10 @@
                 "reasoning": 0,
                 "total": 0,
                 "all_in": 0,
-                "bucket_start": "2026-08-27T00:52:30+07:00"
+                "bucket_start": "2026-08-27T01:39:30+07:00"
               },
               {
-                "bucket": 1787766780,
+                "bucket": 1787769600,
                 "calls": 0,
                 "input": 0,
                 "output": 0,
@@ -16064,10 +16142,10 @@
                 "reasoning": 0,
                 "total": 0,
                 "all_in": 0,
-                "bucket_start": "2026-08-27T00:53:00+07:00"
+                "bucket_start": "2026-08-27T01:40:00+07:00"
               },
               {
-                "bucket": 1787766810,
+                "bucket": 1787769630,
                 "calls": 0,
                 "input": 0,
                 "output": 0,
@@ -16076,10 +16154,10 @@
                 "reasoning": 0,
                 "total": 0,
                 "all_in": 0,
-                "bucket_start": "2026-08-27T00:53:30+07:00"
+                "bucket_start": "2026-08-27T01:40:30+07:00"
               },
               {
-                "bucket": 1787766840,
+                "bucket": 1787769660,
                 "calls": 0,
                 "input": 0,
                 "output": 0,
@@ -16088,10 +16166,10 @@
                 "reasoning": 0,
                 "total": 0,
                 "all_in": 0,
-                "bucket_start": "2026-08-27T00:54:00+07:00"
+                "bucket_start": "2026-08-27T01:41:00+07:00"
               },
               {
-                "bucket": 1787766870,
+                "bucket": 1787769690,
                 "calls": 0,
                 "input": 0,
                 "output": 0,
@@ -16100,10 +16178,10 @@
                 "reasoning": 0,
                 "total": 0,
                 "all_in": 0,
-                "bucket_start": "2026-08-27T00:54:30+07:00"
+                "bucket_start": "2026-08-27T01:41:30+07:00"
               },
               {
-                "bucket": 1787766900,
+                "bucket": 1787769720,
                 "calls": 0,
                 "input": 0,
                 "output": 0,
@@ -16112,10 +16190,10 @@
                 "reasoning": 0,
                 "total": 0,
                 "all_in": 0,
-                "bucket_start": "2026-08-27T00:55:00+07:00"
+                "bucket_start": "2026-08-27T01:42:00+07:00"
               },
               {
-                "bucket": 1787766930,
+                "bucket": 1787769750,
                 "calls": 0,
                 "input": 0,
                 "output": 0,
@@ -16124,10 +16202,10 @@
                 "reasoning": 0,
                 "total": 0,
                 "all_in": 0,
-                "bucket_start": "2026-08-27T00:55:30+07:00"
+                "bucket_start": "2026-08-27T01:42:30+07:00"
               },
               {
-                "bucket": 1787766960,
+                "bucket": 1787769780,
                 "calls": 0,
                 "input": 0,
                 "output": 0,
@@ -16136,10 +16214,10 @@
                 "reasoning": 0,
                 "total": 0,
                 "all_in": 0,
-                "bucket_start": "2026-08-27T00:56:00+07:00"
+                "bucket_start": "2026-08-27T01:43:00+07:00"
               },
               {
-                "bucket": 1787766990,
+                "bucket": 1787769810,
                 "calls": 0,
                 "input": 0,
                 "output": 0,
@@ -16148,10 +16226,10 @@
                 "reasoning": 0,
                 "total": 0,
                 "all_in": 0,
-                "bucket_start": "2026-08-27T00:56:30+07:00"
+                "bucket_start": "2026-08-27T01:43:30+07:00"
               },
               {
-                "bucket": 1787767020,
+                "bucket": 1787769840,
                 "calls": 0,
                 "input": 0,
                 "output": 0,
@@ -16160,10 +16238,10 @@
                 "reasoning": 0,
                 "total": 0,
                 "all_in": 0,
-                "bucket_start": "2026-08-27T00:57:00+07:00"
+                "bucket_start": "2026-08-27T01:44:00+07:00"
               },
               {
-                "bucket": 1787767050,
+                "bucket": 1787769870,
                 "calls": 0,
                 "input": 0,
                 "output": 0,
@@ -16172,10 +16250,10 @@
                 "reasoning": 0,
                 "total": 0,
                 "all_in": 0,
-                "bucket_start": "2026-08-27T00:57:30+07:00"
+                "bucket_start": "2026-08-27T01:44:30+07:00"
               },
               {
-                "bucket": 1787767080,
+                "bucket": 1787769900,
                 "calls": 0,
                 "input": 0,
                 "output": 0,
@@ -16184,10 +16262,10 @@
                 "reasoning": 0,
                 "total": 0,
                 "all_in": 0,
-                "bucket_start": "2026-08-27T00:58:00+07:00"
+                "bucket_start": "2026-08-27T01:45:00+07:00"
               },
               {
-                "bucket": 1787767110,
+                "bucket": 1787769930,
                 "calls": 0,
                 "input": 0,
                 "output": 0,
@@ -16196,10 +16274,10 @@
                 "reasoning": 0,
                 "total": 0,
                 "all_in": 0,
-                "bucket_start": "2026-08-27T00:58:30+07:00"
+                "bucket_start": "2026-08-27T01:45:30+07:00"
               },
               {
-                "bucket": 1787767140,
+                "bucket": 1787769960,
                 "calls": 0,
                 "input": 0,
                 "output": 0,
@@ -16208,10 +16286,10 @@
                 "reasoning": 0,
                 "total": 0,
                 "all_in": 0,
-                "bucket_start": "2026-08-27T00:59:00+07:00"
+                "bucket_start": "2026-08-27T01:46:00+07:00"
               },
               {
-                "bucket": 1787767170,
+                "bucket": 1787769990,
                 "calls": 0,
                 "input": 0,
                 "output": 0,
@@ -16220,10 +16298,10 @@
                 "reasoning": 0,
                 "total": 0,
                 "all_in": 0,
-                "bucket_start": "2026-08-27T00:59:30+07:00"
+                "bucket_start": "2026-08-27T01:46:30+07:00"
               },
               {
-                "bucket": 1787767200,
+                "bucket": 1787770020,
                 "calls": 0,
                 "input": 0,
                 "output": 0,
@@ -16232,7 +16310,7 @@
                 "reasoning": 0,
                 "total": 0,
                 "all_in": 0,
-                "bucket_start": "2026-08-27T01:00:00+07:00"
+                "bucket_start": "2026-08-27T01:47:00+07:00"
               }
             ]
           },
@@ -16240,570 +16318,6 @@
             "bucket_seconds": 60,
             "complete": true,
             "points": [
-              {
-                "bucket": 1787763600,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:00:00+07:00"
-              },
-              {
-                "bucket": 1787763660,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:01:00+07:00"
-              },
-              {
-                "bucket": 1787763720,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:02:00+07:00"
-              },
-              {
-                "bucket": 1787763780,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:03:00+07:00"
-              },
-              {
-                "bucket": 1787763840,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:04:00+07:00"
-              },
-              {
-                "bucket": 1787763900,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:05:00+07:00"
-              },
-              {
-                "bucket": 1787763960,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:06:00+07:00"
-              },
-              {
-                "bucket": 1787764020,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:07:00+07:00"
-              },
-              {
-                "bucket": 1787764080,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:08:00+07:00"
-              },
-              {
-                "bucket": 1787764140,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:09:00+07:00"
-              },
-              {
-                "bucket": 1787764200,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:10:00+07:00"
-              },
-              {
-                "bucket": 1787764260,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:11:00+07:00"
-              },
-              {
-                "bucket": 1787764320,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:12:00+07:00"
-              },
-              {
-                "bucket": 1787764380,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:13:00+07:00"
-              },
-              {
-                "bucket": 1787764440,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:14:00+07:00"
-              },
-              {
-                "bucket": 1787764500,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:15:00+07:00"
-              },
-              {
-                "bucket": 1787764560,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:16:00+07:00"
-              },
-              {
-                "bucket": 1787764620,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:17:00+07:00"
-              },
-              {
-                "bucket": 1787764680,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:18:00+07:00"
-              },
-              {
-                "bucket": 1787764740,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:19:00+07:00"
-              },
-              {
-                "bucket": 1787764800,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:20:00+07:00"
-              },
-              {
-                "bucket": 1787764860,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:21:00+07:00"
-              },
-              {
-                "bucket": 1787764920,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:22:00+07:00"
-              },
-              {
-                "bucket": 1787764980,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:23:00+07:00"
-              },
-              {
-                "bucket": 1787765040,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:24:00+07:00"
-              },
-              {
-                "bucket": 1787765100,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:25:00+07:00"
-              },
-              {
-                "bucket": 1787765160,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:26:00+07:00"
-              },
-              {
-                "bucket": 1787765220,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:27:00+07:00"
-              },
-              {
-                "bucket": 1787765280,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:28:00+07:00"
-              },
-              {
-                "bucket": 1787765340,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:29:00+07:00"
-              },
-              {
-                "bucket": 1787765400,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:30:00+07:00"
-              },
-              {
-                "bucket": 1787765460,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:31:00+07:00"
-              },
-              {
-                "bucket": 1787765520,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:32:00+07:00"
-              },
-              {
-                "bucket": 1787765580,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:33:00+07:00"
-              },
-              {
-                "bucket": 1787765640,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:34:00+07:00"
-              },
-              {
-                "bucket": 1787765700,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:35:00+07:00"
-              },
-              {
-                "bucket": 1787765760,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:36:00+07:00"
-              },
-              {
-                "bucket": 1787765820,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:37:00+07:00"
-              },
-              {
-                "bucket": 1787765880,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:38:00+07:00"
-              },
-              {
-                "bucket": 1787765940,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:39:00+07:00"
-              },
-              {
-                "bucket": 1787766000,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:40:00+07:00"
-              },
-              {
-                "bucket": 1787766060,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:41:00+07:00"
-              },
-              {
-                "bucket": 1787766120,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:42:00+07:00"
-              },
-              {
-                "bucket": 1787766180,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:43:00+07:00"
-              },
-              {
-                "bucket": 1787766240,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:44:00+07:00"
-              },
-              {
-                "bucket": 1787766300,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:45:00+07:00"
-              },
-              {
-                "bucket": 1787766360,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-27T00:46:00+07:00"
-              },
               {
                 "bucket": 1787766420,
                 "calls": 0,
@@ -16971,6 +16485,570 @@
                 "total": 0,
                 "all_in": 0,
                 "bucket_start": "2026-08-27T01:00:00+07:00"
+              },
+              {
+                "bucket": 1787767260,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:01:00+07:00"
+              },
+              {
+                "bucket": 1787767320,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:02:00+07:00"
+              },
+              {
+                "bucket": 1787767380,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:03:00+07:00"
+              },
+              {
+                "bucket": 1787767440,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:04:00+07:00"
+              },
+              {
+                "bucket": 1787767500,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:05:00+07:00"
+              },
+              {
+                "bucket": 1787767560,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:06:00+07:00"
+              },
+              {
+                "bucket": 1787767620,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:07:00+07:00"
+              },
+              {
+                "bucket": 1787767680,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:08:00+07:00"
+              },
+              {
+                "bucket": 1787767740,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:09:00+07:00"
+              },
+              {
+                "bucket": 1787767800,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:10:00+07:00"
+              },
+              {
+                "bucket": 1787767860,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:11:00+07:00"
+              },
+              {
+                "bucket": 1787767920,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:12:00+07:00"
+              },
+              {
+                "bucket": 1787767980,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:13:00+07:00"
+              },
+              {
+                "bucket": 1787768040,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:14:00+07:00"
+              },
+              {
+                "bucket": 1787768100,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:15:00+07:00"
+              },
+              {
+                "bucket": 1787768160,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:16:00+07:00"
+              },
+              {
+                "bucket": 1787768220,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:17:00+07:00"
+              },
+              {
+                "bucket": 1787768280,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:18:00+07:00"
+              },
+              {
+                "bucket": 1787768340,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:19:00+07:00"
+              },
+              {
+                "bucket": 1787768400,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:20:00+07:00"
+              },
+              {
+                "bucket": 1787768460,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:21:00+07:00"
+              },
+              {
+                "bucket": 1787768520,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:22:00+07:00"
+              },
+              {
+                "bucket": 1787768580,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:23:00+07:00"
+              },
+              {
+                "bucket": 1787768640,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:24:00+07:00"
+              },
+              {
+                "bucket": 1787768700,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:25:00+07:00"
+              },
+              {
+                "bucket": 1787768760,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:26:00+07:00"
+              },
+              {
+                "bucket": 1787768820,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:27:00+07:00"
+              },
+              {
+                "bucket": 1787768880,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:28:00+07:00"
+              },
+              {
+                "bucket": 1787768940,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:29:00+07:00"
+              },
+              {
+                "bucket": 1787769000,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:30:00+07:00"
+              },
+              {
+                "bucket": 1787769060,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:31:00+07:00"
+              },
+              {
+                "bucket": 1787769120,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:32:00+07:00"
+              },
+              {
+                "bucket": 1787769180,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:33:00+07:00"
+              },
+              {
+                "bucket": 1787769240,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:34:00+07:00"
+              },
+              {
+                "bucket": 1787769300,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:35:00+07:00"
+              },
+              {
+                "bucket": 1787769360,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:36:00+07:00"
+              },
+              {
+                "bucket": 1787769420,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:37:00+07:00"
+              },
+              {
+                "bucket": 1787769480,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:38:00+07:00"
+              },
+              {
+                "bucket": 1787769540,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:39:00+07:00"
+              },
+              {
+                "bucket": 1787769600,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:40:00+07:00"
+              },
+              {
+                "bucket": 1787769660,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:41:00+07:00"
+              },
+              {
+                "bucket": 1787769720,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:42:00+07:00"
+              },
+              {
+                "bucket": 1787769780,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:43:00+07:00"
+              },
+              {
+                "bucket": 1787769840,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:44:00+07:00"
+              },
+              {
+                "bucket": 1787769900,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:45:00+07:00"
+              },
+              {
+                "bucket": 1787769960,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:46:00+07:00"
+              },
+              {
+                "bucket": 1787770020,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:47:00+07:00"
               }
             ]
           },
@@ -16978,42 +17056,6 @@
             "bucket_seconds": 900,
             "complete": true,
             "points": [
-              {
-                "bucket": 1787724000,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-26T13:00:00+07:00"
-              },
-              {
-                "bucket": 1787724900,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-26T13:15:00+07:00"
-              },
-              {
-                "bucket": 1787725800,
-                "calls": 0,
-                "input": 0,
-                "output": 0,
-                "cache_read": 0,
-                "cache_write": 0,
-                "reasoning": 0,
-                "total": 0,
-                "all_in": 0,
-                "bucket_start": "2026-08-26T13:30:00+07:00"
-              },
               {
                 "bucket": 1787726700,
                 "calls": 0,
@@ -17565,15 +17607,9 @@
                 "total": 0,
                 "all_in": 0,
                 "bucket_start": "2026-08-27T01:00:00+07:00"
-              }
-            ]
-          },
-          "24h": {
-            "bucket_seconds": 1800,
-            "complete": true,
-            "points": [
+              },
               {
-                "bucket": 1787680800,
+                "bucket": 1787768100,
                 "calls": 0,
                 "input": 0,
                 "output": 0,
@@ -17582,8 +17618,38 @@
                 "reasoning": 0,
                 "total": 0,
                 "all_in": 0,
-                "bucket_start": "2026-08-26T01:00:00+07:00"
+                "bucket_start": "2026-08-27T01:15:00+07:00"
               },
+              {
+                "bucket": 1787769000,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:30:00+07:00"
+              },
+              {
+                "bucket": 1787769900,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:45:00+07:00"
+              }
+            ]
+          },
+          "24h": {
+            "bucket_seconds": 1800,
+            "complete": true,
+            "points": [
               {
                 "bucket": 1787682600,
                 "calls": 0,
@@ -18159,6 +18225,18 @@
                 "total": 0,
                 "all_in": 0,
                 "bucket_start": "2026-08-27T01:00:00+07:00"
+              },
+              {
+                "bucket": 1787769000,
+                "calls": 0,
+                "input": 0,
+                "output": 0,
+                "cache_read": 0,
+                "cache_write": 0,
+                "reasoning": 0,
+                "total": 0,
+                "all_in": 0,
+                "bucket_start": "2026-08-27T01:30:00+07:00"
               }
             ]
           },
